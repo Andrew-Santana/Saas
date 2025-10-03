@@ -1,0 +1,788 @@
+{
+  "common": {
+    "loading": "A carregar...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Criar",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "previous": "Anterior",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "refresh": "Actualizar",
+    "close": "Fechar",
+    "open": "Abrir",
+    "yes": "Sim",
+    "no": "Não",
+    "confirm": "Confirmar"
+  },
+  "navigation": {
+    "home": "Início",
+    "dashboard": "Painel",
+    "pricing": "Preços",
+    "features": "Funcionalidades",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "login": "Entrar",
+    "register": "Registar",
+    "logout": "Sair",
+    "profile": "Perfil",
+    "settings": "Configurações"
+  },
+  "auth": {
+    "login": {
+      "title": "Entrar",
+      "subtitle": "Bem-vindo de volta! Faça login na sua conta.",
+      "email": "E-mail",
+      "password": "Palavra-passe",
+      "rememberMe": "Lembrar-me",
+      "forgotPassword": "Esqueceu-se da palavra-passe?",
+      "signInButton": "Entrar",
+      "signingIn": "A entrar...",
+      "noAccount": "Não tem uma conta?",
+      "signUpLink": "Registe-se aqui"
+    },
+    "register": {
+      "title": "Criar Conta",
+      "subtitle": "Comece com a sua conta gratuita hoje.",
+      "name": "Nome Completo",
+      "email": "E-mail",
+      "password": "Palavra-passe",
+      "confirmPassword": "Confirmar Palavra-passe",
+      "agreeTerms": "Concordo com os Termos de Serviço e Política de Privacidade",
+      "createAccountButton": "Criar Conta",
+      "creatingAccount": "A criar conta...",
+      "hasAccount": "Já tem uma conta?",
+      "signInLink": "Entre aqui"
+    },
+    "errors": {
+      "invalidCredentials": "E-mail ou palavra-passe inválidos",
+      "emailRequired": "E-mail é obrigatório",
+      "passwordRequired": "Palavra-passe é obrigatória",
+      "nameRequired": "Nome é obrigatório",
+      "emailInvalid": "Por favor, insira um e-mail válido",
+      "passwordTooShort": "Palavra-passe deve ter pelo menos 6 caracteres",
+      "passwordsDoNotMatch": "As palavras-passe não coincidem",
+      "connectionError": "Erro de ligação",
+      "tokenNotFound": "Token não encontrado",
+      "tokenInvalid": "Token inválido"
+    }
+  },
+  "dashboard": {
+    "title": "Painel",
+    "welcome": "Bem-vindo de volta, {{name}}!",
+    "overview": "Visão Geral",
+    "recentActivity": "Actividade Recente",
+    "quickActions": "Acções Rápidas",
+    "stats": {
+      "totalUsers": "Total de Utilizadores",
+      "activeUsers": "Utilizadores Activos",
+      "revenue": "Receitas",
+      "growth": "Crescimento"
+    }
+  },
+  "pricing": {
+    "title": "Planos de Preços",
+    "subtitle": "Escolha o plano perfeito para as suas necessidades",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "save": "Poupe {{percent}}%",
+    "mostPopular": "Mais Popular",
+    "getStarted": "Começar",
+    "contactSales": "Falar com Vendas",
+    "features": {
+      "unlimitedUsers": "Utilizadores ilimitados",
+      "unlimitedProjects": "Projectos ilimitados",
+      "prioritySupport": "Suporte prioritário",
+      "advancedAnalytics": "Análises avançadas",
+      "customIntegrations": "Integrações personalizadas",
+      "apiAccess": "Acesso à API"
+    }
+  },
+  "features": {
+    "title": "Funcionalidades",
+    "subtitle": "Tudo o que precisa para ter sucesso",
+    "feature1": {
+      "title": "Fácil de Usar",
+      "description": "Interface intuitiva projectada para produtividade"
+    },
+    "feature2": {
+      "title": "Seguro e Confiável",
+      "description": "Segurança empresarial e 99,9% de disponibilidade"
+    },
+    "feature3": {
+      "title": "Escalável",
+      "description": "Cresce com as necessidades do seu negócio"
+    }
+  },
+  "footer": {
+    "company": "Empresa",
+    "product": "Produto",
+    "support": "Suporte",
+    "legal": "Legal",
+    "followUs": "Siga-nos",
+    "allRightsReserved": "Todos os direitos reservados"
+  },
+  "language": {
+    "select": "Seleccionar Idioma",
+    "current": "Idioma Actual"
+  },
+  "languageDemo": {
+    "title": "Demonstração de Internacionalização",
+    "description": "Veja como a aplicação adapta o conteúdo para cada idioma suportado.",
+    "currentLanguage": "Idioma actual",
+    "selectYourLanguage": "Seleccione o seu idioma",
+    "greeting": "Exemplo de saudação",
+    "plural": {
+      "message_one": "Tem {{count}} nova notificação",
+      "message_other": "Tem {{count}} novas notificações"
+    },
+    "interpolationExample": "Olá {{user}}, hoje é {{date}}.",
+    "dynamicContent": "Conteúdo dinâmico",
+    "itemCount": "Tem {{count}} item disponível.",
+    "itemCount_plural": "Tem {{count}} itens disponíveis.",
+    "dateExample": "A data de hoje é {{date}}.",
+    "currencyExample": "O plano em destaque custa {{price}}.",
+    "numberExample": "Número formatado: {{number}}.",
+    "nestedTranslation": "Exemplo aninhado: {{nested}}",
+    "nestedValue": "Este texto vem de uma tradução aninhada",
+    "complexExample": "Exemplo complexo com {{val}} e {{anotherVal}}.",
+    "buttonText": "Ver isto na prática",
+    "footerText": "Todos os textos acima mudam automaticamente consoante o idioma seleccionado."
+  },
+  "landing": {
+    "brand": "SaaS Starter",
+    "hero": {
+      "title": "Template SaaS Starter",
+      "description": "Coloque o seu SaaS em funcionamento em minutos com autenticação, dashboard, faturação e muito mais já configurados.",
+      "startFreeTrial": "COMEÇAR TESTE GRÁTIS",
+      "viewDemo": "Ver Demonstração Completa",
+      "noCommitment": "✅ Sem compromisso • ✅ Sem cartão de crédito • ✅ Suporte completo"
+    },
+    "technologies": {
+      "title": "Tecnologias Incluídas",
+      "subtitle": "Stack moderna pronta para produção",
+      "cards": [
+        {
+          "icon": "⚛️",
+          "title": "React 18",
+          "description": "Interface moderna e responsiva"
+        },
+        {
+          "icon": "🔷",
+          "title": "TypeScript",
+          "description": "Tipagem estática para código seguro"
+        },
+        {
+          "icon": "⚡",
+          "title": "Vite",
+          "description": "Ferramenta de build ultrarrápida"
+        },
+        {
+          "icon": "🎨",
+          "title": "Tailwind CSS",
+          "description": "Estilização utility-first consistente"
+        },
+        {
+          "icon": "🐘",
+          "title": "Laravel 11",
+          "description": "Backend robusto e escalável"
+        },
+        {
+          "icon": "🐳",
+          "title": "Docker",
+          "description": "Ambiente pronto para produção"
+        }
+      ]
+    },
+    "examples": {
+      "title": "Páginas de Exemplo",
+      "subtitle": "Adapte o template para diferentes sectores",
+      "cards": [
+        {
+          "icon": "💇‍♂️",
+          "title": "Barbearia",
+          "description": "Sistema completo para barbearias",
+          "href": "/barbearia"
+        },
+        {
+          "icon": "💄",
+          "title": "Salão de Beleza",
+          "description": "Gestão completa para salões",
+          "href": "/salao-beleza"
+        },
+        {
+          "icon": "🐕",
+          "title": "Clínica Veterinária",
+          "description": "Agenda e CRM para clínicas veterinárias",
+          "href": "/clinica-veterinaria"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para começar?",
+      "description": "Clone o repositório e tenha o seu SaaS a funcionar em minutos!",
+      "primary": "COMEÇAR AGORA",
+      "secondary": "Ver demonstração de idiomas",
+      "bullet": "✅ Open Source • ✅ Documentação completa • ✅ Suporte da comunidade"
+    }
+  },
+  "dashboardPage": {
+    "title": "Painel",
+    "subtitle": "Resumo inicial de métricas. Ligue ao backend Laravel para servir dados reais.",
+    "metrics": [
+      {
+        "label": "Clientes ativos",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "MRR",
+        "value": "€ 4.200",
+        "change": "+8%"
+      },
+      {
+        "label": "Tickets em aberto",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Estado da API Laravel",
+      "loading": "A verificar ligação...",
+      "error": "Não foi possível contactar o backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Integração sugerida:</strong> exponha um endpoint REST no Laravel (por exemplo, <code>{{endpoint}}</code>) e utilize <code>{{library}}</code> para obter dados reais. Substitua este cartão por gráficos, tabelas ou widgets do seu produto."
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Barbearia Moderna",
+      "subtitle": "Marcação Online",
+      "rating": "4,8 (127 avaliações)"
+    },
+    "about": {
+      "title": "Sobre a Barbearia",
+      "description": "A Barbearia Moderna oferece serviços de qualidade com profissionais experientes e equipamentos modernos para garantir o melhor atendimento.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rua das Flores, 123 — Centro"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 99999-9999"
+        },
+        {
+          "icon": "email",
+          "text": "contacto@barbeariamoderna.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sáb: 9h às 19h"
+        }
+      ]
+    },
+    "services": {
+      "title": "Os Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Corte Masculino",
+          "price": "€ 25,00",
+          "duration": "30 min"
+        },
+        {
+          "name": "Barba",
+          "price": "€ 20,00",
+          "duration": "20 min"
+        },
+        {
+          "name": "Corte + Barba",
+          "price": "€ 40,00",
+          "duration": "45 min"
+        },
+        {
+          "name": "Design de Sobrancelhas",
+          "price": "€ 15,00",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Os Nossos Profissionais",
+      "items": [
+        {
+          "name": "João Silva",
+          "specialty": "Cortes modernos",
+          "rating": "4,9",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Pedro Santos",
+          "specialty": "Barbas",
+          "rating": "4,8",
+          "experience": "5 anos de experiência"
+        },
+        {
+          "name": "Carlos Lima",
+          "specialty": "Cortes clássicos",
+          "rating": "4,7",
+          "experience": "3 anos de experiência"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Marcar Horário",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Profissional",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Marcar horário",
+      "serviceOptions": [
+        "Corte Masculino - € 25,00",
+        "Barba - € 20,00",
+        "Corte + Barba - € 40,00",
+        "Design de Sobrancelhas - € 15,00"
+      ],
+      "professionalOptions": [
+        "João Silva",
+        "Pedro Santos",
+        "Carlos Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Clientes atendidos",
+          "value": "1.247"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Salão de Beleza Elegance",
+      "subtitle": "Marcação Online",
+      "rating": "4,9 (89 avaliações)"
+    },
+    "about": {
+      "title": "Sobre o Salão",
+      "description": "O Salão Elegance é especializado em beleza feminina com produtos premium, profissionais qualificados e um ambiente acolhedor.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Av. das Rosas, 456 — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 88888-8888"
+        },
+        {
+          "icon": "email",
+          "text": "contacto@salaoelegance.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sáb: 9h às 19h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "hair",
+          "label": "Cabelo"
+        },
+        {
+          "key": "nails",
+          "label": "Unhas"
+        },
+        {
+          "key": "beauty",
+          "label": "Estética"
+        }
+      ]
+    },
+    "services": {
+      "title": "Os Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Corte Feminino",
+          "price": "€ 45,00",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Brushing",
+          "price": "€ 35,00",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Coloração",
+          "price": "€ 120,00",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manicure",
+          "price": "€ 25,00",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pedicure",
+          "price": "€ 30,00",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Design de Sobrancelhas",
+          "price": "€ 20,00",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "As Nossas Profissionais",
+      "items": [
+        {
+          "name": "Maria Silva",
+          "specialty": "Cortes e coloração",
+          "rating": "4,9",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Ana Costa",
+          "specialty": "Manicure e pedicure",
+          "rating": "4,8",
+          "experience": "5 anos de experiência"
+        },
+        {
+          "name": "Juliana Lima",
+          "specialty": "Design de sobrancelhas",
+          "rating": "4,7",
+          "experience": "3 anos de experiência"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Marcar Atendimento",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Profissional",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Marcar horário",
+      "serviceOptions": [
+        "Corte Feminino - € 45,00",
+        "Brushing - € 35,00",
+        "Coloração - € 120,00",
+        "Manicure - € 25,00",
+        "Pedicure - € 30,00",
+        "Design de Sobrancelhas - € 20,00"
+      ],
+      "professionalOptions": [
+        "Maria Silva",
+        "Ana Costa",
+        "Juliana Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Clientes atendidas",
+          "value": "892"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,9/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "17"
+        },
+        {
+          "label": "Serviços oferecidos",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Promoção Especial",
+      "description": "Corte + Brushing por € 70,00",
+      "note": "Válido até ao final do mês"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "Clínica Veterinária PetCare",
+      "subtitle": "Marcação Online",
+      "rating": "4,8 (156 avaliações)",
+      "emergencyBadge": "Emergência 24h"
+    },
+    "about": {
+      "title": "Sobre a Clínica",
+      "description": "A Clínica PetCare oferece cuidados completos para o seu animal, com equipa dedicada e equipamentos modernos.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rua dos Animais, 789 — Vila Pet"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 77777-7777"
+        },
+        {
+          "icon": "email",
+          "text": "contacto@petcare.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sex: 8h às 18h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultas"
+        },
+        {
+          "key": "prevention",
+          "label": "Prevenção"
+        },
+        {
+          "key": "surgery",
+          "label": "Cirurgias"
+        },
+        {
+          "key": "grooming",
+          "label": "Estética"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnóstico"
+        }
+      ]
+    },
+    "services": {
+      "title": "Os Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Consulta Geral",
+          "price": "€ 80,00",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vacinação",
+          "price": "€ 60,00",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Cirurgia",
+          "price": "€ 300,00",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Banho e Tosa",
+          "price": "€ 45,00",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Exames Laboratoriais",
+          "price": "€ 120,00",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Esterilização",
+          "price": "€ 200,00",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Os Nossos Veterinários",
+      "items": [
+        {
+          "name": "Dr. Carlos Mendes",
+          "specialty": "Clínica geral",
+          "rating": "4,9",
+          "experience": "12 anos de experiência"
+        },
+        {
+          "name": "Dra. Ana Santos",
+          "specialty": "Cirurgia",
+          "rating": "4,8",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Dr. Pedro Lima",
+          "specialty": "Dermatologia",
+          "rating": "4,7",
+          "experience": "6 anos de experiência"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Emergências",
+      "items": [
+        {
+          "name": "Emergência 24h",
+          "availability": "Disponível todos os dias",
+          "phone": "(21) 99999-9999"
+        },
+        {
+          "name": "Plantão de fim de semana",
+          "availability": "Cobertura Sáb-Dom",
+          "phone": "(21) 88888-8888"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Marcar Consulta",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Veterinário",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Marcar consulta",
+      "serviceOptions": [
+        "Consulta Geral - € 80,00",
+        "Vacinação - € 60,00",
+        "Cirurgia - € 300,00",
+        "Banho e Tosa - € 45,00",
+        "Exames Laboratoriais - € 120,00",
+        "Esterilização - € 200,00"
+      ],
+      "professionalOptions": [
+        "Dr. Carlos Mendes",
+        "Dra. Ana Santos",
+        "Dr. Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Pets atendidos",
+          "value": "2.156"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "15"
+        },
+        {
+          "label": "Serviços oferecidos",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Promoção Especial",
+      "description": "Vacinação + Consulta por € 120,00",
+      "note": "Válido até ao final do mês"
+    },
+    "healthTips": {
+      "title": "Dicas de Saúde",
+      "tips": [
+        "Mantenha as vacinas em dia",
+        "Ofereça alimentação equilibrada",
+        "Promova exercícios regulares",
+        "Agende check-ups anuais"
+      ]
+    }
+  }
+}

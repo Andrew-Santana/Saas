@@ -1,0 +1,775 @@
+{
+  "agendaPro": {
+    "brand": "AgendaPro",
+    "navbar": {
+      "services": "Services",
+      "howItWorks": "Comment ça marche",
+      "testimonials": "Témoignages",
+      "pricing": "Tarifs",
+      "faq": "FAQ",
+      "freeTrial": "Essai Gratuit"
+    },
+    "hero": {
+      "title": "Planification facile et gestion complète pour votre entreprise",
+      "subtitle": "Réduisez les absences, organisez votre équipe et conquérez plus de clients avec la plateforme la plus simple du marché",
+      "freeTrial": "Essai Gratuit pendant 14 Jours",
+      "watchDemo": "Voir la Démo",
+      "companies": "entreprises",
+      "rating": "évaluation"
+    },
+    "demoModal": {
+      "title": "Choisissez votre Démonstration",
+      "subtitle": "Voyez comment AgendaPro s'adapte à votre entreprise",
+      "closeButton": "Fermer le modal",
+      "demos": {
+        "salao": {
+          "title": "Salon de Beauté",
+          "description": "Gestion complète pour salons de beauté et cliniques esthétiques",
+          "features": [
+            "Rendez-vous en ligne",
+            "Gestion des professionnels",
+            "Contrôle des stocks"
+          ],
+          "button": "Voir la Démo"
+        },
+        "barbearia": {
+          "title": "Barbier",
+          "description": "Système complet pour barbiers modernes",
+          "features": [
+            "Rendez-vous 24/7",
+            "Gestion des barbiers",
+            "Fidélisation des clients"
+          ],
+          "button": "Voir la Démo"
+        },
+        "veterinaria": {
+          "title": "Clinique Vétérinaire",
+          "description": "Plateforme spécialisée pour vétérinaires",
+          "features": [
+            "Rendez-vous par spécialité",
+            "Dossier médical électronique",
+            "Gestion des vaccins"
+          ],
+          "button": "Voir la Démo"
+        }
+      },
+      "footer": {
+        "text": "Vous n'avez pas trouvé votre segment ? AgendaPro s'adapte à toute entreprise avec des rendez-vous.",
+        "expertButton": "Parler à un Expert",
+        "trialButton": "Essai Gratuit pendant 14 Jours"
+      }
+    },
+    "benefits": {
+      "title": "Tout ce dont vous avez besoin sur une plateforme",
+      "subtitle": "Outils puissants pour transformer la gestion de votre entreprise",
+      "onlineScheduling": {
+        "title": "Planification en Ligne 24/7",
+        "description": "Vos clients planifient à tout moment, de n'importe où. Pas d'appels, pas de confusion."
+      },
+      "automaticReminders": {
+        "title": "Rappels Automatiques",
+        "description": "Réduisez les absences jusqu'à 70% avec des confirmations et rappels par WhatsApp et SMS."
+      },
+      "teamManagement": {
+        "title": "Gestion d'Équipe Simplifiée",
+        "description": "Contrôlez les horaires, la disponibilité et les performances de chaque professionnel en un seul endroit."
+      },
+      "realTimeReports": {
+        "title": "Rapports en Temps Réel",
+        "description": "Voyez les revenus, les services les plus vendus et les performances de votre entreprise instantanément."
+      },
+      "integratedPayments": {
+        "title": "Paiements Intégrés",
+        "description": "Recevez des paiements en ligne en toute sécurité. Augmentez votre taux de conversion."
+      },
+      "saveTime": {
+        "title": "Gagnez du Temps",
+        "description": "Automatisez les tâches répétitives et concentrez-vous sur ce qui compte vraiment : vos clients."
+      }
+    },
+    "pricing": {
+      "title": "Plans transparents pour votre entreprise",
+      "subtitle": "Pas de frais cachés. Annulez à tout moment.",
+      "freeTrial": "Essai gratuit pendant 14 jours sur n'importe quel plan",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "49€",
+          "description": "Idéal pour les professionnels indépendants",
+          "features": [
+            "1 professionnel",
+            "Rendez-vous illimités",
+            "Rappels automatiques",
+            "Gestion des clients",
+            "Support par email"
+          ],
+          "cta": "Commencer maintenant"
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "129€",
+          "description": "Parfait pour les petites équipes",
+          "features": [
+            "Jusqu'à 5 professionnels",
+            "Rendez-vous illimités",
+            "Rappels automatiques",
+            "Gestion des clients",
+            "Rapports avancés",
+            "Paiements en ligne",
+            "Support prioritaire"
+          ],
+          "cta": "Essai gratuit 14 jours",
+          "popular": "Plus Populaire"
+        },
+        "advanced": {
+          "name": "Avancé",
+          "price": "249€",
+          "description": "Pour les entreprises en croissance",
+          "features": [
+            "Professionnels illimités",
+            "Rendez-vous illimités",
+            "Rappels automatiques",
+            "Gestion des clients",
+            "Rapports avancés",
+            "Paiements en ligne",
+            "API personnalisée",
+            "Support dédié",
+            "Multiples emplacements"
+          ],
+          "cta": "Commencer maintenant"
+        }
+      },
+      "footer": "Tous les plans incluent des mises à jour gratuites et un accès complet à la plateforme. Mettez à niveau ou rétrogradez à tout moment."
+    },
+    "testimonials": {
+      "title": "Aimé par les professionnels dans tout le Brésil",
+      "subtitle": "Voyez ce que nos clients disent de la transformation de leurs entreprises",
+      "testimonials": [
+        {
+          "name": "Mariana Silva",
+          "role": "Propriétaire - Salon Bella Vita",
+          "content": "J'ai augmenté mes rendez-vous de 40% après avoir commencé à utiliser cette plateforme ! Mes clients adorent la facilité de prendre rendez-vous par téléphone."
+        },
+        {
+          "name": "Carlos Mendes",
+          "role": "Gestionnaire - Barbier Premium",
+          "content": "J'ai réduit les absences de plus de 60% avec les rappels automatiques. J'économise des heures par semaine que je passais auparavant à répondre aux appels."
+        },
+        {
+          "name": "Ana Costa",
+          "role": "Vétérinaire - Clinique PetCare",
+          "content": "La gestion d'équipe est devenue beaucoup plus simple. Je peux voir l'agenda de tous les vétérinaires en temps réel et optimiser les rendez-vous."
+        },
+        {
+          "name": "Roberto Santos",
+          "role": "Propriétaire - Pet Shop Amigo Fiel",
+          "content": "Plateforme intuitive et complète. Les rapports m'aident à prendre des décisions plus stratégiques pour l'entreprise. Je recommande !"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Commencez en 3 étapes simples",
+      "subtitle": "Configurez votre agenda professionnel en minutes, pas en jours",
+      "stepLabel": "Étape",
+      "steps": [
+        {
+          "title": "Enregistrez votre entreprise",
+          "description": "Créez votre compte en moins de 2 minutes. Aucune carte de crédit nécessaire."
+        },
+        {
+          "title": "Personnalisez votre agenda",
+          "description": "Ajoutez votre logo, les couleurs de votre marque, les services et les heures d'ouverture."
+        },
+        {
+          "title": "Partagez et recevez des rendez-vous",
+          "description": "Envoyez votre lien personnalisé et commencez à recevoir des rendez-vous en ligne immédiatement."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise ?",
+      "subtitle": "Rejoignez des milliers de professionnels qui économisent déjà du temps et augmentent leurs résultats avec notre plateforme",
+      "button": "Commencez Maintenant Gratuitement",
+      "disclaimer": "14 jours gratuits • Sans carte de crédit • Annulez quand vous voulez"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Clarifiez vos doutes sur la plateforme",
+      "questions": [
+        {
+          "question": "Puis-je annuler à tout moment ?",
+          "answer": "Oui, vous pouvez annuler votre abonnement à tout moment sans pénalités ou frais supplémentaires. Votre accès continuera jusqu'à la fin de la période payée."
+        },
+        {
+          "question": "Y a-t-il des frais de configuration ou d'implémentation ?",
+          "answer": "Il n'y a aucun frais de configuration. Vous payez seulement le plan mensuel choisi et pouvez commencer à utiliser immédiatement après l'inscription."
+        },
+        {
+          "question": "Puis-je personnaliser avec la marque de mon entreprise ?",
+          "answer": "Oui ! Vous pouvez ajouter votre logo, choisir les couleurs de votre marque et personnaliser complètement la page de rendez-vous pour correspondre à l'identité visuelle de votre entreprise."
+        },
+        {
+          "question": "Comment fonctionne le support client ?",
+          "answer": "Tous les plans incluent le support par email. Les plans Pro et Avancé ont accès au support prioritaire avec des temps de réponse plus rapides. Le plan Avancé inclut le support dédié."
+        },
+        {
+          "question": "Dois-je installer un logiciel ?",
+          "answer": "Non ! La plateforme est 100% en ligne et fonctionne dans n'importe quel navigateur. Connectez-vous simplement et commencez à utiliser. Nous avons aussi des applications mobiles pour faciliter l'accès."
+        },
+        {
+          "question": "Mes données sont-elles sécurisées ?",
+          "answer": "Oui ! Nous utilisons le chiffrement de bout en bout et suivons les meilleures pratiques de sécurité. Vos données et celles de vos clients sont complètement protégées selon la LGPD."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Fait confiance par des milliers de professionnels"
+    },
+    "footer": {
+      "description": "La solution complète pour gérer et programmer votre entreprise.",
+      "menu": {
+        "title": "Menu",
+        "services": "Services",
+        "howItWorks": "Comment ça marche",
+        "pricing": "Tarifs",
+        "testimonials": "Témoignages"
+      },
+      "legal": {
+        "title": "Légal",
+        "terms": "Conditions d'Utilisation",
+        "privacy": "Politique de Confidentialité",
+        "lgpd": "LGPD",
+        "cookies": "Cookies"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Recevez des conseils et des nouvelles sur la gestion d'entreprise",
+        "placeholder": "Votre email"
+      },
+      "copyright": "© 2025 AgendaPro. Tous droits réservés."
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Barbier Moderne",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,8 (127 avis)"
+    },
+    "about": {
+      "title": "À propos du Barbier",
+      "description": "Le Barbier Moderne offre des services de qualité avec des professionnels expérimentés et des équipements modernes pour garantir le meilleur service.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rue des Fleurs, 123 — Centre"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 99999-9999"
+        },
+        {
+          "icon": "email",
+          "text": "contact@barbiermoderne.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Sam: 9h à 19h"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos Services",
+      "durationLabel": "Durée: {{duration}}",
+      "items": [
+        {
+          "name": "Coupe Homme",
+          "price": "25,00 €",
+          "duration": "30 min"
+        },
+        {
+          "name": "Barbe",
+          "price": "20,00 €",
+          "duration": "20 min"
+        },
+        {
+          "name": "Coupe + Barbe",
+          "price": "40,00 €",
+          "duration": "45 min"
+        },
+        {
+          "name": "Design de Sourcils",
+          "price": "15,00 €",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nos Professionnels",
+      "items": [
+        {
+          "name": "João Silva",
+          "specialty": "Coupes modernes",
+          "rating": "4,9",
+          "experience": "8 ans d'expérience"
+        },
+        {
+          "name": "Pedro Santos",
+          "specialty": "Barbes",
+          "rating": "4,8",
+          "experience": "5 ans d'expérience"
+        },
+        {
+          "name": "Carlos Lima",
+          "specialty": "Coupes classiques",
+          "rating": "4,7",
+          "experience": "3 ans d'expérience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Réserver un Créneau",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professionnel",
+      "availableTimesLabel": "Créneaux Disponibles",
+      "submitLabel": "Réserver créneau",
+      "serviceOptions": [
+        "Coupe Homme - 25,00 €",
+        "Barbe - 20,00 €",
+        "Coupe + Barbe - 40,00 €",
+        "Design de Sourcils - 15,00 €"
+      ],
+      "professionalOptions": [
+        "João Silva",
+        "Pedro Santos",
+        "Carlos Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Clients servis",
+          "value": "1.247"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Salon de Beauté Elegance",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,9 (89 avis)"
+    },
+    "about": {
+      "title": "À propos du Salon",
+      "description": "Le Salon Elegance se spécialise dans la beauté féminine avec des produits premium, des professionnels qualifiés et un environnement accueillant.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Av. des Roses, 456 — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 88888-8888"
+        },
+        {
+          "icon": "email",
+          "text": "contact@salonelegance.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Sam: 9h à 19h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tous"
+        },
+        {
+          "key": "hair",
+          "label": "Cheveux"
+        },
+        {
+          "key": "nails",
+          "label": "Ongles"
+        },
+        {
+          "key": "beauty",
+          "label": "Esthétique"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos Services",
+      "durationLabel": "Durée: {{duration}}",
+      "items": [
+        {
+          "name": "Coupe Femme",
+          "price": "45,00 €",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Brushing",
+          "price": "35,00 €",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Coloration",
+          "price": "120,00 €",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manucure",
+          "price": "25,00 €",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pédicure",
+          "price": "30,00 €",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Design de Sourcils",
+          "price": "20,00 €",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nos Professionnelles",
+      "items": [
+        {
+          "name": "Maria Silva",
+          "specialty": "Coupes et coloration",
+          "rating": "4,9",
+          "experience": "8 ans d'expérience"
+        },
+        {
+          "name": "Ana Costa",
+          "specialty": "Manucure et pédicure",
+          "rating": "4,8",
+          "experience": "5 ans d'expérience"
+        },
+        {
+          "name": "Juliana Lima",
+          "specialty": "Design de sourcils",
+          "rating": "4,7",
+          "experience": "3 ans d'expérience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Réserver un Rendez-vous",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professionnel",
+      "availableTimesLabel": "Créneaux Disponibles",
+      "submitLabel": "Réserver créneau",
+      "serviceOptions": [
+        "Coupe Femme - 45,00 €",
+        "Brushing - 35,00 €",
+        "Coloration - 120,00 €",
+        "Manucure - 25,00 €",
+        "Pédicure - 30,00 €",
+        "Design de Sourcils - 20,00 €"
+      ],
+      "professionalOptions": [
+        "Maria Silva",
+        "Ana Costa",
+        "Juliana Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Clientes servies",
+          "value": "892"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,9/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "17"
+        },
+        {
+          "label": "Services offerts",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Promotion Spéciale",
+      "description": "Coupe + Brushing pour 70,00 €",
+      "note": "Valide jusqu'à la fin du mois"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "Clinique Vétérinaire PetCare",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,8 (156 avis)",
+      "emergencyBadge": "Urgence 24h"
+    },
+    "about": {
+      "title": "À propos de la Clinique",
+      "description": "La Clinique PetCare offre des soins complets pour votre animal, avec une équipe dédiée et des équipements modernes.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rue des Animaux, 789 — Villa Pet"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 77777-7777"
+        },
+        {
+          "icon": "email",
+          "text": "contact@petcare.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Ven: 8h à 18h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tous"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultations"
+        },
+        {
+          "key": "prevention",
+          "label": "Prévention"
+        },
+        {
+          "key": "surgery",
+          "label": "Chirurgies"
+        },
+        {
+          "key": "grooming",
+          "label": "Esthétique"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnostic"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos Services",
+      "durationLabel": "Durée: {{duration}}",
+      "items": [
+        {
+          "name": "Consultation Générale",
+          "price": "80,00 €",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vaccination",
+          "price": "60,00 €",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Chirurgie",
+          "price": "300,00 €",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Bain et Toilettage",
+          "price": "45,00 €",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Examens de Laboratoire",
+          "price": "120,00 €",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Stérilisation",
+          "price": "200,00 €",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Nos Vétérinaires",
+      "items": [
+        {
+          "name": "Dr. Carlos Mendes",
+          "specialty": "Clinique générale",
+          "rating": "4,9",
+          "experience": "12 ans d'expérience"
+        },
+        {
+          "name": "Dr. Ana Santos",
+          "specialty": "Chirurgie",
+          "rating": "4,8",
+          "experience": "8 ans d'expérience"
+        },
+        {
+          "name": "Dr. Pedro Lima",
+          "specialty": "Dermatologie",
+          "rating": "4,7",
+          "experience": "6 ans d'expérience"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Urgences",
+      "items": [
+        {
+          "name": "Urgence 24h",
+          "availability": "Disponible tous les jours",
+          "phone": "(21) 99999-9999"
+        },
+        {
+          "name": "Garde de week-end",
+          "availability": "Couverture Sam-Dim",
+          "phone": "(21) 88888-8888"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Réserver une Consultation",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Vétérinaire",
+      "availableTimesLabel": "Créneaux Disponibles",
+      "submitLabel": "Réserver consultation",
+      "serviceOptions": [
+        "Consultation Générale - 80,00 €",
+        "Vaccination - 60,00 €",
+        "Chirurgie - 300,00 €",
+        "Bain et Toilettage - 45,00 €",
+        "Examens de Laboratoire - 120,00 €",
+        "Stérilisation - 200,00 €"
+      ],
+      "professionalOptions": [
+        "Dr. Carlos Mendes",
+        "Dr. Ana Santos",
+        "Dr. Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Animaux traités",
+          "value": "2.156"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "15"
+        },
+        {
+          "label": "Services offerts",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Offre Spéciale",
+      "description": "Vaccination + Consultation pour 120,00 €",
+      "note": "Valide jusqu'à la fin du mois"
+    },
+    "healthTips": {
+      "title": "Conseils de Santé",
+      "tips": [
+        "Maintenez les vaccins à jour",
+        "Offrez une alimentation équilibrée",
+        "Promouvez l'exercice régulier",
+        "Planifiez des contrôles annuels"
+      ]
+    }
+  }
+}

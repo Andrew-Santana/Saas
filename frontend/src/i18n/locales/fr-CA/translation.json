@@ -1,0 +1,788 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "refresh": "Actualiser",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "yes": "Oui",
+    "no": "Non",
+    "confirm": "Confirmer"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "pricing": "Tarification",
+    "features": "Fonctionnalités",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "settings": "Paramètres"
+  },
+  "auth": {
+    "login": {
+      "title": "Se connecter",
+      "subtitle": "Bon retour ! Veuillez vous connecter à votre compte.",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié ?",
+      "signInButton": "Se connecter",
+      "signingIn": "Connexion en cours...",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signUpLink": "Inscrivez-vous ici"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "subtitle": "Commencez avec votre compte gratuit dès aujourd'hui.",
+      "name": "Nom complet",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "agreeTerms": "J'accepte les Conditions d'utilisation et la Politique de confidentialité",
+      "createAccountButton": "Créer un compte",
+      "creatingAccount": "Création du compte...",
+      "hasAccount": "Vous avez déjà un compte ?",
+      "signInLink": "Connectez-vous ici"
+    },
+    "errors": {
+      "invalidCredentials": "Courriel ou mot de passe invalide",
+      "emailRequired": "Le courriel est requis",
+      "passwordRequired": "Le mot de passe est requis",
+      "nameRequired": "Le nom est requis",
+      "emailInvalid": "Veuillez entrer une adresse courriel valide",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+      "connectionError": "Erreur de connexion",
+      "tokenNotFound": "Token non trouvé",
+      "tokenInvalid": "Token invalide"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bon retour, {{name}} !",
+    "overview": "Aperçu",
+    "recentActivity": "Activité récente",
+    "quickActions": "Actions rapides",
+    "stats": {
+      "totalUsers": "Utilisateurs totaux",
+      "activeUsers": "Utilisateurs actifs",
+      "revenue": "Revenus",
+      "growth": "Croissance"
+    }
+  },
+  "pricing": {
+    "title": "Plans tarifaires",
+    "subtitle": "Choisissez le plan parfait pour vos besoins",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "save": "Économisez {{percent}}%",
+    "mostPopular": "Le plus populaire",
+    "getStarted": "Commencer",
+    "contactSales": "Contacter les ventes",
+    "features": {
+      "unlimitedUsers": "Utilisateurs illimités",
+      "unlimitedProjects": "Projets illimités",
+      "prioritySupport": "Support prioritaire",
+      "advancedAnalytics": "Analyses avancées",
+      "customIntegrations": "Intégrations personnalisées",
+      "apiAccess": "Accès API"
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "subtitle": "Tout ce dont vous avez besoin pour réussir",
+    "feature1": {
+      "title": "Facile à utiliser",
+      "description": "Interface intuitive conçue pour la productivité"
+    },
+    "feature2": {
+      "title": "Sécurisé et fiable",
+      "description": "Sécurité de niveau entreprise et disponibilité de 99,9 %"
+    },
+    "feature3": {
+      "title": "Évolutif",
+      "description": "Grandit avec les besoins de votre entreprise"
+    }
+  },
+  "footer": {
+    "company": "Entreprise",
+    "product": "Produit",
+    "support": "Support",
+    "legal": "Légal",
+    "followUs": "Suivez-nous",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "language": {
+    "select": "Sélectionner la langue",
+    "current": "Langue actuelle"
+  },
+  "languageDemo": {
+    "title": "Démo d'internationalisation",
+    "description": "Découvrez comment l'application adapte son contenu pour chaque langue prise en charge.",
+    "currentLanguage": "Langue actuelle",
+    "selectYourLanguage": "Choisissez votre langue",
+    "greeting": "Exemple de salutation",
+    "plural": {
+      "message_one": "Vous avez {{count}} nouvelle notification",
+      "message_other": "Vous avez {{count}} nouvelles notifications"
+    },
+    "interpolationExample": "Bonjour {{user}}, nous sommes le {{date}}.",
+    "dynamicContent": "Contenu dynamique",
+    "itemCount": "Vous avez {{count}} élément disponible.",
+    "itemCount_plural": "Vous avez {{count}} éléments disponibles.",
+    "dateExample": "La date du jour est {{date}}.",
+    "currencyExample": "Le plan vedette coûte {{price}}.",
+    "numberExample": "Nombre formaté : {{number}}.",
+    "nestedTranslation": "Exemple imbriqué : {{nested}}",
+    "nestedValue": "Ce texte provient d'une traduction imbriquée",
+    "complexExample": "Exemple complexe avec {{val}} et {{anotherVal}}.",
+    "buttonText": "Voir cette démo",
+    "footerText": "Tous les textes ci-dessus changent automatiquement selon la langue sélectionnée."
+  },
+  "landing": {
+    "brand": "SaaS Starter",
+    "hero": {
+      "title": "Modèle SaaS Starter",
+      "description": "Lancez votre SaaS en quelques minutes avec authentification, tableaux de bord, facturation et bien plus déjà configurés.",
+      "startFreeTrial": "COMMENCER L’ESSAI GRATUIT",
+      "viewDemo": "Voir la démo complète",
+      "noCommitment": "✅ Sans engagement • ✅ Sans carte bancaire • ✅ Support complet"
+    },
+    "technologies": {
+      "title": "Technologies incluses",
+      "subtitle": "Stack moderne prête pour la production",
+      "cards": [
+        {
+          "icon": "⚛️",
+          "title": "React 18",
+          "description": "Interface moderne et responsive"
+        },
+        {
+          "icon": "🔷",
+          "title": "TypeScript",
+          "description": "Typage statique pour un code fiable"
+        },
+        {
+          "icon": "⚡",
+          "title": "Vite",
+          "description": "Outil de build ultra-rapide"
+        },
+        {
+          "icon": "🎨",
+          "title": "Tailwind CSS",
+          "description": "Style utility-first cohérent"
+        },
+        {
+          "icon": "🐘",
+          "title": "Laravel 11",
+          "description": "Base backend robuste"
+        },
+        {
+          "icon": "🐳",
+          "title": "Docker",
+          "description": "Environnements prêts pour la production"
+        }
+      ]
+    },
+    "examples": {
+      "title": "Pages exemples",
+      "subtitle": "Adaptez le template à différents secteurs",
+      "cards": [
+        {
+          "icon": "💇‍♂️",
+          "title": "Barbershop",
+          "description": "Système complet pour barbershops",
+          "href": "/barbearia"
+        },
+        {
+          "icon": "💄",
+          "title": "Salon de beauté",
+          "description": "Gestion complète pour salons",
+          "href": "/salao-beleza"
+        },
+        {
+          "icon": "🐕",
+          "title": "Clinique vétérinaire",
+          "description": "Agenda et CRM pour cliniques vétérinaires",
+          "href": "/clinica-veterinaria"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à démarrer ?",
+      "description": "Clonez le dépôt et lancez votre SaaS en quelques minutes.",
+      "primary": "COMMENCER MAINTENANT",
+      "secondary": "Voir la démo des langues",
+      "bullet": "✅ Open source • ✅ Documentation complète • ✅ Communauté active"
+    }
+  },
+  "dashboardPage": {
+    "title": "Tableau de bord",
+    "subtitle": "Résumé initial des métriques. Connectez le backend Laravel pour afficher des données réelles.",
+    "metrics": [
+      {
+        "label": "Clients actifs",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "MRR",
+        "value": "CA$ 4,200",
+        "change": "+8%"
+      },
+      {
+        "label": "Tickets ouverts",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Statut de l’API Laravel",
+      "loading": "Vérification de la connexion...",
+      "error": "Impossible de joindre le backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Intégration suggérée :</strong> exposez un endpoint REST dans Laravel (ex. <code>{{endpoint}}</code>) et utilisez <code>{{library}}</code> pour récupérer des données réelles. Remplacez cette carte par vos graphiques, tableaux ou widgets métier."
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Barbershop Moderne",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,8 (127 avis)"
+    },
+    "about": {
+      "title": "À propos du barbershop",
+      "description": "Le Barbershop Moderne offre des services de haute qualité avec des professionnels expérimentés et un environnement confortable.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "123 rue des Fleurs — Centre"
+        },
+        {
+          "icon": "phone",
+          "text": "(33) 1 99 99 99 99"
+        },
+        {
+          "icon": "email",
+          "text": "contact@barbershopmoderne.fr"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Sam : 9h à 19h"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos services",
+      "durationLabel": "Durée : {{duration}}",
+      "items": [
+        {
+          "name": "Coupe masculine",
+          "price": "25 €",
+          "duration": "30 min"
+        },
+        {
+          "name": "Taille de barbe",
+          "price": "20 €",
+          "duration": "20 min"
+        },
+        {
+          "name": "Coupe + barbe",
+          "price": "40 €",
+          "duration": "45 min"
+        },
+        {
+          "name": "Design des sourcils",
+          "price": "15 €",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nos professionnels",
+      "items": [
+        {
+          "name": "Jean Silva",
+          "specialty": "Coupes modernes",
+          "rating": "4,9",
+          "experience": "8 ans d’expérience"
+        },
+        {
+          "name": "Pierre Santos",
+          "specialty": "Barbes",
+          "rating": "4,8",
+          "experience": "5 ans d’expérience"
+        },
+        {
+          "name": "Charles Lima",
+          "specialty": "Coupes classiques",
+          "rating": "4,7",
+          "experience": "3 ans d’expérience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Réserver un créneau",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professionnel",
+      "availableTimesLabel": "Horaires disponibles",
+      "submitLabel": "Réserver",
+      "serviceOptions": [
+        "Coupe masculine - 25 €",
+        "Taille de barbe - 20 €",
+        "Coupe + barbe - 40 €",
+        "Design des sourcils - 15 €"
+      ],
+      "professionalOptions": [
+        "Jean Silva",
+        "Pierre Santos",
+        "Charles Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Clients servis",
+          "value": "1 247"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Salon de Beauté Elegance",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,9 (89 avis)"
+    },
+    "about": {
+      "title": "À propos du salon",
+      "description": "Elegance propose une expérience beauté premium avec des professionnelles qualifiées et des produits sélectionnés.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "456 avenue des Roses — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(33) 1 88 88 88 88"
+        },
+        {
+          "icon": "email",
+          "text": "contact@salonelegance.fr"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Sam : 9h à 19h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tous"
+        },
+        {
+          "key": "hair",
+          "label": "Cheveux"
+        },
+        {
+          "key": "nails",
+          "label": "Ongles"
+        },
+        {
+          "key": "beauty",
+          "label": "Esthétique"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos services",
+      "durationLabel": "Durée : {{duration}}",
+      "items": [
+        {
+          "name": "Coupe femme",
+          "price": "45 CA$",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Brushing",
+          "price": "35 CA$",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Coloration",
+          "price": "120 CA$",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manucure",
+          "price": "25 CA$",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pédicure",
+          "price": "30 CA$",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Design des sourcils",
+          "price": "20 CA$",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nos professionnelles",
+      "items": [
+        {
+          "name": "Marie Silva",
+          "specialty": "Coupes et coloration",
+          "rating": "4,9",
+          "experience": "8 ans d’expérience"
+        },
+        {
+          "name": "Anne Costa",
+          "specialty": "Manucure & pédicure",
+          "rating": "4,8",
+          "experience": "5 ans d’expérience"
+        },
+        {
+          "name": "Juliane Lima",
+          "specialty": "Design des sourcils",
+          "rating": "4,7",
+          "experience": "3 ans d’expérience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Prendre rendez-vous",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professionnelle",
+      "availableTimesLabel": "Horaires disponibles",
+      "submitLabel": "Réserver",
+      "serviceOptions": [
+        "Coupe femme - 45 CA$",
+        "Brushing - 35 CA$",
+        "Coloration - 120 CA$",
+        "Manucure - 25 CA$",
+        "Pédicure - 30 CA$",
+        "Design des sourcils - 20 CA$"
+      ],
+      "professionalOptions": [
+        "Marie Silva",
+        "Anne Costa",
+        "Juliane Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Clientes servies",
+          "value": "892"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,9/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "17"
+        },
+        {
+          "label": "Services proposés",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Offre spéciale",
+      "description": "Coupe + brushing pour 95 CA$",
+      "note": "Valable jusqu’à la fin du mois"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "Clinique Vétérinaire PetCare",
+      "subtitle": "Réservation en ligne",
+      "rating": "4,8 (156 avis)",
+      "emergencyBadge": "Urgence 24h/24"
+    },
+    "about": {
+      "title": "À propos de la clinique",
+      "description": "La clinique PetCare prend soin de votre animal avec une équipe dévouée et des équipements modernes pour garantir santé et bien-être.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "789 rue des Animaux — Quartier Pet"
+        },
+        {
+          "icon": "phone",
+          "text": "(33) 7 77 77 77 77"
+        },
+        {
+          "icon": "email",
+          "text": "contact@petcare.fr"
+        },
+        {
+          "icon": "hours",
+          "text": "Lun-Ven : 8h à 18h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tous"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultations"
+        },
+        {
+          "key": "prevention",
+          "label": "Prévention"
+        },
+        {
+          "key": "surgery",
+          "label": "Chirurgies"
+        },
+        {
+          "key": "grooming",
+          "label": "Toilettage"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnostics"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos services",
+      "durationLabel": "Durée : {{duration}}",
+      "items": [
+        {
+          "name": "Consultation générale",
+          "price": "80 CA$",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vaccination",
+          "price": "60 CA$",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Chirurgie",
+          "price": "300 CA$",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Toilettage",
+          "price": "45 CA$",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Analyses de laboratoire",
+          "price": "120 CA$",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Stérilisation",
+          "price": "200 CA$",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Nos vétérinaires",
+      "items": [
+        {
+          "name": "Dr Carlos Mendes",
+          "specialty": "Médecine générale",
+          "rating": "4,9",
+          "experience": "12 ans d’expérience"
+        },
+        {
+          "name": "Dr Ana Santos",
+          "specialty": "Chirurgie",
+          "rating": "4,8",
+          "experience": "8 ans d’expérience"
+        },
+        {
+          "name": "Dr Pedro Lima",
+          "specialty": "Dermatologie",
+          "rating": "4,7",
+          "experience": "6 ans d’expérience"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Urgences",
+      "items": [
+        {
+          "name": "Urgence 24h/24",
+          "availability": "Disponible à toute heure",
+          "phone": "(33) 9 99 99 99 99"
+        },
+        {
+          "name": "Garde week-end",
+          "availability": "Couverture Sam-Dim",
+          "phone": "(33) 8 88 88 88 88"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Prendre rendez-vous",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Vétérinaire",
+      "availableTimesLabel": "Horaires disponibles",
+      "submitLabel": "Réserver la consultation",
+      "serviceOptions": [
+        "Consultation générale - 80 CA$",
+        "Vaccination - 60 CA$",
+        "Chirurgie - 300 CA$",
+        "Toilettage - 45 CA$",
+        "Analyses de laboratoire - 120 CA$",
+        "Stérilisation - 200 CA$"
+      ],
+      "professionalOptions": [
+        "Dr Carlos Mendes",
+        "Dr Ana Santos",
+        "Dr Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistiques",
+      "items": [
+        {
+          "label": "Animaux soignés",
+          "value": "2 156"
+        },
+        {
+          "label": "Note moyenne",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Créneaux disponibles",
+          "value": "15"
+        },
+        {
+          "label": "Services proposés",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Offre spéciale",
+      "description": "Vaccination + consultation pour 160 CA$",
+      "note": "Valable jusqu’à la fin du mois"
+    },
+    "healthTips": {
+      "title": "Conseils santé",
+      "tips": [
+        "Maintenez les vaccins à jour",
+        "Une alimentation équilibrée est essentielle",
+        "Encouragez l’exercice régulier",
+        "Planifiez un check-up annuel"
+      ]
+    }
+  }
+}

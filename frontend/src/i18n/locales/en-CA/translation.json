@@ -1,0 +1,788 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "pricing": "Pricing",
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Welcome back! Please sign in to your account.",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "signInButton": "Sign In",
+      "signingIn": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up here"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Get started with your free account today.",
+      "name": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "agreeTerms": "I agree to the Terms of Service and Privacy Policy",
+      "createAccountButton": "Create Account",
+      "creatingAccount": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign in here"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "nameRequired": "Name is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "connectionError": "Connection error",
+      "tokenNotFound": "Token not found",
+      "tokenInvalid": "Invalid token"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {{name}}!",
+    "overview": "Overview",
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeUsers": "Active Users",
+      "revenue": "Revenue",
+      "growth": "Growth"
+    }
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the perfect plan for your needs",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save {{percent}}%",
+    "mostPopular": "Most Popular",
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "features": {
+      "unlimitedUsers": "Unlimited users",
+      "unlimitedProjects": "Unlimited projects",
+      "prioritySupport": "Priority support",
+      "advancedAnalytics": "Advanced analytics",
+      "customIntegrations": "Custom integrations",
+      "apiAccess": "API access"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need to succeed",
+    "feature1": {
+      "title": "Easy to Use",
+      "description": "Intuitive interface designed for productivity"
+    },
+    "feature2": {
+      "title": "Secure & Reliable",
+      "description": "Enterprise-grade security and 99.9% uptime"
+    },
+    "feature3": {
+      "title": "Scalable",
+      "description": "Grows with your business needs"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "product": "Product",
+    "support": "Support",
+    "legal": "Legal",
+    "followUs": "Follow us",
+    "allRightsReserved": "All rights reserved"
+  },
+  "language": {
+    "select": "Select Language",
+    "current": "Current Language"
+  },
+  "languageDemo": {
+    "title": "Internationalization Demo",
+    "description": "Explore how the application adapts content for each supported language.",
+    "currentLanguage": "Current Language",
+    "selectYourLanguage": "Select your language",
+    "greeting": "Greeting Example",
+    "plural": {
+      "message_one": "You have {{count}} new notification",
+      "message_other": "You have {{count}} new notifications"
+    },
+    "interpolationExample": "Hello {{user}}, today is {{date}}.",
+    "dynamicContent": "Dynamic Content",
+    "itemCount": "You have {{count}} item available.",
+    "itemCount_plural": "You have {{count}} items available.",
+    "dateExample": "Today's date is {{date}}.",
+    "currencyExample": "The featured plan costs {{price}}.",
+    "numberExample": "Formatted number: {{number}}.",
+    "nestedTranslation": "Nested example: {{nested}}",
+    "nestedValue": "This text comes from a nested translation",
+    "complexExample": "Complex example with {{val}} and {{anotherVal}}.",
+    "buttonText": "See this in action",
+    "footerText": "All texts above change automatically based on the selected language."
+  },
+  "landing": {
+    "brand": "SaaS Starter",
+    "hero": {
+      "title": "SaaS Starter Template",
+      "description": "Launch your SaaS in minutes with authentication, dashboards, billing flows, and more already wired in.",
+      "startFreeTrial": "START FREE TRIAL NOW",
+      "viewDemo": "View Complete Demo",
+      "noCommitment": "✅ No commitment • ✅ No credit card • ✅ Full support"
+    },
+    "technologies": {
+      "title": "Included Technologies",
+      "subtitle": "Production-ready modern stack",
+      "cards": [
+        {
+          "icon": "⚛️",
+          "title": "React 18",
+          "description": "Modern and responsive interface"
+        },
+        {
+          "icon": "🔷",
+          "title": "TypeScript",
+          "description": "Type-safe codebase for confident refactors"
+        },
+        {
+          "icon": "⚡",
+          "title": "Vite",
+          "description": "Ultra-fast development and build tooling"
+        },
+        {
+          "icon": "🎨",
+          "title": "Tailwind CSS",
+          "description": "Utility-first styling with design consistency"
+        },
+        {
+          "icon": "🐘",
+          "title": "Laravel 11",
+          "description": "Robust backend API foundation"
+        },
+        {
+          "icon": "🐳",
+          "title": "Docker",
+          "description": "Production-ready container orchestration"
+        }
+      ]
+    },
+    "examples": {
+      "title": "Example Pages",
+      "subtitle": "Adapt the template to different industries",
+      "cards": [
+        {
+          "icon": "💇‍♂️",
+          "title": "Barbershop",
+          "description": "Ready-to-use barbershop booking system",
+          "href": "/barbearia"
+        },
+        {
+          "icon": "💄",
+          "title": "Beauty Salon",
+          "description": "Complete management for beauty salons",
+          "href": "/salao-beleza"
+        },
+        {
+          "icon": "🐕",
+          "title": "Veterinary Clinic",
+          "description": "Scheduling and CRM for veterinary teams",
+          "href": "/clinica-veterinaria"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "description": "Clone the repository and launch your SaaS in minutes!",
+      "primary": "START NOW",
+      "secondary": "View Language Demo",
+      "bullet": "✅ Open source • ✅ Complete documentation • ✅ Community support"
+    }
+  },
+  "dashboardPage": {
+    "title": "Dashboard",
+    "subtitle": "Initial metrics summary. Connect the Laravel backend to serve live data.",
+    "metrics": [
+      {
+        "label": "Active customers",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "MRR",
+        "value": "$4,200",
+        "change": "+8%"
+      },
+      {
+        "label": "Open tickets",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Laravel API status",
+      "loading": "Checking connection...",
+      "error": "Unable to reach the backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Suggested integration:</strong> expose a REST endpoint in Laravel (e.g. <code>{{endpoint}}</code>) and use <code>{{library}}</code> to fetch real data. Replace this card with charts, tables, or product-specific widgets."
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Modern Barbershop",
+      "subtitle": "Online Booking",
+      "rating": "4.8 (127 reviews)"
+    },
+    "about": {
+      "title": "About the Barbershop",
+      "description": "Modern Barbershop offers high-quality services with experienced barbers. A climate-controlled space with modern equipment guarantees the best experience.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "123 Flower Street — Downtown"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 99999-9999"
+        },
+        {
+          "icon": "email",
+          "text": "contact@modernbarbershop.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Sat: 9am to 7pm"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "Men's Haircut",
+          "price": "$25.00",
+          "duration": "30 min"
+        },
+        {
+          "name": "Beard Trim",
+          "price": "$20.00",
+          "duration": "20 min"
+        },
+        {
+          "name": "Haircut + Beard",
+          "price": "$40.00",
+          "duration": "45 min"
+        },
+        {
+          "name": "Eyebrow Design",
+          "price": "$15.00",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Our Professionals",
+      "items": [
+        {
+          "name": "John Silva",
+          "specialty": "Modern cuts",
+          "rating": "4.9",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Peter Santos",
+          "specialty": "Beards",
+          "rating": "4.8",
+          "experience": "5 years of experience"
+        },
+        {
+          "name": "Carlos Lima",
+          "specialty": "Classic cuts",
+          "rating": "4.7",
+          "experience": "3 years of experience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Book an Appointment",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professional",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book appointment",
+      "serviceOptions": [
+        "Men's Haircut - $25.00",
+        "Beard Trim - $20.00",
+        "Haircut + Beard - $40.00",
+        "Eyebrow Design - $15.00"
+      ],
+      "professionalOptions": [
+        "John Silva",
+        "Peter Santos",
+        "Carlos Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Customers served",
+          "value": "1,247"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.8/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Elegance Beauty Salon",
+      "subtitle": "Online Booking",
+      "rating": "4.9 (89 reviews)"
+    },
+    "about": {
+      "title": "About the Salon",
+      "description": "Elegance Salon specializes in premium beauty experiences with qualified professionals and carefully selected products.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "456 Rose Avenue — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 88888-8888"
+        },
+        {
+          "icon": "email",
+          "text": "contact@elegancesalon.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Sat: 9am to 7pm"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "All"
+        },
+        {
+          "key": "hair",
+          "label": "Hair"
+        },
+        {
+          "key": "nails",
+          "label": "Nails"
+        },
+        {
+          "key": "beauty",
+          "label": "Beauty"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "Women's Haircut",
+          "price": "$45.00",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Blowout",
+          "price": "$35.00",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Hair Coloring",
+          "price": "$120.00",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manicure",
+          "price": "$25.00",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pedicure",
+          "price": "$30.00",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Brow Design",
+          "price": "$20.00",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Our Professionals",
+      "items": [
+        {
+          "name": "Maria Silva",
+          "specialty": "Cuts & Coloring",
+          "rating": "4.9",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Ana Costa",
+          "specialty": "Manicure & Pedicure",
+          "rating": "4.8",
+          "experience": "5 years of experience"
+        },
+        {
+          "name": "Juliana Lima",
+          "specialty": "Brow design",
+          "rating": "4.7",
+          "experience": "3 years of experience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Schedule an Appointment",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professional",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book appointment",
+      "serviceOptions": [
+        "Women's Haircut - $45.00",
+        "Blowout - $35.00",
+        "Hair Coloring - $120.00",
+        "Manicure - $25.00",
+        "Pedicure - $30.00",
+        "Brow Design - $20.00"
+      ],
+      "professionalOptions": [
+        "Maria Silva",
+        "Ana Costa",
+        "Juliana Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Clients served",
+          "value": "892"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.9/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "17"
+        },
+        {
+          "label": "Services offered",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Special Offer",
+      "description": "Haircut + Blowout for only $70.00",
+      "note": "Valid until the end of the month"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "PetCare Veterinary Clinic",
+      "subtitle": "Online Booking",
+      "rating": "4.8 (156 reviews)",
+      "emergencyBadge": "24/7 Emergency"
+    },
+    "about": {
+      "title": "About the Clinic",
+      "description": "PetCare Clinic specializes in complete pet care, delivering high-quality veterinary services with modern equipment and a dedicated team.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "789 Animal Street — Pet District"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 77777-7777"
+        },
+        {
+          "icon": "email",
+          "text": "contact@petcare.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Fri: 8am to 6pm"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "All"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultations"
+        },
+        {
+          "key": "prevention",
+          "label": "Prevention"
+        },
+        {
+          "key": "surgery",
+          "label": "Surgeries"
+        },
+        {
+          "key": "grooming",
+          "label": "Grooming"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnostics"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "General Consultation",
+          "price": "$80.00",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vaccination",
+          "price": "$60.00",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Surgery",
+          "price": "$300.00",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Bath & Grooming",
+          "price": "$45.00",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Laboratory Tests",
+          "price": "$120.00",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Neutering",
+          "price": "$200.00",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Our Veterinarians",
+      "items": [
+        {
+          "name": "Dr. Carlos Mendes",
+          "specialty": "General Practice",
+          "rating": "4.9",
+          "experience": "12 years of experience"
+        },
+        {
+          "name": "Dr. Ana Santos",
+          "specialty": "Surgery",
+          "rating": "4.8",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Dr. Pedro Lima",
+          "specialty": "Dermatology",
+          "rating": "4.7",
+          "experience": "6 years of experience"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Emergency Services",
+      "items": [
+        {
+          "name": "24/7 Emergency",
+          "availability": "Available around the clock",
+          "phone": "(11) 99999-9999"
+        },
+        {
+          "name": "Weekend On-call",
+          "availability": "Sat–Sun coverage",
+          "phone": "(11) 88888-8888"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Book a Consultation",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Veterinarian",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book consultation",
+      "serviceOptions": [
+        "General Consultation - $80.00",
+        "Vaccination - $60.00",
+        "Surgery - $300.00",
+        "Bath & Grooming - $45.00",
+        "Laboratory Tests - $120.00",
+        "Neutering - $200.00"
+      ],
+      "professionalOptions": [
+        "Dr. Carlos Mendes",
+        "Dr. Ana Santos",
+        "Dr. Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Pets treated",
+          "value": "2,156"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.8/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "15"
+        },
+        {
+          "label": "Services offered",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Special Offer",
+      "description": "Vaccination + Consultation for $120.00",
+      "note": "Valid until the end of the month"
+    },
+    "healthTips": {
+      "title": "Health Tips",
+      "tips": [
+        "Keep vaccinations up to date",
+        "Balanced nutrition matters",
+        "Encourage regular exercise",
+        "Schedule annual check-ups"
+      ]
+    }
+  }
+}

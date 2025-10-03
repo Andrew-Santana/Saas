@@ -1,0 +1,775 @@
+{
+  "agendaPro": {
+    "brand": "AgendaPro",
+    "navbar": {
+      "services": "Services",
+      "howItWorks": "How it works",
+      "testimonials": "Testimonials",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "freeTrial": "Free Trial"
+    },
+    "hero": {
+      "title": "Easy scheduling and complete management for your business",
+      "subtitle": "Reduce no-shows, organize your team and win more customers with the simplest platform on the market",
+      "freeTrial": "Free Trial for 14 Days",
+      "watchDemo": "Watch Demo",
+      "companies": "companies",
+      "rating": "rating"
+    },
+    "demoModal": {
+      "title": "Choose Your Demo",
+      "subtitle": "See how AgendaPro adapts to your business",
+      "closeButton": "Close modal",
+      "demos": {
+        "salao": {
+          "title": "Beauty Salon",
+          "description": "Complete management for beauty salons and aesthetic clinics",
+          "features": [
+            "Online appointments",
+            "Professional management",
+            "Inventory control"
+          ],
+          "button": "View Demo"
+        },
+        "barbearia": {
+          "title": "Barbershop",
+          "description": "Complete system for modern barbershops",
+          "features": [
+            "24/7 appointments",
+            "Barber management",
+            "Customer loyalty"
+          ],
+          "button": "View Demo"
+        },
+        "veterinaria": {
+          "title": "Veterinary Clinic",
+          "description": "Specialized platform for veterinarians",
+          "features": [
+            "Appointments by specialty",
+            "Electronic medical records",
+            "Vaccine management"
+          ],
+          "button": "View Demo"
+        }
+      },
+      "footer": {
+        "text": "Didn't find your segment? AgendaPro adapts to any business with appointments.",
+        "expertButton": "Talk to an Expert",
+        "trialButton": "Free Trial for 14 Days"
+      }
+    },
+    "benefits": {
+      "title": "Everything you need in one platform",
+      "subtitle": "Powerful tools to transform your business management",
+      "onlineScheduling": {
+        "title": "Online Scheduling 24/7",
+        "description": "Your customers schedule anytime, anywhere. No calls, no confusion."
+      },
+      "automaticReminders": {
+        "title": "Automatic Reminders",
+        "description": "Reduce no-shows by up to 70% with WhatsApp and SMS confirmations and reminders."
+      },
+      "teamManagement": {
+        "title": "Simplified Team Management",
+        "description": "Control schedules, availability and performance of each professional in one place."
+      },
+      "realTimeReports": {
+        "title": "Real-time Reports",
+        "description": "See revenue, best-selling services and your business performance instantly."
+      },
+      "integratedPayments": {
+        "title": "Integrated Payments",
+        "description": "Receive online payments securely. Increase your conversion rate."
+      },
+      "saveTime": {
+        "title": "Save Time",
+        "description": "Automate repetitive tasks and focus on what really matters: your customers."
+      }
+    },
+    "pricing": {
+      "title": "Transparent plans for your business",
+      "subtitle": "No hidden fees. Cancel anytime.",
+      "freeTrial": "Free trial for 14 days on any plan",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "$49",
+          "description": "Ideal for independent professionals",
+          "features": [
+            "1 professional",
+            "Unlimited appointments",
+            "Automatic reminders",
+            "Client management",
+            "Email support"
+          ],
+          "cta": "Start now"
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "$129",
+          "description": "Perfect for small teams",
+          "features": [
+            "Up to 5 professionals",
+            "Unlimited appointments",
+            "Automatic reminders",
+            "Client management",
+            "Advanced reports",
+            "Online payments",
+            "Priority support"
+          ],
+          "cta": "Free trial 14 days",
+          "popular": "Most Popular"
+        },
+        "advanced": {
+          "name": "Advanced",
+          "price": "$249",
+          "description": "For growing businesses",
+          "features": [
+            "Unlimited professionals",
+            "Unlimited appointments",
+            "Automatic reminders",
+            "Client management",
+            "Advanced reports",
+            "Online payments",
+            "Custom API",
+            "Dedicated support",
+            "Multiple locations"
+          ],
+          "cta": "Start now"
+        }
+      },
+      "footer": "All plans include free updates and full platform access. Upgrade or downgrade anytime."
+    },
+    "testimonials": {
+      "title": "Loved by professionals across Brazil",
+      "subtitle": "See what our clients are saying about the transformation in their businesses",
+      "testimonials": [
+        {
+          "name": "Mariana Silva",
+          "role": "Owner - Bella Vita Salon",
+          "content": "I increased my appointments by 40% after I started using this platform! My clients love the ease of scheduling by cell phone."
+        },
+        {
+          "name": "Carlos Mendes",
+          "role": "Manager - Premium Barbershop",
+          "content": "I reduced no-shows by more than 60% with automatic reminders. I save hours per week that I used to spend answering calls."
+        },
+        {
+          "name": "Ana Costa",
+          "role": "Veterinarian - PetCare Clinic",
+          "content": "Team management became much simpler. I can see the schedule of all veterinarians in real-time and optimize appointments."
+        },
+        {
+          "name": "Roberto Santos",
+          "role": "Owner - Loyal Friend Pet Shop",
+          "content": "Intuitive and complete platform. The reports help me make more strategic business decisions. I recommend it!"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Start in 3 simple steps",
+      "subtitle": "Set up your professional schedule in minutes, not days",
+      "stepLabel": "Step",
+      "steps": [
+        {
+          "title": "Register your business",
+          "description": "Create your account in less than 2 minutes. No credit card needed."
+        },
+        {
+          "title": "Customize your schedule",
+          "description": "Add your logo, brand colors, services and service hours."
+        },
+        {
+          "title": "Share and receive appointments",
+          "description": "Send your personalized link and start receiving online appointments immediately."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to transform your business?",
+      "subtitle": "Join thousands of professionals who already save time and increase their results with our platform",
+      "button": "Start Now Free",
+      "disclaimer": "14 days free • No credit card • Cancel anytime"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Clear your doubts about the platform",
+      "questions": [
+        {
+          "question": "Can I cancel at any time?",
+          "answer": "Yes, you can cancel your subscription at any time without penalties or additional fees. Your access will continue until the end of the paid period."
+        },
+        {
+          "question": "Is there a setup or implementation fee?",
+          "answer": "There is no setup fee. You only pay the chosen monthly plan and can start using immediately after registration."
+        },
+        {
+          "question": "Can I customize with my business's brand?",
+          "answer": "Yes! You can add your logo, choose your brand colors and completely customize the scheduling page to match your business's visual identity."
+        },
+        {
+          "question": "How does customer support work?",
+          "answer": "All plans include email support. Pro and Advanced plans have access to priority support with faster response times. The Advanced plan includes dedicated support."
+        },
+        {
+          "question": "Do I need to install any software?",
+          "answer": "No! The platform is 100% online and works in any browser. Just log in and start using. We also have mobile apps to facilitate access."
+        },
+        {
+          "question": "Are my data safe?",
+          "answer": "Yes! We use end-to-end encryption and follow the best security practices. Your data and your clients' data are completely protected according to LGPD."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Trusted by thousands of professionals"
+    },
+    "footer": {
+      "description": "The complete solution for managing and scheduling your business.",
+      "menu": {
+        "title": "Menu",
+        "services": "Services",
+        "howItWorks": "How it works",
+        "pricing": "Pricing",
+        "testimonials": "Testimonials"
+      },
+      "legal": {
+        "title": "Legal",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "lgpd": "LGPD",
+        "cookies": "Cookies"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Receive tips and news about business management",
+        "placeholder": "Your email"
+      },
+      "copyright": "© 2025 AgendaPro. All rights reserved."
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Modern Barbershop",
+      "subtitle": "Online Booking",
+      "rating": "4.8 (127 reviews)"
+    },
+    "about": {
+      "title": "About the Barbershop",
+      "description": "Modern Barbershop offers high-quality services with experienced barbers. A climate-controlled space with modern equipment guarantees the best experience.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "123 Flower Street — Downtown"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 99999-9999"
+        },
+        {
+          "icon": "email",
+          "text": "contact@modernbarbershop.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Sat: 9am to 7pm"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "Men's Haircut",
+          "price": "$25.00",
+          "duration": "30 min"
+        },
+        {
+          "name": "Beard Trim",
+          "price": "$20.00",
+          "duration": "20 min"
+        },
+        {
+          "name": "Haircut + Beard",
+          "price": "$40.00",
+          "duration": "45 min"
+        },
+        {
+          "name": "Eyebrow Design",
+          "price": "$15.00",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Our Professionals",
+      "items": [
+        {
+          "name": "John Silva",
+          "specialty": "Modern cuts",
+          "rating": "4.9",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Peter Santos",
+          "specialty": "Beards",
+          "rating": "4.8",
+          "experience": "5 years of experience"
+        },
+        {
+          "name": "Carlos Lima",
+          "specialty": "Classic cuts",
+          "rating": "4.7",
+          "experience": "3 years of experience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Book an Appointment",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professional",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book appointment",
+      "serviceOptions": [
+        "Men's Haircut - $25.00",
+        "Beard Trim - $20.00",
+        "Haircut + Beard - $40.00",
+        "Eyebrow Design - $15.00"
+      ],
+      "professionalOptions": [
+        "John Silva",
+        "Peter Santos",
+        "Carlos Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Customers served",
+          "value": "1,247"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.8/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Elegance Beauty Salon",
+      "subtitle": "Online Booking",
+      "rating": "4.9 (89 reviews)"
+    },
+    "about": {
+      "title": "About the Salon",
+      "description": "Elegance Salon specializes in premium beauty experiences with qualified professionals and carefully selected products.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "456 Rose Avenue — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 88888-8888"
+        },
+        {
+          "icon": "email",
+          "text": "contact@elegancesalon.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Sat: 9am to 7pm"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "All"
+        },
+        {
+          "key": "hair",
+          "label": "Hair"
+        },
+        {
+          "key": "nails",
+          "label": "Nails"
+        },
+        {
+          "key": "beauty",
+          "label": "Beauty"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "Women's Haircut",
+          "price": "$45.00",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Blowout",
+          "price": "$35.00",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Hair Coloring",
+          "price": "$120.00",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manicure",
+          "price": "$25.00",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pedicure",
+          "price": "$30.00",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Eyebrow Design",
+          "price": "$20.00",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Our Professionals",
+      "items": [
+        {
+          "name": "Maria Silva",
+          "specialty": "Haircuts and coloring",
+          "rating": "4.9",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Ana Costa",
+          "specialty": "Manicure and pedicure",
+          "rating": "4.8",
+          "experience": "5 years of experience"
+        },
+        {
+          "name": "Juliana Lima",
+          "specialty": "Eyebrow design",
+          "rating": "4.7",
+          "experience": "3 years of experience"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Book Appointment",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Professional",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book appointment",
+      "serviceOptions": [
+        "Women's Haircut - $45.00",
+        "Blowout - $35.00",
+        "Hair Coloring - $120.00",
+        "Manicure - $25.00",
+        "Pedicure - $30.00",
+        "Eyebrow Design - $20.00"
+      ],
+      "professionalOptions": [
+        "Maria Silva",
+        "Ana Costa",
+        "Juliana Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Clients served",
+          "value": "892"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.9/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "17"
+        },
+        {
+          "label": "Services offered",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Special Promotion",
+      "description": "Haircut + Blowout for $70.00",
+      "note": "Valid until end of month"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "PetCare Veterinary Clinic",
+      "subtitle": "Online Booking",
+      "rating": "4.8 (156 reviews)",
+      "emergencyBadge": "24/7 Emergency"
+    },
+    "about": {
+      "title": "About the Clinic",
+      "description": "PetCare Clinic specializes in complete pet care, delivering high-quality veterinary services with modern equipment and a dedicated team.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "789 Animal Street — Pet District"
+        },
+        {
+          "icon": "phone",
+          "text": "(11) 77777-7777"
+        },
+        {
+          "icon": "email",
+          "text": "contact@petcare.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Mon–Fri: 8am to 6pm"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "All"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultations"
+        },
+        {
+          "key": "prevention",
+          "label": "Prevention"
+        },
+        {
+          "key": "surgery",
+          "label": "Surgeries"
+        },
+        {
+          "key": "grooming",
+          "label": "Grooming"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnostics"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "durationLabel": "Duration: {{duration}}",
+      "items": [
+        {
+          "name": "General Consultation",
+          "price": "$80.00",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vaccination",
+          "price": "$60.00",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Surgery",
+          "price": "$300.00",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Bath & Grooming",
+          "price": "$45.00",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Laboratory Tests",
+          "price": "$120.00",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Neutering",
+          "price": "$200.00",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Our Veterinarians",
+      "items": [
+        {
+          "name": "Dr. Carlos Mendes",
+          "specialty": "General Practice",
+          "rating": "4.9",
+          "experience": "12 years of experience"
+        },
+        {
+          "name": "Dr. Ana Santos",
+          "specialty": "Surgery",
+          "rating": "4.8",
+          "experience": "8 years of experience"
+        },
+        {
+          "name": "Dr. Pedro Lima",
+          "specialty": "Dermatology",
+          "rating": "4.7",
+          "experience": "6 years of experience"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Emergency Services",
+      "items": [
+        {
+          "name": "24/7 Emergency",
+          "availability": "Available around the clock",
+          "phone": "(11) 99999-9999"
+        },
+        {
+          "name": "Weekend On-call",
+          "availability": "Sat–Sun coverage",
+          "phone": "(11) 88888-8888"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Book a Consultation",
+      "dateLabel": "Date",
+      "serviceLabel": "Service",
+      "professionalLabel": "Veterinarian",
+      "availableTimesLabel": "Available Times",
+      "submitLabel": "Book consultation",
+      "serviceOptions": [
+        "General Consultation - $80.00",
+        "Vaccination - $60.00",
+        "Surgery - $300.00",
+        "Bath & Grooming - $45.00",
+        "Laboratory Tests - $120.00",
+        "Neutering - $200.00"
+      ],
+      "professionalOptions": [
+        "Dr. Carlos Mendes",
+        "Dr. Ana Santos",
+        "Dr. Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Statistics",
+      "items": [
+        {
+          "label": "Pets treated",
+          "value": "2,156"
+        },
+        {
+          "label": "Average rating",
+          "value": "4.8/5"
+        },
+        {
+          "label": "Available slots",
+          "value": "15"
+        },
+        {
+          "label": "Services offered",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Special Offer",
+      "description": "Vaccination + Consultation for $120.00",
+      "note": "Valid until the end of the month"
+    },
+    "healthTips": {
+      "title": "Health Tips",
+      "tips": [
+        "Keep vaccinations up to date",
+        "Balanced nutrition matters",
+        "Encourage regular exercise",
+        "Schedule annual check-ups"
+      ]
+    }
+  }
+}
