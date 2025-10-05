@@ -51,6 +51,56 @@
             "Gestion des vaccins"
           ],
           "button": "Voir la Démo"
+        },
+        "dashboard": {
+          "title": "Tableau de bord exécutif",
+          "description": "Surveillez les indicateurs clés et la performance des services en temps réel",
+          "features": [
+            "Indicateurs en direct",
+            "Suivi du statut",
+            "Tableau des prochaines actions"
+          ],
+          "button": "Voir la Démo"
+        },
+        "inventory": {
+          "title": "Gestion des stocks",
+          "description": "Suivez les niveaux de stock et les commandes fournisseurs sur tous les sites",
+          "features": [
+            "Alertes de réassort",
+            "Suivi des fournisseurs",
+            "Inventaire multi-sites"
+          ],
+          "button": "Voir la Démo"
+        },
+        "newsletter": {
+          "title": "Marketplace Newsletter",
+          "description": "Développez vos revenus avec des campagnes promotionnelles ciblées",
+          "features": [
+            "Audiences segmentées",
+            "Partage des revenus",
+            "Analyses de campagnes"
+          ],
+          "button": "Voir la Démo"
+        },
+        "productShowcase": {
+          "title": "Vitrine Produits",
+          "description": "Présentez des collections avec des sections prêtes à l'achat",
+          "features": [
+            "Mises en avant héro",
+            "Tableaux comparatifs",
+            "Capture de leads"
+          ],
+          "button": "Voir la Démo"
+        },
+        "productReviews": {
+          "title": "Avis Produits",
+          "description": "Mettez en valeur la voix des clients avec un storytelling riche",
+          "features": [
+            "Grille de témoignages",
+            "Mises en avant vidéo",
+            "Synthèses de notes"
+          ],
+          "button": "Voir la Démo"
         }
       },
       "footer": {
@@ -247,6 +297,248 @@
         "placeholder": "Votre email"
       },
       "copyright": "© 2025 AgendaPro. Tous droits réservés."
+    }
+  },
+  "dashboardPage": {
+    "title": "Tableau de bord exécutif",
+    "subtitle": "Visualisez en temps réel les rendez-vous, les revenus et la satisfaction client.",
+    "metrics": [
+      {
+        "label": "Clients actifs",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "Revenu récurrent mensuel",
+        "value": "$4 200",
+        "change": "+8%"
+      },
+      {
+        "label": "Tickets ouverts",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Statut de l'API Laravel",
+      "loading": "Vérification de la connexion...",
+      "error": "Impossible de joindre le backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Intégration suggérée :</strong> exposez un endpoint REST dans Laravel (ex. <code>{{endpoint}}</code>) et utilisez <code>{{library}}</code> pour récupérer des données réelles. Remplacez cette carte par des graphiques, tableaux ou widgets propres à votre produit."
+    }
+  },
+  "inventoryManagementPage": {
+    "hero": {
+      "badge": "Opérations",
+      "title": "Gestion des stocks",
+      "subtitle": "Assurez l'approvisionnement de chaque site sans surcommander.",
+      "description": "Centralisez points de réassort, statut des fournisseurs et délais de livraison dans un workspace connecté."
+    },
+    "stats": [
+      {
+        "label": "Articles suivis",
+        "value": "1 842"
+      },
+      {
+        "label": "Alertes de faible stock",
+        "value": "12"
+      },
+      {
+        "label": "Bons de commande en attente",
+        "value": "4"
+      }
+    ],
+    "highlights": {
+      "title": "Pourquoi les équipes opérations adorent cette vue",
+      "items": [
+        {
+          "title": "Seuils en temps réel",
+          "description": "Centralisez les alertes pour les articles passant sous le minimum."
+        },
+        {
+          "title": "Scorecards fournisseurs",
+          "description": "Mesurez délais et fiabilité pour chaque partenaire."
+        },
+        {
+          "title": "Calendrier de réception",
+          "description": "Coordonnez les livraisons avec les services ou expéditions planifiées."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flux suggéré",
+      "steps": [
+        "Connectez votre catalogue produits via l'API Laravel.",
+        "Synchronisez les bons de commande depuis votre ERP ou vos tableurs.",
+        "Automatisez alertes et validations grâce au moteur de workflow AgendaPro."
+      ]
+    },
+    "cta": {
+      "title": "Prêt à automatiser le réassort ?",
+      "description": "Utilisez ce modèle comme base de votre tableau de bord opérations.",
+      "primary": "Lancer la démo stock",
+      "secondary": "Télécharger le brief de passation"
+    }
+  },
+  "newsletterMarketplacePage": {
+    "hero": {
+      "badge": "Croissance",
+      "title": "Marketplace Newsletter",
+      "subtitle": "Associez vos marchands à des campagnes promotionnelles ciblées.",
+      "description": "Mettez en avant des emplacements sponsorisés, des insights audience et la performance des partenaires."
+    },
+    "stats": [
+      {
+        "label": "Éditeurs actifs",
+        "value": "38"
+      },
+      {
+        "label": "Taux d'ouverture moyen",
+        "value": "41%"
+      },
+      {
+        "label": "Emplacements sponsorisés cette semaine",
+        "value": "22"
+      }
+    ],
+    "highlights": {
+      "title": "Des fonctionnalités pensées pour la croissance",
+      "items": [
+        {
+          "title": "Audiences segmentées",
+          "description": "Constituez des offres par démographie, centres d'intérêt ou étape du cycle de vie."
+        },
+        {
+          "title": "Revenus prévisibles",
+          "description": "Comparez CPM et forfaits fixes pour optimiser le rendement."
+        },
+        {
+          "title": "Analyses de campagnes",
+          "description": "Offrez à vos sponsors des tableaux de bord transparents et exportables."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flux suggéré",
+      "steps": [
+        "Onboardez les éditeurs et synchronisez leurs listes via l'API.",
+        "Composez des packages de sponsoring avec grilles tarifaires et portée.",
+        "Mesurez les conversions et automatisez les renouvellements depuis un centre de commande unique."
+      ]
+    },
+    "cta": {
+      "title": "Monétisez votre audience plus vite",
+      "description": "Rassemblez ventes, marketing et partenaires dans un même espace de travail.",
+      "primary": "Prévisualiser la démo marketplace",
+      "secondary": "Partager avec le marketing"
+    }
+  },
+  "productShowcasePage": {
+    "hero": {
+      "badge": "Ventes",
+      "title": "Vitrine Produits",
+      "subtitle": "Présentez des collections soignées qui convertissent les visiteurs en clients.",
+      "description": "Mettez en lumière produits phares, bundles et options avec un storytelling orienté conversion."
+    },
+    "stats": [
+      {
+        "label": "Collections mises en avant",
+        "value": "6"
+      },
+      {
+        "label": "Hausse de conversion",
+        "value": "+18%"
+      },
+      {
+        "label": "Opportunités de ventes croisées",
+        "value": "14"
+      }
+    ],
+    "highlights": {
+      "title": "Ce qui rend cette page efficace",
+      "items": [
+        {
+          "title": "Sections héro immersives",
+          "description": "Utilisez visuels marquants et blocs de texte pour transmettre la valeur instantanément."
+        },
+        {
+          "title": "Prêt pour la comparaison",
+          "description": "Ajoutez des matrices de fonctionnalités pour guider le choix du plan ou du bundle."
+        },
+        {
+          "title": "Capture de leads",
+          "description": "Intégrez formulaires ou modales de paiement pour réduire le parcours d'achat."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flux suggéré",
+      "steps": [
+        "Importez votre catalogue et vos données merchandising via le backend Laravel.",
+        "Personnalisez badges, accroches tarifaires et indicateurs de stock.",
+        "Intégrez des appels à l'action reliés à votre parcours de paiement préféré."
+      ]
+    },
+    "cta": {
+      "title": "Mettez en avant vos best-sellers",
+      "description": "Proposez une expérience premium sans reconstruire les composants.",
+      "primary": "Lancer la démo vitrine",
+      "secondary": "Copier la mise en page"
+    }
+  },
+  "productReviewsPage": {
+    "hero": {
+      "badge": "Preuve sociale",
+      "title": "Avis Produits",
+      "subtitle": "Célébrez la réussite client avec des témoignages multimédia.",
+      "description": "Collectez et publiez des histoires qui influencent les décisions d'achat sur tous les canaux."
+    },
+    "stats": [
+      {
+        "label": "Avis publiés",
+        "value": "312"
+      },
+      {
+        "label": "Note moyenne",
+        "value": "4,9"
+      },
+      {
+        "label": "Net promoter score",
+        "value": "72"
+      }
+    ],
+    "highlights": {
+      "title": "Transformez les retours en conversions",
+      "items": [
+        {
+          "title": "Galerie de témoignages",
+          "description": "Curatez textes, photos et vidéos dans une grille responsive."
+        },
+        {
+          "title": "Focus par cas d'usage",
+          "description": "Regroupez les avis par segment pour que chaque prospect trouve un retour pertinent."
+        },
+        {
+          "title": "Synthèses d'insights",
+          "description": "Faites ressortir tendances de sentiment, notes et thèmes récurrents."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flux suggéré",
+      "steps": [
+        "Collectez la voix client via formulaires ou intégrations.",
+        "Modérez les soumissions, taguez les points forts et demandez les validations.",
+        "Publiez les témoignages sur la page et diffusez-les dans vos campagnes."
+      ]
+    },
+    "cta": {
+      "title": "Activez vos ambassadeurs",
+      "description": "Réutilisez la preuve sociale dans vos publicités, pages d'atterrissage et contenus commerciaux.",
+      "primary": "Lancer la démo avis",
+      "secondary": "Exporter le brief contenu"
     }
   },
   "barbershopPage": {

@@ -51,6 +51,56 @@
             "Gestão de vacinas"
           ],
           "button": "Ver Demonstração"
+        },
+        "dashboard": {
+          "title": "Painel Executivo",
+          "description": "Acompanhe métricas chave e desempenho dos serviços em tempo real",
+          "features": [
+            "Indicadores ao vivo",
+            "Monitoramento de status",
+            "Painel de próximas ações"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "inventory": {
+          "title": "Gestão de Estoque",
+          "description": "Controle níveis de estoque e pedidos de fornecedores em todas as unidades",
+          "features": [
+            "Alertas de reposição",
+            "Acompanhamento de fornecedores",
+            "Estoque multiunidade"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "newsletter": {
+          "title": "Marketplace de Newsletter",
+          "description": "Aumente a receita com campanhas promocionais curadas",
+          "features": [
+            "Audiências segmentadas",
+            "Divisão de receita",
+            "Analytics de campanhas"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "productShowcase": {
+          "title": "Vitrine de Produtos",
+          "description": "Apresente coleções de produtos com seções compráveis",
+          "features": [
+            "Destaques no topo",
+            "Tabelas comparativas",
+            "Captura de leads"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "productReviews": {
+          "title": "Avaliações de Produtos",
+          "description": "Destaque a voz dos clientes com storytelling rico",
+          "features": [
+            "Grade de depoimentos",
+            "Destaques em vídeo",
+            "Resumos de avaliações"
+          ],
+          "button": "Ver Demonstração"
         }
       },
       "footer": {
@@ -247,6 +297,248 @@
         "placeholder": "Seu e-mail"
       },
       "copyright": "© 2025 AgendaPro. Todos os direitos reservados."
+    }
+  },
+  "dashboardPage": {
+    "title": "Painel Executivo",
+    "subtitle": "Visualize em tempo real agendamentos, receita e satisfação dos clientes.",
+    "metrics": [
+      {
+        "label": "Clientes ativos",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "Receita recorrente mensal",
+        "value": "$4.200",
+        "change": "+8%"
+      },
+      {
+        "label": "Chamados em aberto",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Status da API Laravel",
+      "loading": "Verificando conexão...",
+      "error": "Não foi possível acessar o backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Integração sugerida:</strong> exponha um endpoint REST no Laravel (ex.: <code>{{endpoint}}</code>) e utilize <code>{{library}}</code> para buscar dados reais. Substitua este card por gráficos, tabelas ou widgets específicos do produto."
+    }
+  },
+  "inventoryManagementPage": {
+    "hero": {
+      "badge": "Operações",
+      "title": "Gestão de Estoque",
+      "subtitle": "Garanta cada unidade abastecida sem excesso de compras.",
+      "description": "Centralize pontos de reposição, status de fornecedores e prazos de entrega em um workspace conectado."
+    },
+    "stats": [
+      {
+        "label": "SKUs monitorados",
+        "value": "1.842"
+      },
+      {
+        "label": "Alertas de baixo estoque",
+        "value": "12"
+      },
+      {
+        "label": "Pedidos de compra pendentes",
+        "value": "4"
+      }
+    ],
+    "highlights": {
+      "title": "Por que o time de operações ama esta visão",
+      "items": [
+        {
+          "title": "Limites em tempo real",
+          "description": "Centralize alertas para itens que ficam abaixo do estoque mínimo."
+        },
+        {
+          "title": "Scorecards de fornecedores",
+          "description": "Meça prazos e confiabilidade de cada fornecedor."
+        },
+        {
+          "title": "Calendário de recebimento",
+          "description": "Coordene remessas com serviços ou entregas agendadas."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Fluxo sugerido",
+      "steps": [
+        "Conecte seu catálogo de produtos via API Laravel.",
+        "Sincronize pedidos de compra do ERP ou das planilhas.",
+        "Automatize alertas e aprovações com o motor de workflow da AgendaPro."
+      ]
+    },
+    "cta": {
+      "title": "Pronto para automatizar a reposição?",
+      "description": "Use este template como base para o seu painel de operações.",
+      "primary": "Abrir demo de estoque",
+      "secondary": "Baixar briefing de handoff"
+    }
+  },
+  "newsletterMarketplacePage": {
+    "hero": {
+      "badge": "Crescimento",
+      "title": "Marketplace de Newsletter",
+      "subtitle": "Conecte marcas a campanhas promocionais curadas.",
+      "description": "Mostre espaços patrocinados, insights de audiência e performance dos anunciantes."
+    },
+    "stats": [
+      {
+        "label": "Publicadores ativos",
+        "value": "38"
+      },
+      {
+        "label": "Taxa média de abertura",
+        "value": "41%"
+      },
+      {
+        "label": "Vagas patrocinadas na semana",
+        "value": "22"
+      }
+    ],
+    "highlights": {
+      "title": "Recursos pensados para times de growth",
+      "items": [
+        {
+          "title": "Audiências segmentadas",
+          "description": "Monte pacotes por demografia, interesse ou etapa do funil."
+        },
+        {
+          "title": "Receita previsível",
+          "description": "Compare CPM e valores fixos para otimizar o yield."
+        },
+        {
+          "title": "Analytics de campanha",
+          "description": "Entregue dashboards transparentes com dados exportáveis aos patrocinadores."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Fluxo sugerido",
+      "steps": [
+        "Onboard publishers e sincronize listas via API.",
+        "Monte pacotes de patrocínio com faixas de preço e alcance.",
+        "Meça conversões e automatize renovações em um único hub."
+      ]
+    },
+    "cta": {
+      "title": "Monetize sua audiência mais rápido",
+      "description": "Una vendas, marketing e parceiros em um workspace compartilhado.",
+      "primary": "Ver demo do marketplace",
+      "secondary": "Compartilhar com marketing"
+    }
+  },
+  "productShowcasePage": {
+    "hero": {
+      "badge": "Vendas",
+      "title": "Vitrine de Produtos",
+      "subtitle": "Apresente coleções curadas que transformam visitantes em compradores.",
+      "description": "Destaque produtos estrela, combos e adicionais com storytelling voltado à conversão."
+    },
+    "stats": [
+      {
+        "label": "Coleções em destaque",
+        "value": "6"
+      },
+      {
+        "label": "Aumento de conversão",
+        "value": "+18%"
+      },
+      {
+        "label": "Oportunidades de cross-sell",
+        "value": "14"
+      }
+    ],
+    "highlights": {
+      "title": "O que torna esta página eficiente",
+      "items": [
+        {
+          "title": "Hero imersivo",
+          "description": "Use imagens marcantes e blocos de texto para comunicar valor rapidamente."
+        },
+        {
+          "title": "Pronto para comparação",
+          "description": "Inclua matrizes de recursos para ajudar na escolha do plano ou combo."
+        },
+        {
+          "title": "Captura de leads",
+          "description": "Incorpore formulários ou modais de checkout para reduzir o caminho de compra."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Fluxo sugerido",
+      "steps": [
+        "Importe catálogo e dados de merchandising pelo backend Laravel.",
+        "Personalize selos, destaques de preço e indicadores de estoque.",
+        "Incorpore CTAs integrados ao fluxo de checkout preferido."
+      ]
+    },
+    "cta": {
+      "title": "Destaque seus campeões de venda",
+      "description": "Entregue uma experiência premium sem recriar componentes do zero.",
+      "primary": "Abrir demo da vitrine",
+      "secondary": "Copiar layout"
+    }
+  },
+  "productReviewsPage": {
+    "hero": {
+      "badge": "Prova social",
+      "title": "Avaliações de Produtos",
+      "subtitle": "Celebre o sucesso dos clientes com depoimentos multimídia.",
+      "description": "Colete e publique histórias que influenciam decisões de compra em todos os canais."
+    },
+    "stats": [
+      {
+        "label": "Avaliações publicadas",
+        "value": "312"
+      },
+      {
+        "label": "Nota média",
+        "value": "4,9"
+      },
+      {
+        "label": "Net promoter score",
+        "value": "72"
+      }
+    ],
+    "highlights": {
+      "title": "Transforme feedback em conversão",
+      "items": [
+        {
+          "title": "Galeria de depoimentos",
+          "description": "Curadoria de textos, fotos e vídeos em uma grade responsiva."
+        },
+        {
+          "title": "Destaques por uso",
+          "description": "Agrupe avaliações por segmento para que cada perfil encontre histórias relevantes."
+        },
+        {
+          "title": "Sumários de insights",
+          "description": "Mostre tendências de sentimento, notas e temas recorrentes."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Fluxo sugerido",
+      "steps": [
+        "Colete feedback com formulários ou integrações.",
+        "Modere envios, marque destaques e peça aprovações.",
+        "Publique depoimentos na página e replique em campanhas."
+      ]
+    },
+    "cta": {
+      "title": "Ative seus defensores",
+      "description": "Reaproveite prova social em anúncios, landing pages e enablement de vendas.",
+      "primary": "Abrir demo de avaliações",
+      "secondary": "Exportar briefing de conteúdo"
     }
   },
   "barbershopPage": {

@@ -1,14 +1,14 @@
 import { Star, User } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslationSafe } from '../hooks/useTranslationSafe';
 
 export default function Testimonials() {
-  const { t } = useTranslation();
-  
-  const testimonials = t('agendaPro.testimonials.testimonials', { returnObjects: true }) as Array<{
+  const { t, tArray } = useTranslationSafe();
+
+  const testimonials = tArray<{
     name: string;
     role: string;
     content: string;
-  }>;
+  }>('agendaPro.testimonials.testimonials');
 
   return (
     <section id="testimonials" className="py-20 bg-slate-50">

@@ -6,6 +6,7 @@ import Partners from './components/Partners';
 import Benefits from './components/Benefits';
 import SEO from './components/SEO';
 import { useStructuredData } from './hooks/useStructuredData';
+import { ROUTES } from './constants';
 
 // Lazy loading para componentes pesados
 const HowItWorks = lazy(() => import('./components/HowItWorks'));
@@ -19,6 +20,13 @@ const Footer = lazy(() => import('./components/Footer'));
 const SalaoBelezaPage = lazy(() => import('./pages/SalaoBelezaPage'));
 const BarbeariaPage = lazy(() => import('./pages/BarbeariaPage'));
 const ClinicaVeterinariaPage = lazy(() => import('./pages/ClinicaVeterinariaPage'));
+const DashboardPage = lazy(() =>
+  import('./pages/DashboardPage').then((module) => ({ default: module.DashboardPage }))
+);
+const InventoryDemoPage = lazy(() => import('./pages/InventoryDemoPage'));
+const NewsletterDemoPage = lazy(() => import('./pages/NewsletterDemoPage'));
+const ProductShowcaseDemoPage = lazy(() => import('./pages/ProductShowcaseDemoPage'));
+const ProductReviewsDemoPage = lazy(() => import('./pages/ProductReviewsDemoPage'));
 
 // Loading component
 const LoadingSpinner = () => (
@@ -83,30 +91,70 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route 
-          path="/demonstracoes/salao" 
+        <Route path={ROUTES.HOME} element={<LandingPage />} />
+        <Route
+          path={ROUTES.DEMO_SALAO}
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <SalaoBelezaPage />
             </Suspense>
-          } 
+          }
         />
-        <Route 
-          path="/demonstracoes/barbearia" 
+        <Route
+          path={ROUTES.DEMO_BARBEARIA}
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <BarbeariaPage />
             </Suspense>
-          } 
+          }
         />
-        <Route 
-          path="/demonstracoes/veterinaria" 
+        <Route
+          path={ROUTES.DEMO_VETERINARIA}
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <ClinicaVeterinariaPage />
             </Suspense>
-          } 
+          }
+        />
+        <Route
+          path={ROUTES.DEMO_DASHBOARD}
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <DashboardPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.DEMO_INVENTORY}
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <InventoryDemoPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.DEMO_NEWSLETTER}
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <NewsletterDemoPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.DEMO_PRODUCT_SHOWCASE}
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ProductShowcaseDemoPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path={ROUTES.DEMO_PRODUCT_REVIEWS}
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <ProductReviewsDemoPage />
+            </Suspense>
+          }
         />
       </Routes>
     </Router>

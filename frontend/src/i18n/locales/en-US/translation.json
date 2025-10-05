@@ -51,6 +51,56 @@
             "Vaccine management"
           ],
           "button": "View Demo"
+        },
+        "dashboard": {
+          "title": "Executive Dashboard",
+          "description": "Monitor key metrics and service performance in real time",
+          "features": [
+            "Live metrics",
+            "Status monitoring",
+            "Next actions board"
+          ],
+          "button": "View Demo"
+        },
+        "inventory": {
+          "title": "Inventory Management",
+          "description": "Track stock levels and supplier orders across locations",
+          "features": [
+            "Reorder alerts",
+            "Supplier tracking",
+            "Multi-location inventory"
+          ],
+          "button": "View Demo"
+        },
+        "newsletter": {
+          "title": "Newsletter Marketplace",
+          "description": "Grow revenue with curated promotional campaigns",
+          "features": [
+            "Segmented audiences",
+            "Revenue sharing",
+            "Campaign analytics"
+          ],
+          "button": "View Demo"
+        },
+        "productShowcase": {
+          "title": "Product Showcase",
+          "description": "Present curated product collections with shoppable sections",
+          "features": [
+            "Hero highlights",
+            "Comparison tables",
+            "Lead capture"
+          ],
+          "button": "View Demo"
+        },
+        "productReviews": {
+          "title": "Product Reviews",
+          "description": "Highlight customer voices with rich storytelling",
+          "features": [
+            "Testimonials grid",
+            "Video spotlights",
+            "Rating summaries"
+          ],
+          "button": "View Demo"
         }
       },
       "footer": {
@@ -247,6 +297,248 @@
         "placeholder": "Your email"
       },
       "copyright": "© 2025 AgendaPro. All rights reserved."
+    }
+  },
+  "dashboardPage": {
+    "title": "Executive Dashboard",
+    "subtitle": "Get a real-time view of appointments, revenue, and customer satisfaction.",
+    "metrics": [
+      {
+        "label": "Active customers",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "Monthly recurring revenue",
+        "value": "$4,200",
+        "change": "+8%"
+      },
+      {
+        "label": "Open tickets",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Laravel API status",
+      "loading": "Checking connection...",
+      "error": "Unable to reach the backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Suggested integration:</strong> expose a REST endpoint in Laravel (e.g. <code>{{endpoint}}</code>) and use <code>{{library}}</code> to fetch real data. Replace this card with charts, tables, or product-specific widgets."
+    }
+  },
+  "inventoryManagementPage": {
+    "hero": {
+      "badge": "Operations",
+      "title": "Inventory Management",
+      "subtitle": "Keep every location stocked without over-ordering.",
+      "description": "Surface reorder points, supplier status, and fulfillment timelines from a single connected workspace."
+    },
+    "stats": [
+      {
+        "label": "SKUs tracked",
+        "value": "1,842"
+      },
+      {
+        "label": "Low stock alerts",
+        "value": "12"
+      },
+      {
+        "label": "Purchase orders pending",
+        "value": "4"
+      }
+    ],
+    "highlights": {
+      "title": "Why operations teams love this view",
+      "items": [
+        {
+          "title": "Real-time thresholds",
+          "description": "Centralize alerts for items that drop below minimum stock levels."
+        },
+        {
+          "title": "Supplier scorecards",
+          "description": "Measure lead times and reliability across every vendor."
+        },
+        {
+          "title": "Fulfillment calendar",
+          "description": "Coordinate inbound shipments with scheduled services or deliveries."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Suggested workflow",
+      "steps": [
+        "Connect your product catalog via the Laravel API.",
+        "Sync purchase orders from your ERP or spreadsheets.",
+        "Automate alerts and approvals with AgendaPro's workflow engine."
+      ]
+    },
+    "cta": {
+      "title": "Ready to automate reordering?",
+      "description": "Use this template as the foundation for your operations dashboard.",
+      "primary": "Launch inventory demo",
+      "secondary": "Download handoff brief"
+    }
+  },
+  "newsletterMarketplacePage": {
+    "hero": {
+      "badge": "Growth",
+      "title": "Newsletter Marketplace",
+      "subtitle": "Pair merchants with curated marketing campaigns.",
+      "description": "Showcase monetized newsletter placements, audience insights, and sponsor performance."
+    },
+    "stats": [
+      {
+        "label": "Active publishers",
+        "value": "38"
+      },
+      {
+        "label": "Avg. open rate",
+        "value": "41%"
+      },
+      {
+        "label": "Sponsored slots this week",
+        "value": "22"
+      }
+    ],
+    "highlights": {
+      "title": "Features built for growth teams",
+      "items": [
+        {
+          "title": "Segmented audiences",
+          "description": "Bundle placements by demographic, interest, or lifecycle stage."
+        },
+        {
+          "title": "Predictable revenue",
+          "description": "Model CPMs and flat fees side by side to optimize yield."
+        },
+        {
+          "title": "Campaign analytics",
+          "description": "Give sponsors transparent performance dashboards with exportable data."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Suggested workflow",
+      "steps": [
+        "Onboard publishers and sync their mailing lists via the API.",
+        "Build sponsorship packages with pricing tiers and audience reach.",
+        "Measure conversions and automate renewals from one command center."
+      ]
+    },
+    "cta": {
+      "title": "Monetize your audience faster",
+      "description": "Bring sales, marketing, and partner teams into one shared workspace.",
+      "primary": "Preview marketplace demo",
+      "secondary": "Share with marketing"
+    }
+  },
+  "productShowcasePage": {
+    "hero": {
+      "badge": "Sales",
+      "title": "Product Showcase",
+      "subtitle": "Present curated collections that convert browsers into buyers.",
+      "description": "Highlight hero products, bundles, and add-ons with conversion-focused storytelling."
+    },
+    "stats": [
+      {
+        "label": "Featured collections",
+        "value": "6"
+      },
+      {
+        "label": "Conversion uplift",
+        "value": "+18%"
+      },
+      {
+        "label": "Cross-sell opportunities",
+        "value": "14"
+      }
+    ],
+    "highlights": {
+      "title": "What makes this page effective",
+      "items": [
+        {
+          "title": "Immersive hero sections",
+          "description": "Use bold imagery and copy blocks to communicate product value quickly."
+        },
+        {
+          "title": "Comparison-ready",
+          "description": "Add feature matrices so prospects can pick the right plan or bundle."
+        },
+        {
+          "title": "Lead capture",
+          "description": "Embed forms or checkout modals to shorten the path to purchase."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Suggested workflow",
+      "steps": [
+        "Import your catalog and merchandising data via the Laravel backend.",
+        "Customize badges, pricing callouts, and inventory indicators.",
+        "Embed call-to-action blocks that sync with your preferred checkout flow."
+      ]
+    },
+    "cta": {
+      "title": "Showcase your best sellers",
+      "description": "Ship a premium storefront experience without rebuilding components from scratch.",
+      "primary": "Launch showcase demo",
+      "secondary": "Copy layout"
+    }
+  },
+  "productReviewsPage": {
+    "hero": {
+      "badge": "Social proof",
+      "title": "Product Reviews",
+      "subtitle": "Celebrate customer success with rich multimedia testimonials.",
+      "description": "Collect and publish stories that influence buying decisions across channels."
+    },
+    "stats": [
+      {
+        "label": "Published reviews",
+        "value": "312"
+      },
+      {
+        "label": "Average rating",
+        "value": "4.9"
+      },
+      {
+        "label": "Net promoter score",
+        "value": "72"
+      }
+    ],
+    "highlights": {
+      "title": "Turn feedback into conversion",
+      "items": [
+        {
+          "title": "Testimonial gallery",
+          "description": "Curate text, photo, and video quotes in a responsive grid."
+        },
+        {
+          "title": "Use-case spotlights",
+          "description": "Group reviews by segment so prospects find the stories that match their goals."
+        },
+        {
+          "title": "Insight summaries",
+          "description": "Surface sentiment trends, star ratings, and common themes."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Suggested workflow",
+      "steps": [
+        "Collect voice-of-customer responses with forms or integrations.",
+        "Moderate submissions, tag highlights, and request approvals.",
+        "Publish testimonials to the page and syndicate across campaigns."
+      ]
+    },
+    "cta": {
+      "title": "Activate your advocates",
+      "description": "Repurpose social proof across ads, landing pages, and sales enablement.",
+      "primary": "Launch reviews demo",
+      "secondary": "Export content brief"
     }
   },
   "barbershopPage": {

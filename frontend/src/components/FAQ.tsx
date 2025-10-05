@@ -1,22 +1,22 @@
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslationSafe } from '../hooks/useTranslationSafe';
 import SEO from './SEO';
 import { useStructuredData } from '../hooks/useStructuredData';
 
 export default function FAQ() {
-  const { t } = useTranslation();
+  const { t, tArray } = useTranslationSafe();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const { getFAQSchema } = useStructuredData();
 
-  const faqs = t('agendaPro.faq.questions', { returnObjects: true }) as Array<{
+  const faqs = tArray<{
     question: string;
     answer: string;
-  }>;
+  }>('agendaPro.faq.questions');
 
   return (
     <section id="faq" className="py-20 bg-white">
-      <SEO 
+      <SEO
         title="Perguntas Frequentes"
         description="Tire suas dúvidas sobre o AgendaPro. Encontre respostas para as perguntas mais comuns sobre nossa plataforma de agendamento."
         structuredData={getFAQSchema()}
@@ -43,7 +43,7 @@ export default function FAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-slate-50 transition"
               >
-                <span 
+                <span
                   className="font-semibold text-slate-900 text-lg pr-4"
                   itemProp="name"
                 >
@@ -57,15 +57,12 @@ export default function FAQ() {
                 />
               </button>
               {openIndex === index && (
-                <div 
+                <div
                   className="px-6 py-5 bg-slate-50 border-t border-slate-200"
                   itemScope
                   itemType="https://schema.org/Answer"
                 >
-                  <p 
-                    className="text-slate-700 leading-relaxed"
-                    itemProp="text"
-                  >
+                  <p className="text-slate-700 leading-relaxed" itemProp="text">
                     {faq.answer}
                   </p>
                 </div>

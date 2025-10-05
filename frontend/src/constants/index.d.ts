@@ -36,12 +36,52 @@ export declare const DEMO_PAGES_CONFIG: {
         readonly ogImage: "https://agendapro.com.br/og-image-veterinaria.jpg";
         readonly url: "https://agendapro.com.br/demonstracoes/veterinaria";
     };
+    readonly dashboard: {
+        readonly title: "Demonstração Dashboard Inteligente - AgendaPro";
+        readonly description: "Visualize métricas em tempo real, acompanhe KPIs e tome decisões baseadas em dados com o dashboard completo do AgendaPro.";
+        readonly keywords: "dashboard agendamento, relatórios agenda pro, indicadores salão, analytics spa";
+        readonly ogImage: "https://agendapro.com.br/og-image-dashboard.jpg";
+        readonly url: "https://agendapro.com.br/demonstracoes/dashboard";
+    };
+    readonly inventory: {
+        readonly title: "Demonstração Controle de Estoque - AgendaPro";
+        readonly description: "Gerencie o estoque do seu negócio com alertas inteligentes, reposição automática e análise de consumo por profissional.";
+        readonly keywords: "controle de estoque salão, gestão de produtos estética, inventário spa, agenda pro estoque";
+        readonly ogImage: "https://agendapro.com.br/og-image-estoque.jpg";
+        readonly url: "https://agendapro.com.br/demonstracoes/estoque";
+    };
+    readonly newsletter: {
+        readonly title: "Demonstração Newsletter e Campanhas - AgendaPro";
+        readonly description: "Crie newsletters segmentadas, automações de e-mail e campanhas de retenção para fidelizar seus clientes.";
+        readonly keywords: "newsletter salão, automação e-mail agenda pro, marketing relacionamento spa, campanhas fidelização";
+        readonly ogImage: "https://agendapro.com.br/og-image-newsletter.jpg";
+        readonly url: "https://agendapro.com.br/demonstracoes/newsletter";
+    };
+    readonly productShowcase: {
+        readonly title: "Demonstração Vitrine de Produtos - AgendaPro";
+        readonly description: "Apresente seus produtos com vitrines digitais integradas, destaque lançamentos e aumente suas vendas online.";
+        readonly keywords: "vitrine produtos salão, catálogo digital estética, venda produtos spa, agenda pro vitrine";
+        readonly ogImage: "https://agendapro.com.br/og-image-vitrine.jpg";
+        readonly url: "https://agendapro.com.br/demonstracoes/vitrine";
+    };
+    readonly productReviews: {
+        readonly title: "Demonstração Avaliações de Clientes - AgendaPro";
+        readonly description: "Colete, gerencie e destaque avaliações dos clientes para fortalecer a reputação do seu negócio e aumentar conversões.";
+        readonly keywords: "avaliações clientes salão, reputação online estética, reviews agenda pro, feedback clientes spa";
+        readonly ogImage: "https://agendapro.com.br/og-image-avaliacoes.jpg";
+        readonly url: "https://agendapro.com.br/demonstracoes/avaliacoes";
+    };
 };
 export declare const ROUTES: {
     readonly HOME: "/";
     readonly DEMO_SALAO: "/demonstracoes/salao";
     readonly DEMO_BARBEARIA: "/demonstracoes/barbearia";
     readonly DEMO_VETERINARIA: "/demonstracoes/veterinaria";
+    readonly DEMO_DASHBOARD: "/demonstracoes/dashboard";
+    readonly DEMO_INVENTORY: "/demonstracoes/estoque";
+    readonly DEMO_NEWSLETTER: "/demonstracoes/newsletter";
+    readonly DEMO_PRODUCT_SHOWCASE: "/demonstracoes/vitrine";
+    readonly DEMO_PRODUCT_REVIEWS: "/demonstracoes/avaliacoes";
     readonly DASHBOARD: "/dashboard";
 };
 export declare const API_ENDPOINTS: {

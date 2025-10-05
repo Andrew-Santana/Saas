@@ -1,5 +1,5 @@
 import React from 'react';
-import i18n from './index';
+import i18n, { resolveLanguage, supportedLanguages } from './index';
 
 /**
  * Sistema de lazy loading para traduções
@@ -12,26 +12,28 @@ export class TranslationLazyLoader {
    * Carrega um idioma de forma assíncrona
    */
   static async loadLanguage(language: string): Promise<void> {
+    const resolvedLanguage = resolveLanguage(language);
+
     // Se já está carregado, retorna imediatamente
-    if (this.loadedLanguages.has(language)) {
+    if (this.loadedLanguages.has(resolvedLanguage)) {
       return Promise.resolve();
     }
 
     // Se já está carregando, retorna a promise existente
-    if (this.loadingPromises.has(language)) {
-      return this.loadingPromises.get(language)!;
+    if (this.loadingPromises.has(resolvedLanguage)) {
+      return this.loadingPromises.get(resolvedLanguage)!;
     }
 
     // Inicia o carregamento
-    const loadingPromise = this.loadLanguageResource(language);
-    this.loadingPromises.set(language, loadingPromise);
+    const loadingPromise = this.loadLanguageResource(resolvedLanguage);
+    this.loadingPromises.set(resolvedLanguage, loadingPromise);
 
     try {
       await loadingPromise;
-      this.loadedLanguages.add(language);
-      this.loadingPromises.delete(language);
+      this.loadedLanguages.add(resolvedLanguage);
+      this.loadingPromises.delete(resolvedLanguage);
     } catch (error) {
-      this.loadingPromises.delete(language);
+      this.loadingPromises.delete(resolvedLanguage);
       throw error;
     }
   }
@@ -43,9 +45,10 @@ export class TranslationLazyLoader {
     try {
       // Importação dinâmica do arquivo de tradução
       const translationModule = await import(`./locales/${language}/translation.json`);
-      
+      const translationData = 'default' in translationModule ? translationModule.default : translationModule;
+
       // Adiciona o recurso ao i18n
-      i18n.addResourceBundle(language, 'translation', translationModule.default, true, true);
+      i18n.addResourceBundle(language, 'translation', translationData, true, true);
       
       console.log(`✅ Idioma ${language} carregado com sucesso`);
     } catch (error) {
@@ -81,26 +84,25 @@ export class TranslationLazyLoader {
   /**
    * Obtém idiomas preferidos do usuário
    */
-  private static getUserPreferredLanguages(): string[] {
+  static getUserPreferredLanguages(): string[] {
     const languages: string[] = [];
 
     // Idioma atual do i18n
     if (i18n.language) {
-      languages.push(i18n.language);
+      languages.push(resolveLanguage(i18n.language));
     }
 
     // Idiomas do navegador
     if (navigator.languages) {
-      languages.push(...navigator.languages);
+      languages.push(...navigator.languages.map(resolveLanguage));
     }
 
     // Idioma do navegador
     if (navigator.language) {
-      languages.push(navigator.language);
+      languages.push(resolveLanguage(navigator.language));
     }
 
     // Remover duplicatas e manter apenas idiomas suportados
-    const supportedLanguages = ['pt-BR', 'en-US', 'es-ES', 'fr-FR'];
     return [...new Set(languages)]
       .filter(lang => supportedLanguages.includes(lang))
       .slice(0, 3); // Máximo 3 idiomas

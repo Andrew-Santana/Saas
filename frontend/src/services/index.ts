@@ -159,8 +159,9 @@ export class SEOService {
   }
 
   static generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+    const safeFaqs = Array.isArray(faqs) ? faqs : [];
     return this.generateStructuredData('FAQPage', {
-      mainEntity: faqs.map(faq => ({
+      mainEntity: safeFaqs.map(faq => ({
         '@type': 'Question',
         name: faq.question,
         acceptedAnswer: {

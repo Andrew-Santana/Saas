@@ -1,13 +1,13 @@
 import { UserPlus, Palette, Share2 } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslationSafe } from '../hooks/useTranslationSafe';
 
 export default function HowItWorks() {
-  const { t } = useTranslation();
-  
-  const steps = t('agendaPro.howItWorks.steps', { returnObjects: true }) as Array<{
+  const { t, tArray } = useTranslationSafe();
+
+  const steps = tArray<{
     title: string;
     description: string;
-  }>;
+  }>('agendaPro.howItWorks.steps');
 
   const icons = [UserPlus, Palette, Share2];
 
@@ -34,7 +34,9 @@ export default function HowItWorks() {
                   </div>
                   <div className="absolute top-10 left-1/2 w-full h-0.5 bg-emerald-200 -z-10 hidden md:block last:hidden"></div>
                   <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition">
-                    <div className="text-emerald-600 font-bold text-lg mb-2">{t('agendaPro.howItWorks.stepLabel')} {index + 1}</div>
+                    <div className="text-emerald-600 font-bold text-lg mb-2">
+                      {t('agendaPro.howItWorks.stepLabel')} {index + 1}
+                    </div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-3">{step.title}</h3>
                     <p className="text-slate-600 leading-relaxed">{step.description}</p>
                   </div>

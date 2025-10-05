@@ -1,20 +1,34 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import App from './App';
 import './index.css';
-import i18n from './i18n'; // Importar configuração do i18n
+import i18n from './i18n';
 
-// Aguardar inicialização do i18n
-const initApp = async () => {
-  await i18n.isInitialized;
-  createRoot(document.getElementById('root')!).render(
+const mount = () => {
+  const rootElement = document.getElementById('root');
+  if (!rootElement) {
+    throw new Error('Root element not found');
+  }
+
+  const queryClient = new QueryClient();
+
+  createRoot(rootElement).render(
     <StrictMode>
       <HelmetProvider>
-        <App />
+        <QueryClientProvider client={queryClient}>
+          <App />
+        </QueryClientProvider>
       </HelmetProvider>
     </StrictMode>
   );
 };
 
-initApp();
+if (i18n.isInitialized) {
+  mount();
+} else {
+  i18n.on('initialized', () => {
+    mount();
+  });
+}

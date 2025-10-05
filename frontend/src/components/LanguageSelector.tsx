@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Globe, Check, Loader2 } from 'lucide-react';
-import { supportedLanguagesList } from '../i18n/lazyIndex';
-import { loadLanguage, isLanguageLoaded } from '../i18n/lazyIndex';
+import { supportedLanguagesList } from '../i18n';
 import { useSmartTranslation } from '../hooks/useSmartTranslation';
 
 interface LanguageSelectorProps {

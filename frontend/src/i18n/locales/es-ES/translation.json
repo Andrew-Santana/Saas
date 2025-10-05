@@ -51,6 +51,56 @@
             "Gestión de vacunas"
           ],
           "button": "Ver Demostración"
+        },
+        "dashboard": {
+          "title": "Panel Ejecutivo",
+          "description": "Supervisa métricas clave y el rendimiento del servicio en tiempo real",
+          "features": [
+            "Métricas en vivo",
+            "Monitorización de estado",
+            "Panel de próximas acciones"
+          ],
+          "button": "Ver Demostración"
+        },
+        "inventory": {
+          "title": "Gestión de Inventario",
+          "description": "Controla niveles de stock y pedidos a proveedores en todas las sedes",
+          "features": [
+            "Alertas de reposición",
+            "Seguimiento de proveedores",
+            "Inventario multilocal"
+          ],
+          "button": "Ver Demostración"
+        },
+        "newsletter": {
+          "title": "Marketplace de Newsletters",
+          "description": "Impulsa los ingresos con campañas promocionales curadas",
+          "features": [
+            "Audiencias segmentadas",
+            "Reparto de ingresos",
+            "Analítica de campañas"
+          ],
+          "button": "Ver Demostración"
+        },
+        "productShowcase": {
+          "title": "Escaparate de Productos",
+          "description": "Presenta colecciones seleccionadas con secciones listas para comprar",
+          "features": [
+            "Destacados hero",
+            "Tablas comparativas",
+            "Captura de leads"
+          ],
+          "button": "Ver Demostración"
+        },
+        "productReviews": {
+          "title": "Reseñas de Productos",
+          "description": "Destaca la voz del cliente con historias ricas",
+          "features": [
+            "Cuadrícula de testimonios",
+            "Destacados en video",
+            "Resúmenes de valoraciones"
+          ],
+          "button": "Ver Demostración"
         }
       },
       "footer": {
@@ -247,6 +297,248 @@
         "placeholder": "Tu email"
       },
       "copyright": "© 2025 AgendaPro. Todos los derechos reservados."
+    }
+  },
+  "dashboardPage": {
+    "title": "Panel Ejecutivo",
+    "subtitle": "Visualiza en tiempo real las citas, los ingresos y la satisfacción del cliente.",
+    "metrics": [
+      {
+        "label": "Clientes activos",
+        "value": "24",
+        "change": "+12%"
+      },
+      {
+        "label": "Ingresos recurrentes mensuales",
+        "value": "$4,200",
+        "change": "+8%"
+      },
+      {
+        "label": "Tickets abiertos",
+        "value": "5",
+        "change": "-2"
+      }
+    ],
+    "status": {
+      "title": "Estado de la API Laravel",
+      "loading": "Comprobando conexión...",
+      "error": "No se pudo conectar con el backend.",
+      "success": "{{message}} — {{time}}"
+    },
+    "integration": {
+      "description": "<strong>Integración sugerida:</strong> expón un endpoint REST en Laravel (p. ej. <code>{{endpoint}}</code>) y utiliza <code>{{library}}</code> para obtener datos reales. Sustituye esta tarjeta por gráficos, tablas o widgets propios del producto."
+    }
+  },
+  "inventoryManagementPage": {
+    "hero": {
+      "badge": "Operaciones",
+      "title": "Gestión de Inventario",
+      "subtitle": "Mantén cada sede abastecida sin sobrecomprar.",
+      "description": "Centraliza puntos de reposición, estado de proveedores y tiempos de entrega en un espacio conectado."
+    },
+    "stats": [
+      {
+        "label": "SKUs monitorizados",
+        "value": "1.842"
+      },
+      {
+        "label": "Alertas de bajo stock",
+        "value": "12"
+      },
+      {
+        "label": "Órdenes de compra pendientes",
+        "value": "4"
+      }
+    ],
+    "highlights": {
+      "title": "Por qué el equipo de operaciones la prefiere",
+      "items": [
+        {
+          "title": "Umbrales en tiempo real",
+          "description": "Centraliza alertas cuando un artículo cae por debajo del mínimo."
+        },
+        {
+          "title": "Scorecards de proveedores",
+          "description": "Mide tiempos de entrega y confiabilidad de cada socio."
+        },
+        {
+          "title": "Calendario de recepción",
+          "description": "Coordina entregas con servicios o envíos programados."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flujo sugerido",
+      "steps": [
+        "Conecta tu catálogo de productos mediante la API de Laravel.",
+        "Sincroniza órdenes de compra desde tu ERP o hojas de cálculo.",
+        "Automatiza alertas y aprobaciones con el motor de flujos de AgendaPro."
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para automatizar la reposición?",
+      "description": "Usa esta plantilla como base para tu panel de operaciones.",
+      "primary": "Abrir demo de inventario",
+      "secondary": "Descargar briefing de traspaso"
+    }
+  },
+  "newsletterMarketplacePage": {
+    "hero": {
+      "badge": "Crecimiento",
+      "title": "Marketplace de Newsletters",
+      "subtitle": "Conecta comercios con campañas promocionales curadas.",
+      "description": "Presenta espacios patrocinados, insights de audiencia y rendimiento de patrocinadores."
+    },
+    "stats": [
+      {
+        "label": "Publicadores activos",
+        "value": "38"
+      },
+      {
+        "label": "Tasa media de apertura",
+        "value": "41%"
+      },
+      {
+        "label": "Espacios patrocinados esta semana",
+        "value": "22"
+      }
+    ],
+    "highlights": {
+      "title": "Funcionalidades pensadas para crecer",
+      "items": [
+        {
+          "title": "Audiencias segmentadas",
+          "description": "Agrupa ofertas por demografía, intereses o etapa del ciclo."
+        },
+        {
+          "title": "Ingresos predecibles",
+          "description": "Compara CPM y tarifas fijas para maximizar el rendimiento."
+        },
+        {
+          "title": "Analítica de campañas",
+          "description": "Entrega paneles transparentes y exportables a cada patrocinador."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flujo sugerido",
+      "steps": [
+        "Integra publicadores y sincroniza sus listas mediante la API.",
+        "Diseña paquetes de patrocinio con tarifas y alcance.",
+        "Mide conversiones y automatiza renovaciones desde un centro de mando."
+      ]
+    },
+    "cta": {
+      "title": "Monetiza tu audiencia más rápido",
+      "description": "Alinea ventas, marketing y partners en un mismo espacio de trabajo.",
+      "primary": "Ver demo del marketplace",
+      "secondary": "Compartir con marketing"
+    }
+  },
+  "productShowcasePage": {
+    "hero": {
+      "badge": "Ventas",
+      "title": "Escaparate de Productos",
+      "subtitle": "Presenta colecciones curadas que convierten visitas en compras.",
+      "description": "Destaca productos estrella, bundles y complementos con un relato orientado a la conversión."
+    },
+    "stats": [
+      {
+        "label": "Colecciones destacadas",
+        "value": "6"
+      },
+      {
+        "label": "Incremento de conversión",
+        "value": "+18%"
+      },
+      {
+        "label": "Oportunidades de venta cruzada",
+        "value": "14"
+      }
+    ],
+    "highlights": {
+      "title": "Qué hace efectiva a esta página",
+      "items": [
+        {
+          "title": "Secciones hero inmersivas",
+          "description": "Usa imágenes potentes y textos claros para transmitir valor de inmediato."
+        },
+        {
+          "title": "Lista para comparar",
+          "description": "Incluye matrices de funcionalidades para guiar la decisión correcta."
+        },
+        {
+          "title": "Captura de leads",
+          "description": "Incorpora formularios o modales de compra para acortar el proceso."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flujo sugerido",
+      "steps": [
+        "Importa tu catálogo y datos de merchandising desde el backend Laravel.",
+        "Personaliza insignias, destacados de precio e indicadores de stock.",
+        "Inserta CTAs conectados con tu flujo de pago preferido."
+      ]
+    },
+    "cta": {
+      "title": "Destaca tus superventas",
+      "description": "Entrega una experiencia premium sin reconstruir componentes desde cero.",
+      "primary": "Abrir demo del escaparate",
+      "secondary": "Copiar diseño"
+    }
+  },
+  "productReviewsPage": {
+    "hero": {
+      "badge": "Prueba social",
+      "title": "Reseñas de Productos",
+      "subtitle": "Celebra el éxito de tus clientes con testimonios multimedia.",
+      "description": "Recopila y publica historias que influyen en la decisión de compra en todos los canales."
+    },
+    "stats": [
+      {
+        "label": "Reseñas publicadas",
+        "value": "312"
+      },
+      {
+        "label": "Valoración media",
+        "value": "4,9"
+      },
+      {
+        "label": "Net promoter score",
+        "value": "72"
+      }
+    ],
+    "highlights": {
+      "title": "Convierte el feedback en ventas",
+      "items": [
+        {
+          "title": "Galería de testimonios",
+          "description": "Agrupa citas en texto, foto y video en una cuadrícula responsive."
+        },
+        {
+          "title": "Destacados por caso de uso",
+          "description": "Clasifica las reseñas por segmento para cada tipo de cliente."
+        },
+        {
+          "title": "Resumen de insights",
+          "description": "Resalta tendencias de sentimiento, puntuaciones y temas recurrentes."
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Flujo sugerido",
+      "steps": [
+        "Recoge la voz del cliente con formularios o integraciones.",
+        "Modera envíos, etiqueta hallazgos y solicita aprobaciones.",
+        "Publica los testimonios en la página y reutilízalos en campañas."
+      ]
+    },
+    "cta": {
+      "title": "Activa a tus promotores",
+      "description": "Reutiliza la prueba social en anuncios, landing pages y materiales comerciales.",
+      "primary": "Abrir demo de reseñas",
+      "secondary": "Exportar briefing de contenido"
     }
   },
   "barbershopPage": {

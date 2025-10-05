@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslationSafe } from './useTranslationSafe';
 import { SEOService } from '../services';
 
 export const useStructuredData = () => {
-  const { t } = useTranslation();
+  const { t, tArray } = useTranslationSafe();
 
   const getSoftwareApplicationSchema = () => {
     return SEOService.generateSoftwareApplicationSchema({
@@ -20,10 +20,10 @@ export const useStructuredData = () => {
   };
 
   const getFAQSchema = () => {
-    const faqs = t('agendaPro.faq.questions', { returnObjects: true }) as Array<{
+    const faqs = tArray<{
       question: string;
       answer: string;
-    }>;
+    }>('agendaPro.faq.questions');
 
     return SEOService.generateFAQSchema(faqs);
   };

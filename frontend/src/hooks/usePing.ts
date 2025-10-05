@@ -13,6 +13,7 @@ export const usePing = () => {
       const { data } = await apiClient.get<PingResponse>('/api/ping');
       return data;
     },
-    staleTime: 30_000
+    staleTime: 30_000,
+    retry: false
   });
 };

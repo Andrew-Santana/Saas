@@ -1,9 +1,9 @@
 import { Check } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslationSafe } from '../hooks/useTranslationSafe';
 
 export default function Pricing() {
-  const { t } = useTranslation();
-  
+  const { t, tArray } = useTranslationSafe();
+
   const plans = [
     {
       nameKey: 'agendaPro.pricing.plans.starter.name',
@@ -88,7 +88,7 @@ export default function Pricing() {
               </div>
 
               <ul className="space-y-4 mb-8">
-                {(t(plan.featuresKey, { returnObjects: true }) as string[]).map((feature: string, i: number) => (
+                {tArray<string>(plan.featuresKey).map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check
                       className={`flex-shrink-0 ${

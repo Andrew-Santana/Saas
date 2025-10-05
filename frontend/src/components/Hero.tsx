@@ -1,5 +1,19 @@
 import { useState } from 'react';
-import { Calendar, PlayCircle, Smartphone, Monitor, X, Scissors, PawPrint, ChevronRight } from 'lucide-react';
+import {
+  Calendar,
+  PlayCircle,
+  Smartphone,
+  Monitor,
+  X,
+  Scissors,
+  PawPrint,
+  ChevronRight,
+  LayoutDashboard,
+  Boxes,
+  Mail,
+  ShoppingBag,
+  Star
+} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { trackEvent } from '../hooks/useAnalytics';
@@ -11,7 +25,6 @@ export default function Hero() {
   const navigate = useNavigate();
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
-  // Dados das demonstrações usando traduções
   const demos: DemoPage[] = [
     {
       id: 'salao',
@@ -21,7 +34,7 @@ export default function Hero() {
       color: 'from-pink-500 to-rose-600',
       bgColor: 'bg-pink-50',
       borderColor: 'border-pink-200',
-      features: t('agendaPro.demoModal.demos.salao.features', { returnObjects: true }) as string[],
+      features: t('agendaPro.demoModal.demos.salao.features', { returnObjects: true }) || [],
       url: ROUTES.DEMO_SALAO,
       keywords: 'agendamento salão beleza, software salão, gestão salão de beleza'
     },
@@ -33,7 +46,7 @@ export default function Hero() {
       color: 'from-blue-500 to-indigo-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      features: t('agendaPro.demoModal.demos.barbearia.features', { returnObjects: true }) as string[],
+      features: t('agendaPro.demoModal.demos.barbearia.features', { returnObjects: true }) || [],
       url: ROUTES.DEMO_BARBEARIA,
       keywords: 'agendamento barbearia, software barbearia, gestão barbearia'
     },
@@ -45,9 +58,69 @@ export default function Hero() {
       color: 'from-green-500 to-emerald-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
-      features: t('agendaPro.demoModal.demos.veterinaria.features', { returnObjects: true }) as string[],
+      features: t('agendaPro.demoModal.demos.veterinaria.features', { returnObjects: true }) || [],
       url: ROUTES.DEMO_VETERINARIA,
       keywords: 'agendamento veterinária, software veterinária, gestão clínica veterinária'
+    },
+    {
+      id: 'dashboard',
+      title: t('agendaPro.demoModal.demos.dashboard.title'),
+      description: t('agendaPro.demoModal.demos.dashboard.description'),
+      icon: LayoutDashboard,
+      color: 'from-slate-600 to-slate-900',
+      bgColor: 'bg-slate-50',
+      borderColor: 'border-slate-200',
+      features: t('agendaPro.demoModal.demos.dashboard.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_DASHBOARD,
+      keywords: 'dashboard salão de beleza, kpis estética, relatórios agenda pro, analytics spa'
+    },
+    {
+      id: 'inventory',
+      title: t('agendaPro.demoModal.demos.inventory.title'),
+      description: t('agendaPro.demoModal.demos.inventory.description'),
+      icon: Boxes,
+      color: 'from-amber-500 to-orange-600',
+      bgColor: 'bg-amber-50',
+      borderColor: 'border-amber-200',
+      features: t('agendaPro.demoModal.demos.inventory.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_INVENTORY,
+      keywords: 'controle estoque salão, inventário spa, gestão produtos estética, agenda pro estoque'
+    },
+    {
+      id: 'newsletter',
+      title: t('agendaPro.demoModal.demos.newsletter.title'),
+      description: t('agendaPro.demoModal.demos.newsletter.description'),
+      icon: Mail,
+      color: 'from-purple-500 to-fuchsia-600',
+      bgColor: 'bg-purple-50',
+      borderColor: 'border-purple-200',
+      features: t('agendaPro.demoModal.demos.newsletter.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_NEWSLETTER,
+      keywords: 'newsletter salão, automação email estética, campanhas agenda pro, marketing spa'
+    },
+    {
+      id: 'productShowcase',
+      title: t('agendaPro.demoModal.demos.productShowcase.title'),
+      description: t('agendaPro.demoModal.demos.productShowcase.description'),
+      icon: ShoppingBag,
+      color: 'from-cyan-500 to-sky-600',
+      bgColor: 'bg-cyan-50',
+      borderColor: 'border-cyan-200',
+      features: t('agendaPro.demoModal.demos.productShowcase.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_PRODUCT_SHOWCASE,
+      keywords: 'vitrine digital salão, catálogo produtos agenda pro, venda cruzada spa, ecommerce estética'
+    },
+    {
+      id: 'productReviews',
+      title: t('agendaPro.demoModal.demos.productReviews.title'),
+      description: t('agendaPro.demoModal.demos.productReviews.description'),
+      icon: Star,
+      color: 'from-yellow-500 to-amber-500',
+      bgColor: 'bg-yellow-50',
+      borderColor: 'border-yellow-200',
+      features: t('agendaPro.demoModal.demos.productReviews.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_PRODUCT_REVIEWS,
+      keywords: 'avaliações clientes agenda pro, reputação online salão, reviews estética, prova social spa'
     }
   ];
 
@@ -59,15 +132,14 @@ export default function Hero() {
     setIsDemoModalOpen(true);
   };
 
-  const handleDemoSelection = (demoId: string, demoTitle: string) => {
+  const handleDemoSelection = (demo: DemoPage) => {
     trackEvent(ANALYTICS_EVENTS.DEMO_SELECTION_CLICK, {
       event_category: 'engagement',
-      event_label: demoId,
-      demo_type: demoTitle
+      event_label: demo.id,
+      demo_type: demo.title
     });
     setIsDemoModalOpen(false);
-    // Redirecionar para a página específica usando React Router
-    navigate(`/demonstracoes/${demoId}`);
+    navigate(demo.url);
   };
 
   const handleCloseModal = () => {
@@ -93,14 +165,14 @@ export default function Hero() {
               {t('agendaPro.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <button 
+              <button
                 onClick={handleFreeTrialClick}
                 className="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 aria-label="Iniciar teste grátis de 14 dias"
               >
                 {t('agendaPro.hero.freeTrial')}
               </button>
-              <button 
+              <button
                 onClick={handleWatchDemoClick}
                 className="bg-white text-slate-700 px-8 py-4 rounded-lg hover:bg-slate-50 transition font-semibold text-lg border-2 border-slate-200 flex items-center justify-center gap-2"
                 aria-label="Assistir demonstração do produto"
@@ -146,11 +218,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Modal de Seleção de Demonstrações */}
       {isDemoModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            {/* Header do Modal */}
             <div className="flex justify-between items-center p-6 border-b border-slate-200">
               <div>
                 <h2 className="text-2xl font-bold text-slate-900">{t('agendaPro.demoModal.title')}</h2>
@@ -165,7 +235,6 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Conteúdo do Modal */}
             <div className="p-6">
               <div className="grid md:grid-cols-3 gap-6">
                 {demos.map((demo) => {
@@ -175,7 +244,6 @@ export default function Hero() {
                       key={demo.id}
                       className={`group bg-white border-2 ${demo.borderColor} rounded-xl hover:border-emerald-300 transition-all duration-300 hover:shadow-lg`}
                     >
-                      {/* Card Header */}
                       <div className={`bg-gradient-to-br ${demo.color} p-6 rounded-t-xl text-center`}>
                         <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
                           <IconComponent className="text-white" size={24} />
@@ -184,7 +252,6 @@ export default function Hero() {
                         <p className="text-white/90 text-sm">{demo.description}</p>
                       </div>
 
-                      {/* Card Body */}
                       <div className="p-6">
                         <ul className="space-y-2 mb-6">
                           {demo.features.map((feature, index) => (
@@ -196,7 +263,7 @@ export default function Hero() {
                         </ul>
 
                         <button
-                          onClick={() => handleDemoSelection(demo.id, demo.title)}
+                          onClick={() => handleDemoSelection(demo)}
                           className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-200 bg-gradient-to-r ${demo.color} text-white hover:shadow-md flex items-center justify-center gap-2`}
                         >
                           <span>{t(`agendaPro.demoModal.demos.${demo.id}.button`)}</span>
@@ -208,7 +275,6 @@ export default function Hero() {
                 })}
               </div>
 
-              {/* Footer do Modal */}
               <div className="mt-8 pt-6 border-t border-slate-200 text-center">
                 <p className="text-slate-600 mb-4">
                   {t('agendaPro.demoModal.footer.text')}

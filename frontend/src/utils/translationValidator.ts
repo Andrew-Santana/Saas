@@ -13,7 +13,7 @@ export class TranslationValidator {
       present: string[];
       coverage: number;
     };
-  } => {
+  } {
     const results: any = {};
     const languages = i18n.languages;
 
@@ -32,7 +32,7 @@ export class TranslationValidator {
     missing: string[];
     present: string[];
     coverage: number;
-  } => {
+  } {
     const missing: string[] = [];
     const present: string[] = [];
 

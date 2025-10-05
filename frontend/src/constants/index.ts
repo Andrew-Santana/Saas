@@ -39,6 +39,41 @@ export const DEMO_PAGES_CONFIG = {
     ogImage: 'https://agendapro.com.br/og-image-veterinaria.jpg',
     url: 'https://agendapro.com.br/demonstracoes/veterinaria',
   },
+  dashboard: {
+    title: 'Demonstração Dashboard Inteligente - AgendaPro',
+    description: 'Visualize métricas em tempo real, acompanhe KPIs e tome decisões baseadas em dados com o dashboard completo do AgendaPro.',
+    keywords: 'dashboard agendamento, relatórios agenda pro, indicadores salão, analytics spa',
+    ogImage: 'https://agendapro.com.br/og-image-dashboard.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/dashboard',
+  },
+  inventory: {
+    title: 'Demonstração Controle de Estoque - AgendaPro',
+    description: 'Gerencie o estoque do seu negócio com alertas inteligentes, reposição automática e análise de consumo por profissional.',
+    keywords: 'controle de estoque salão, gestão de produtos estética, inventário spa, agenda pro estoque',
+    ogImage: 'https://agendapro.com.br/og-image-estoque.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/estoque',
+  },
+  newsletter: {
+    title: 'Demonstração Newsletter e Campanhas - AgendaPro',
+    description: 'Crie newsletters segmentadas, automações de e-mail e campanhas de retenção para fidelizar seus clientes.',
+    keywords: 'newsletter salão, automação e-mail agenda pro, marketing relacionamento spa, campanhas fidelização',
+    ogImage: 'https://agendapro.com.br/og-image-newsletter.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/newsletter',
+  },
+  productShowcase: {
+    title: 'Demonstração Vitrine de Produtos - AgendaPro',
+    description: 'Apresente seus produtos com vitrines digitais integradas, destaque lançamentos e aumente suas vendas online.',
+    keywords: 'vitrine produtos salão, catálogo digital estética, venda produtos spa, agenda pro vitrine',
+    ogImage: 'https://agendapro.com.br/og-image-vitrine.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/vitrine',
+  },
+  productReviews: {
+    title: 'Demonstração Avaliações de Clientes - AgendaPro',
+    description: 'Colete, gerencie e destaque avaliações dos clientes para fortalecer a reputação do seu negócio e aumentar conversões.',
+    keywords: 'avaliações clientes salão, reputação online estética, reviews agenda pro, feedback clientes spa',
+    ogImage: 'https://agendapro.com.br/og-image-avaliacoes.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/avaliacoes',
+  },
 } as const;
 
 export const ROUTES = {
@@ -46,6 +81,11 @@ export const ROUTES = {
   DEMO_SALAO: '/demonstracoes/salao',
   DEMO_BARBEARIA: '/demonstracoes/barbearia',
   DEMO_VETERINARIA: '/demonstracoes/veterinaria',
+  DEMO_DASHBOARD: '/demonstracoes/dashboard',
+  DEMO_INVENTORY: '/demonstracoes/estoque',
+  DEMO_NEWSLETTER: '/demonstracoes/newsletter',
+  DEMO_PRODUCT_SHOWCASE: '/demonstracoes/vitrine',
+  DEMO_PRODUCT_REVIEWS: '/demonstracoes/avaliacoes',
   DASHBOARD: '/dashboard',
 } as const;
 
