@@ -53,6 +53,13 @@ export const DEMO_PAGES_CONFIG = {
     ogImage: 'https://agendapro.com.br/og-image-estoque.jpg',
     url: 'https://agendapro.com.br/demonstracoes/estoque',
   },
+  timeBank: {
+    title: 'Demonstração Banco de Horas - AgendaPro',
+    description: 'Controle a jornada do time em tempo real, gere banco de horas automaticamente e mantenha conformidade com a legislação trabalhista.',
+    keywords: 'banco de horas, controle de ponto, gestão de jornada, horas extras, compliance trabalhista',
+    ogImage: 'https://agendapro.com.br/og-image-banco-horas.jpg',
+    url: 'https://agendapro.com.br/demonstracoes/banco-de-horas',
+  },
   newsletter: {
     title: 'Demonstração Newsletter e Campanhas - AgendaPro',
     description: 'Crie newsletters segmentadas, automações de e-mail e campanhas de retenção para fidelizar seus clientes.',
@@ -83,6 +90,7 @@ export const ROUTES = {
   DEMO_VETERINARIA: '/demonstracoes/veterinaria',
   DEMO_DASHBOARD: '/demonstracoes/dashboard',
   DEMO_INVENTORY: '/demonstracoes/estoque',
+  DEMO_TIME_BANK: '/demonstracoes/banco-de-horas',
   DEMO_NEWSLETTER: '/demonstracoes/newsletter',
   DEMO_PRODUCT_SHOWCASE: '/demonstracoes/vitrine',
   DEMO_PRODUCT_REVIEWS: '/demonstracoes/avaliacoes',

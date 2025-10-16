@@ -72,6 +72,16 @@
           ],
           "button": "View Demo"
         },
+        "timeBank": {
+          "title": "Time Bank",
+          "description": "Track shifts in real time and stay compliant with labor policies",
+          "features": [
+            "Live hour tracker",
+            "Overtime approval flows",
+            "Payroll-ready exports"
+          ],
+          "button": "View Demo"
+        },
         "newsletter": {
           "title": "Newsletter Marketplace",
           "description": "Grow revenue with curated promotional campaigns",
@@ -299,246 +309,465 @@
       "copyright": "© 2025 AgendaPro. All rights reserved."
     }
   },
+  "timeBankPage": {
+    "header": {
+      "title": "Intelligent Time Bank",
+      "subtitle": "Real-time workforce tracking and compliance",
+      "rating": "4.9 (312 reviews)",
+      "runningBadge": "Live tracker running",
+      "balanceLabel": "Team balance",
+      "balanceValue": "+12h30"
+    },
+    "about": {
+      "title": "Keep your team on track",
+      "description": "The time bank module unifies real-time punches, smart approvals and compliance alerts so HR always has a reliable view of the journey.",
+      "details": [
+        {
+          "label": "Employees monitored",
+          "value": "18"
+        },
+        {
+          "label": "Hours logged this month",
+          "value": "1,245h"
+        },
+        {
+          "label": "Overtime pending approval",
+          "value": "6h45"
+        },
+        {
+          "label": "Legal limit remaining",
+          "value": "27h"
+        }
+      ]
+    },
+    "liveTracker": {
+      "title": "Real-time tracker",
+      "currentTaskLabel": "Current activity",
+      "currentTaskPlaceholder": "e.g. Contract review or client onboarding",
+      "elapsedLabel": "Accumulated time in session",
+      "startLabel": "Start tracking",
+      "pauseLabel": "Pause",
+      "resumeLabel": "Resume",
+      "resetLabel": "Reset counter",
+      "note": "Give HR full visibility while automatically allocating time to projects and cost centers.",
+      "runningSinceLabel": "Running since",
+      "manualEntry": {
+        "title": "Manual entry",
+        "description": "Log hours from previous days",
+        "action": "Add entry"
+      }
+    },
+    "calendar": {
+      "title": "Workload calendar",
+      "monthLabel": "September 2024",
+      "legend": {
+        "working": "Worked day",
+        "overtime": "Overtime",
+        "absence": "Scheduled leave"
+      },
+      "summary": {
+        "totalTracked": "Total tracked: 132h",
+        "overtime": "Accumulated overtime",
+        "daysWorked": "17 days worked"
+      },
+      "weekDays": ["S", "M", "T", "W", "T", "F", "S"],
+      "days": [
+        { "date": "01", "hours": "8h15", "status": "working" },
+        { "date": "02", "hours": "8h45", "status": "overtime" },
+        { "date": "03", "hours": "-", "status": "absence" },
+        { "date": "04", "hours": "7h58", "status": "working" },
+        { "date": "05", "hours": "8h10", "status": "working" },
+        { "date": "06", "hours": "4h20", "status": "working" },
+        { "date": "07", "hours": "-", "status": "absence" },
+        { "date": "08", "hours": "8h05", "status": "working" },
+        { "date": "09", "hours": "9h20", "status": "overtime" },
+        { "date": "10", "hours": "8h00", "status": "working" },
+        { "date": "11", "hours": "8h12", "status": "working" },
+        { "date": "12", "hours": "-", "status": "absence" },
+        { "date": "13", "hours": "5h45", "status": "working" },
+        { "date": "14", "hours": "-", "status": "absence" },
+        { "date": "15", "hours": "8h30", "status": "working" },
+        { "date": "16", "hours": "8h40", "status": "overtime" },
+        { "date": "17", "hours": "7h55", "status": "working" },
+        { "date": "18", "hours": "8h05", "status": "working" },
+        { "date": "19", "hours": "-", "status": "absence" },
+        { "date": "20", "hours": "6h10", "status": "working" },
+        { "date": "21", "hours": "-", "status": "absence" },
+        { "date": "22", "hours": "8h00", "status": "working" },
+        { "date": "23", "hours": "8h50", "status": "overtime" },
+        { "date": "24", "hours": "8h10", "status": "working" },
+        { "date": "25", "hours": "8h02", "status": "working" },
+        { "date": "26", "hours": "-", "status": "absence" },
+        { "date": "27", "hours": "5h30", "status": "working" },
+        { "date": "28", "hours": "-", "status": "absence" }
+      ]
+    },
+    "history": {
+      "title": "Consolidated history",
+      "filterLabel": "Latest punches synced automatically",
+      "exportLabel": "Export report",
+      "entries": [
+        {
+          "date": "09/23",
+          "weekDay": "Monday",
+          "duration": "08h50",
+          "activity": "Q4 campaign planning",
+          "project": "Marketing",
+          "notes": "Strategic meeting with leadership and roadmap adjustments."
+        },
+        {
+          "date": "09/22",
+          "weekDay": "Sunday",
+          "duration": "04h10",
+          "activity": "Support on-call shift",
+          "project": "Customer Care",
+          "notes": "Extraordinary service automatically approved by the manager."
+        },
+        {
+          "date": "09/21",
+          "weekDay": "Saturday",
+          "duration": "03h20",
+          "activity": "BI dashboard updates",
+          "project": "Data & Analytics",
+          "notes": "Extra workload to close the monthly OKR cadence."
+        },
+        {
+          "date": "09/20",
+          "weekDay": "Friday",
+          "duration": "07h55",
+          "activity": "New hire onboarding",
+          "project": "People Ops",
+          "notes": "Individual sessions with new teammates and template adjustments."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Key indicators",
+      "items": [
+        {
+          "label": "Approved hours",
+          "value": "98h",
+          "helper": "Will be sent to payroll in 3 days"
+        },
+        {
+          "label": "Compliance alerts",
+          "value": "2 pending",
+          "helper": "Daily overtime limit exceeded by 2 employees"
+        },
+        {
+          "label": "Daily average",
+          "value": "7h36",
+          "helper": "Aligned with the HR target (7h30)"
+        }
+      ]
+    },
+    "insights": {
+      "title": "Automated insights",
+      "items": [
+        {
+          "title": "Sales team with positive balance",
+          "description": "Consultants accumulated +6h this month. Suggestion: compensate with internal training."
+        },
+        {
+          "title": "On-call shifts concentrated on weekends",
+          "description": "Rebalance rosters to distribute overtime across squads."
+        },
+        {
+          "title": "Missing punches detected",
+          "description": "3 employees forgot to clock out. Send an automatic reminder."
+        }
+      ]
+    },
+    "quickActions": {
+      "title": "Quick actions",
+      "actions": [
+        {
+          "label": "Approve this week’s overtime",
+          "description": "Forward to finance with one click"
+        },
+        {
+          "label": "Notify employees with negative balance",
+          "description": "Share the compensation plan automatically"
+        },
+        {
+          "label": "Generate compliance report",
+          "description": "PDF with history per employee and justification notes"
+        }
+      ]
+    }
+  },
   "dashboardPage": {
-    "title": "Executive Dashboard",
-    "subtitle": "Get a real-time view of appointments, revenue, and customer satisfaction.",
+    "title": "Smart Dashboard",
+    "subtitle": "Monitor metrics in real time, analyze trends and make data-driven decisions.",
+    "badge": "📊 Dashboard Analytics",
     "metrics": [
       {
-        "label": "Active customers",
-        "value": "24",
-        "change": "+12%"
+        "label": "Monthly Revenue",
+        "value": "$45,280",
+        "change": "+18.2%"
       },
       {
-        "label": "Monthly recurring revenue",
-        "value": "$4,200",
-        "change": "+8%"
+        "label": "New Customers",
+        "value": "1,245",
+        "change": "+24.5%"
       },
       {
-        "label": "Open tickets",
-        "value": "5",
-        "change": "-2"
+        "label": "Conversion Rate",
+        "value": "3.84%",
+        "change": "+0.8%"
+      },
+      {
+        "label": "Average Ticket",
+        "value": "$156",
+        "change": "+5.2%"
+      },
+      {
+        "label": "Active Subscriptions",
+        "value": "892",
+        "change": "+12.1%"
+      },
+      {
+        "label": "Churn Rate",
+        "value": "2.1%",
+        "change": "-0.4%"
       }
     ],
-    "status": {
-      "title": "Laravel API status",
-      "loading": "Checking connection...",
-      "error": "Unable to reach the backend.",
-      "success": "{{message}} — {{time}}"
+    "chart": {
+      "title": "Monthly Growth",
+      "subtitle": "Revenue for the last 6 months"
     },
-    "integration": {
-      "description": "<strong>Suggested integration:</strong> expose a REST endpoint in Laravel (e.g. <code>{{endpoint}}</code>) and use <code>{{library}}</code> to fetch real data. Replace this card with charts, tables, or product-specific widgets."
+    "status": {
+      "title": "API Status",
+      "loading": "Checking connection...",
+      "error": "Connection error",
+      "success": "API Online",
+      "uptime": "Uptime",
+      "latency": "Average Latency",
+      "requests": "Requests/min"
+    },
+    "recentSales": {
+      "title": "Recent Sales"
+    },
+    "topPlans": {
+      "title": "Best Selling Plans",
+      "subscriptions": "subscriptions"
     }
   },
   "inventoryManagementPage": {
-    "hero": {
-      "badge": "Operations",
-      "title": "Inventory Management",
-      "subtitle": "Keep every location stocked without over-ordering.",
-      "description": "Surface reorder points, supplier status, and fulfillment timelines from a single connected workspace."
-    },
+    "title": "Inventory Management",
+    "subtitle": "Complete control of your inventory with smart alerts, automatic replenishment and consumption analysis.",
+    "badge": "📦 Inventory Control",
     "stats": [
       {
-        "label": "SKUs tracked",
-        "value": "1,842"
+        "label": "Total Products",
+        "value": "156",
+        "change": "+12 this month"
       },
       {
-        "label": "Low stock alerts",
-        "value": "12"
+        "label": "Inventory Value",
+        "value": "$28,450",
+        "change": "+8.2%"
       },
       {
-        "label": "Purchase orders pending",
-        "value": "4"
+        "label": "Out of Stock",
+        "value": "8",
+        "change": "-3 resolved"
+      },
+      {
+        "label": "Pending Orders",
+        "value": "5",
+        "change": "2 in transit"
       }
     ],
-    "highlights": {
-      "title": "Why operations teams love this view",
-      "items": [
-        {
-          "title": "Real-time thresholds",
-          "description": "Centralize alerts for items that drop below minimum stock levels."
-        },
-        {
-          "title": "Supplier scorecards",
-          "description": "Measure lead times and reliability across every vendor."
-        },
-        {
-          "title": "Fulfillment calendar",
-          "description": "Coordinate inbound shipments with scheduled services or deliveries."
-        }
-      ]
+    "table": {
+      "title": "Stock Products",
+      "filters": {
+        "all": "All",
+        "ok": "OK",
+        "low": "Low",
+        "critical": "Critical"
+      },
+      "columns": {
+        "product": "Product",
+        "category": "Category",
+        "stock": "Stock",
+        "price": "Price",
+        "supplier": "Supplier",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "statuses": {
+        "ok": "Stock OK",
+        "low": "Low Stock",
+        "critical": "Critical"
+      },
+      "actions": {
+        "reorder": "Reorder"
+      },
+      "lastPurchase": "Last purchase",
+      "minStock": "Min",
+      "units": "units",
+      "noResults": "No products found with this filter."
     },
-    "workflow": {
-      "title": "Suggested workflow",
-      "steps": [
-        "Connect your product catalog via the Laravel API.",
-        "Sync purchase orders from your ERP or spreadsheets.",
-        "Automate alerts and approvals with AgendaPro's workflow engine."
-      ]
-    },
-    "cta": {
-      "title": "Ready to automate reordering?",
-      "description": "Use this template as the foundation for your operations dashboard.",
-      "primary": "Launch inventory demo",
-      "secondary": "Download handoff brief"
+    "alerts": {
+      "critical": {
+        "title": "Critical Stock",
+        "value": "3 items",
+        "description": "Require urgent replenishment"
+      },
+      "low": {
+        "title": "Near Minimum",
+        "value": "5 items",
+        "description": "Attention needed soon"
+      },
+      "healthy": {
+        "title": "Healthy Stock",
+        "value": "148 items",
+        "description": "Adequate levels"
+      }
     }
   },
   "newsletterMarketplacePage": {
-    "hero": {
-      "badge": "Growth",
-      "title": "Newsletter Marketplace",
-      "subtitle": "Pair merchants with curated marketing campaigns.",
-      "description": "Showcase monetized newsletter placements, audience insights, and sponsor performance."
-    },
+    "title": "Newsletter and Campaigns",
+    "subtitle": "Create segmented newsletters, email automations and retention campaigns to build customer loyalty.",
+    "badge": "📧 Email Marketing",
     "stats": [
       {
-        "label": "Active publishers",
-        "value": "38"
+        "label": "Total Subscribers",
+        "value": "12,450",
+        "change": "+18.2%"
       },
       {
-        "label": "Avg. open rate",
-        "value": "41%"
+        "label": "Average Open Rate",
+        "value": "58.5%",
+        "change": "+5.2%"
       },
       {
-        "label": "Sponsored slots this week",
-        "value": "22"
+        "label": "Click Rate",
+        "value": "22.3%",
+        "change": "+3.8%"
+      },
+      {
+        "label": "Active Campaigns",
+        "value": "8",
+        "change": "2 scheduled"
       }
     ],
-    "highlights": {
-      "title": "Features built for growth teams",
-      "items": [
-        {
-          "title": "Segmented audiences",
-          "description": "Bundle placements by demographic, interest, or lifecycle stage."
-        },
-        {
-          "title": "Predictable revenue",
-          "description": "Model CPMs and flat fees side by side to optimize yield."
-        },
-        {
-          "title": "Campaign analytics",
-          "description": "Give sponsors transparent performance dashboards with exportable data."
-        }
-      ]
+    "campaigns": {
+      "title": "Recent Campaigns",
+      "statuses": {
+        "sent": "Sent",
+        "draft": "Draft",
+        "scheduled": "Scheduled"
+      }
     },
-    "workflow": {
-      "title": "Suggested workflow",
-      "steps": [
-        "Onboard publishers and sync their mailing lists via the API.",
-        "Build sponsorship packages with pricing tiers and audience reach.",
-        "Measure conversions and automate renewals from one command center."
-      ]
+    "performance": {
+      "title": "Campaign Performance",
+      "sent": "Sent",
+      "opened": "Opened",
+      "clicked": "Clicks",
+      "openRate": "Open Rate",
+      "clickRate": "Click Rate",
+      "sentOn": "Sent on",
+      "notSentYet": "This campaign has not been sent yet. Statistics will be available after sending."
     },
-    "cta": {
-      "title": "Monetize your audience faster",
-      "description": "Bring sales, marketing, and partner teams into one shared workspace.",
-      "primary": "Preview marketplace demo",
-      "secondary": "Share with marketing"
+    "segments": {
+      "title": "Audience Segmentation",
+      "subscribers": "subscribers"
     }
   },
   "productShowcasePage": {
-    "hero": {
-      "badge": "Sales",
-      "title": "Product Showcase",
-      "subtitle": "Present curated collections that convert browsers into buyers.",
-      "description": "Highlight hero products, bundles, and add-ons with conversion-focused storytelling."
-    },
+    "title": "Product Showcase",
+    "subtitle": "Present your products with integrated digital showcases, highlight launches and increase your online sales.",
+    "badge": "🛍️ Digital Showcase",
     "stats": [
       {
-        "label": "Featured collections",
-        "value": "6"
+        "label": "Active Products",
+        "value": "248",
+        "change": "+18 new"
       },
       {
-        "label": "Conversion uplift",
-        "value": "+18%"
+        "label": "Sales This Month",
+        "value": "$52,340",
+        "change": "+32.5%"
       },
       {
-        "label": "Cross-sell opportunities",
-        "value": "14"
+        "label": "Views",
+        "value": "12,450",
+        "change": "+18.2%"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "4.2%",
+        "change": "+0.8%"
       }
     ],
-    "highlights": {
-      "title": "What makes this page effective",
-      "items": [
-        {
-          "title": "Immersive hero sections",
-          "description": "Use bold imagery and copy blocks to communicate product value quickly."
-        },
-        {
-          "title": "Comparison-ready",
-          "description": "Add feature matrices so prospects can pick the right plan or bundle."
-        },
-        {
-          "title": "Lead capture",
-          "description": "Embed forms or checkout modals to shorten the path to purchase."
-        }
-      ]
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Best sellers and highest rated",
+      "inStock": "units in stock",
+      "reviews": "reviews",
+      "buy": "Buy"
     },
-    "workflow": {
-      "title": "Suggested workflow",
-      "steps": [
-        "Import your catalog and merchandising data via the Laravel backend.",
-        "Customize badges, pricing callouts, and inventory indicators.",
-        "Embed call-to-action blocks that sync with your preferred checkout flow."
-      ]
-    },
-    "cta": {
-      "title": "Showcase your best sellers",
-      "description": "Ship a premium storefront experience without rebuilding components from scratch.",
-      "primary": "Launch showcase demo",
-      "secondary": "Copy layout"
+    "catalog": {
+      "title": "Full Catalog",
+      "filters": {
+        "all": "All"
+      },
+      "viewDetails": "View Details",
+      "noResults": "No products found in this category."
     }
   },
   "productReviewsPage": {
-    "hero": {
-      "badge": "Social proof",
-      "title": "Product Reviews",
-      "subtitle": "Celebrate customer success with rich multimedia testimonials.",
-      "description": "Collect and publish stories that influence buying decisions across channels."
-    },
+    "title": "Reviews System",
+    "subtitle": "Collect, manage and highlight customer reviews to strengthen your business reputation and increase conversions.",
+    "badge": "⭐ Customer Reviews",
     "stats": [
       {
-        "label": "Published reviews",
-        "value": "312"
+        "label": "Total Reviews",
+        "value": "2,847",
+        "change": "+156 this month"
       },
       {
-        "label": "Average rating",
-        "value": "4.9"
+        "label": "Average Rating",
+        "value": "4.8/5",
+        "change": "+0.2 points"
       },
       {
-        "label": "Net promoter score",
-        "value": "72"
+        "label": "Response Rate",
+        "value": "94%",
+        "change": "+5% this month"
+      },
+      {
+        "label": "Would Recommend",
+        "value": "96%",
+        "change": "+3%"
       }
     ],
-    "highlights": {
-      "title": "Turn feedback into conversion",
-      "items": [
-        {
-          "title": "Testimonial gallery",
-          "description": "Curate text, photo, and video quotes in a responsive grid."
-        },
-        {
-          "title": "Use-case spotlights",
-          "description": "Group reviews by segment so prospects find the stories that match their goals."
-        },
-        {
-          "title": "Insight summaries",
-          "description": "Surface sentiment trends, star ratings, and common themes."
-        }
-      ]
+    "distribution": {
+      "title": "Rating Distribution",
+      "basedOn": "Based on {{count}} reviews",
+      "showAll": "Show All"
     },
-    "workflow": {
-      "title": "Suggested workflow",
-      "steps": [
-        "Collect voice-of-customer responses with forms or integrations.",
-        "Moderate submissions, tag highlights, and request approvals.",
-        "Publish testimonials to the page and syndicate across campaigns."
-      ]
+    "recentReviews": {
+      "title": "Recent Reviews",
+      "verified": "Verified",
+      "photos": "photo",
+      "photosPlural": "photos",
+      "helpful": "Helpful",
+      "reply": "Reply",
+      "noResults": "No reviews found with this filter."
     },
-    "cta": {
-      "title": "Activate your advocates",
-      "description": "Repurpose social proof across ads, landing pages, and sales enablement.",
-      "primary": "Launch reviews demo",
-      "secondary": "Export content brief"
+    "insights": {
+      "strengths": {
+        "title": "Strengths"
+      },
+      "opportunities": {
+        "title": "Opportunities"
+      },
+      "trends": {
+        "title": "Trends"
+      }
     }
   },
   "barbershopPage": {
@@ -1062,6 +1291,115 @@
         "Encourage regular exercise",
         "Schedule annual check-ups"
       ]
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "Connection Error",
+      "message": "Unable to connect to the server. Check your connection and try again.",
+      "retry": "Try Again"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "message": "The page you are looking for does not exist.",
+      "backHome": "Back to Home"
+    },
+    "unauthorized": {
+      "title": "Access Denied",
+      "message": "You do not have permission to access this resource.",
+      "login": "Log In"
+    },
+    "serverError": {
+      "title": "Server Error",
+      "message": "An unexpected error occurred. Please try again later.",
+      "contactSupport": "Contact Support"
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Enter a valid email",
+      "minLength": "Minimum {{min}} characters",
+      "maxLength": "Maximum {{max}} characters",
+      "password": "Password must be at least 8 characters",
+      "passwordMatch": "Passwords do not match",
+      "phone": "Enter a valid phone number",
+      "cpf": "Enter a valid CPF",
+      "cnpj": "Enter a valid CNPJ",
+      "date": "Enter a valid date",
+      "url": "Enter a valid URL",
+      "number": "Enter numbers only",
+      "positive": "Value must be positive",
+      "min": "Minimum value is {{min}}",
+      "max": "Maximum value is {{max}}"
+    }
+  },
+  "notifications": {
+    "success": {
+      "saved": "Saved successfully!",
+      "updated": "Updated successfully!",
+      "deleted": "Deleted successfully!",
+      "created": "Created successfully!",
+      "sent": "Sent successfully!"
+    },
+    "error": {
+      "generic": "Something went wrong. Please try again.",
+      "timeout": "Operation took too long. Please try again.",
+      "offline": "You are offline. Check your connection."
+    },
+    "warning": {
+      "unsavedChanges": "You have unsaved changes. Do you want to continue?",
+      "deleteConfirm": "Are you sure you want to delete?",
+      "irreversible": "This action cannot be undone."
+    },
+    "info": {
+      "loading": "Loading...",
+      "processing": "Processing...",
+      "saving": "Saving...",
+      "uploading": "Uploading..."
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "create": "Create",
+      "update": "Update",
+      "close": "Close",
+      "confirm": "Confirm",
+      "search": "Search",
+      "filter": "Filter",
+      "export": "Export",
+      "import": "Import",
+      "download": "Download",
+      "upload": "Upload",
+      "view": "View",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "finish": "Finish"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "draft": "Draft",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "time": {
+      "now": "Now",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "tomorrow": "Tomorrow",
+      "thisWeek": "This Week",
+      "lastWeek": "Last Week",
+      "thisMonth": "This Month",
+      "lastMonth": "Last Month",
+      "thisYear": "This Year",
+      "lastYear": "Last Year"
     }
   }
 }

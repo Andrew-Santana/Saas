@@ -1,92 +1,29 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import SEO from '../components/SEO';
 import { DEMO_PAGES_CONFIG } from '../constants';
+import { useI18n } from '../hooks/useI18n';
+import { MOCK_INVENTORY_PRODUCTS } from '../data/mockData';
 
 const page = DEMO_PAGES_CONFIG.inventory;
 
-// Dados mockados de produtos
-const MOCK_PRODUCTS = [
-  {
-    id: 1,
-    name: 'Shampoo Hidratante 500ml',
-    category: 'Cabelos',
-    stock: 45,
-    minStock: 20,
-    price: 'R$ 89,90',
-    supplier: 'BeautyPro',
-    lastPurchase: '15/09/2025',
-    status: 'ok',
-  },
-  {
-    id: 2,
-    name: 'Cera Modeladora Premium',
-    category: 'Barba',
-    stock: 8,
-    minStock: 15,
-    price: 'R$ 45,00',
-    supplier: 'BarberShop Co.',
-    lastPurchase: '10/09/2025',
-    status: 'low',
-  },
-  {
-    id: 3,
-    name: 'Máscara Facial Argila',
-    category: 'Estética',
-    stock: 2,
-    minStock: 10,
-    price: 'R$ 125,00',
-    supplier: 'SkinCare Brasil',
-    lastPurchase: '01/09/2025',
-    status: 'critical',
-  },
-  {
-    id: 4,
-    name: 'Óleo para Massagem 1L',
-    category: 'Massagem',
-    stock: 67,
-    minStock: 25,
-    price: 'R$ 78,50',
-    supplier: 'Wellness Store',
-    lastPurchase: '20/09/2025',
-    status: 'ok',
-  },
-  {
-    id: 5,
-    name: 'Esmalte Gel UV - Vermelho',
-    category: 'Unhas',
-    stock: 12,
-    minStock: 15,
-    price: 'R$ 32,90',
-    supplier: 'Nails Express',
-    lastPurchase: '18/09/2025',
-    status: 'low',
-  },
-  {
-    id: 6,
-    name: 'Pomada Cicatrizante Pet',
-    category: 'Veterinária',
-    stock: 89,
-    minStock: 30,
-    price: 'R$ 156,00',
-    supplier: 'VetMed Pharma',
-    lastPurchase: '22/09/2025',
-    status: 'ok',
-  },
-];
-
-const INVENTORY_STATS = [
-  { label: 'Total de Produtos', value: '156', change: '+12 este mês' },
-  { label: 'Valor do Estoque', value: 'R$ 28.450', change: '+8.2%' },
-  { label: 'Itens em Falta', value: '8', change: '-3 resolvidos' },
-  { label: 'Pedidos Pendentes', value: '5', change: '2 em trânsito' },
-];
+type InventoryStat = {
+  label: string;
+  value: string;
+  change: string;
+};
 
 const InventoryDemoPage = () => {
+  const { t } = useI18n();
   const [filter, setFilter] = useState<'all' | 'ok' | 'low' | 'critical'>('all');
 
+  const stats = useMemo(
+    () => t('inventoryManagementPage.stats', { returnObjects: true }) as InventoryStat[],
+    [t]
+  );
+
   const filteredProducts = filter === 'all' 
-    ? MOCK_PRODUCTS 
-    : MOCK_PRODUCTS.filter(p => p.status === filter);
+    ? MOCK_INVENTORY_PRODUCTS 
+    : MOCK_INVENTORY_PRODUCTS.filter(p => p.status === filter);
 
   const getStatusBadge = (status: string) => {
     switch (status) {
@@ -102,16 +39,7 @@ const InventoryDemoPage = () => {
   };
 
   const getStatusText = (status: string) => {
-    switch (status) {
-      case 'ok':
-        return 'Estoque OK';
-      case 'low':
-        return 'Estoque Baixo';
-      case 'critical':
-        return 'Crítico';
-      default:
-        return 'Desconhecido';
-    }
+    return t(`inventoryManagementPage.table.statuses.${status}`);
   };
 
   return (
@@ -124,19 +52,19 @@ const InventoryDemoPage = () => {
           {/* Header */}
           <header className="space-y-4">
             <span className="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
-              📦 Controle de Estoque
+              {t('inventoryManagementPage.badge')}
             </span>
             <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
-              Gerenciamento de Inventário
+              {t('inventoryManagementPage.title')}
             </h1>
             <p className="max-w-3xl text-base text-slate-600 sm:text-lg">
-              Controle completo do seu estoque com alertas inteligentes, reposição automática e análise de consumo.
+              {t('inventoryManagementPage.subtitle')}
             </p>
           </header>
 
           {/* Stats */}
           <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {INVENTORY_STATS.map((stat) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-6 shadow-lg backdrop-blur"
@@ -154,7 +82,7 @@ const InventoryDemoPage = () => {
           <section className="rounded-3xl border border-white/60 bg-white/90 p-8 shadow-xl backdrop-blur">
             {/* Filtros */}
             <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-              <h2 className="text-lg font-semibold text-slate-900">Produtos em Estoque</h2>
+              <h2 className="text-lg font-semibold text-slate-900">{t('inventoryManagementPage.table.title')}</h2>
               <div className="flex gap-2">
                 <button
                   onClick={() => setFilter('all')}
@@ -164,7 +92,7 @@ const InventoryDemoPage = () => {
                       : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                   }`}
                 >
-                  Todos
+                  {t('inventoryManagementPage.table.filters.all')}
                 </button>
                 <button
                   onClick={() => setFilter('ok')}
@@ -174,7 +102,7 @@ const InventoryDemoPage = () => {
                       : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                   }`}
                 >
-                  OK
+                  {t('inventoryManagementPage.table.filters.ok')}
                 </button>
                 <button
                   onClick={() => setFilter('low')}
@@ -184,7 +112,7 @@ const InventoryDemoPage = () => {
                       : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                   }`}
                 >
-                  Baixo
+                  {t('inventoryManagementPage.table.filters.low')}
                 </button>
                 <button
                   onClick={() => setFilter('critical')}
@@ -194,7 +122,7 @@ const InventoryDemoPage = () => {
                       : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                   }`}
                 >
-                  Crítico
+                  {t('inventoryManagementPage.table.filters.critical')}
                 </button>
               </div>
             </div>
@@ -204,13 +132,13 @@ const InventoryDemoPage = () => {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-slate-200 text-left text-xs font-semibold uppercase tracking-wide text-slate-600">
-                    <th className="pb-3">Produto</th>
-                    <th className="pb-3">Categoria</th>
-                    <th className="pb-3">Estoque</th>
-                    <th className="pb-3">Preço</th>
-                    <th className="pb-3">Fornecedor</th>
-                    <th className="pb-3">Status</th>
-                    <th className="pb-3">Ações</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.product')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.category')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.stock')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.price')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.supplier')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.status')}</th>
+                    <th className="pb-3">{t('inventoryManagementPage.table.columns.actions')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
@@ -223,15 +151,15 @@ const InventoryDemoPage = () => {
                         <div>
                           <p className="font-medium text-slate-900">{product.name}</p>
                           <p className="text-xs text-slate-500">
-                            Última compra: {product.lastPurchase}
+                            {t('inventoryManagementPage.table.lastPurchase')}: {product.lastPurchase}
                           </p>
                         </div>
                       </td>
                       <td className="py-4 text-slate-700">{product.category}</td>
                       <td className="py-4">
                         <div>
-                          <p className="font-semibold text-slate-900">{product.stock} un</p>
-                          <p className="text-xs text-slate-500">Mín: {product.minStock}</p>
+                          <p className="font-semibold text-slate-900">{product.stock} {t('inventoryManagementPage.table.units')}</p>
+                          <p className="text-xs text-slate-500">{t('inventoryManagementPage.table.minStock')}: {product.minStock}</p>
                         </div>
                       </td>
                       <td className="py-4 font-medium text-slate-900">{product.price}</td>
@@ -247,7 +175,7 @@ const InventoryDemoPage = () => {
                       </td>
                       <td className="py-4">
                         <button className="text-emerald-600 hover:text-emerald-700 text-sm font-medium transition">
-                          Repor
+                          {t('inventoryManagementPage.table.actions.reorder')}
                         </button>
                       </td>
                     </tr>
@@ -258,7 +186,7 @@ const InventoryDemoPage = () => {
 
             {filteredProducts.length === 0 && (
               <div className="py-12 text-center text-slate-500">
-                Nenhum produto encontrado com este filtro.
+                {t('inventoryManagementPage.table.noResults')}
               </div>
             )}
           </section>
@@ -270,10 +198,10 @@ const InventoryDemoPage = () => {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-rose-100 text-rose-600">
                   🚨
                 </div>
-                <h3 className="font-semibold text-slate-900">Estoque Crítico</h3>
+                <h3 className="font-semibold text-slate-900">{t('inventoryManagementPage.alerts.critical.title')}</h3>
               </div>
-              <p className="text-2xl font-bold text-slate-900">3 itens</p>
-              <p className="mt-1 text-sm text-slate-600">Necessitam reposição urgente</p>
+              <p className="text-2xl font-bold text-slate-900">{t('inventoryManagementPage.alerts.critical.value')}</p>
+              <p className="mt-1 text-sm text-slate-600">{t('inventoryManagementPage.alerts.critical.description')}</p>
             </div>
 
             <div className="rounded-3xl border border-amber-200 bg-amber-50/50 p-6 shadow-lg backdrop-blur">
@@ -281,10 +209,10 @@ const InventoryDemoPage = () => {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                   ⚠️
                 </div>
-                <h3 className="font-semibold text-slate-900">Próximo ao Mínimo</h3>
+                <h3 className="font-semibold text-slate-900">{t('inventoryManagementPage.alerts.low.title')}</h3>
               </div>
-              <p className="text-2xl font-bold text-slate-900">5 itens</p>
-              <p className="mt-1 text-sm text-slate-600">Atenção necessária em breve</p>
+              <p className="text-2xl font-bold text-slate-900">{t('inventoryManagementPage.alerts.low.value')}</p>
+              <p className="mt-1 text-sm text-slate-600">{t('inventoryManagementPage.alerts.low.description')}</p>
             </div>
 
             <div className="rounded-3xl border border-emerald-200 bg-emerald-50/50 p-6 shadow-lg backdrop-blur">
@@ -292,10 +220,10 @@ const InventoryDemoPage = () => {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
                   ✅
                 </div>
-                <h3 className="font-semibold text-slate-900">Estoque Saudável</h3>
+                <h3 className="font-semibold text-slate-900">{t('inventoryManagementPage.alerts.healthy.title')}</h3>
               </div>
-              <p className="text-2xl font-bold text-slate-900">148 itens</p>
-              <p className="mt-1 text-sm text-slate-600">Níveis adequados</p>
+              <p className="text-2xl font-bold text-slate-900">{t('inventoryManagementPage.alerts.healthy.value')}</p>
+              <p className="mt-1 text-sm text-slate-600">{t('inventoryManagementPage.alerts.healthy.description')}</p>
             </div>
           </section>
         </div>

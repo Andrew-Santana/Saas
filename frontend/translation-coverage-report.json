@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "totalKeys": 35,
+    "languages": [
+      "pt-BR",
+      "en-US",
+      "es-ES",
+      "fr-FR"
+    ],
+    "averageCoverage": 100
+  },
+  "details": {
+    "pt-BR": {
+      "coverage": 100,
+      "missingCount": 0,
+      "presentCount": 35,
+      "missingKeys": []
+    },
+    "en-US": {
+      "coverage": 100,
+      "missingCount": 0,
+      "presentCount": 35,
+      "missingKeys": []
+    },
+    "es-ES": {
+      "coverage": 100,
+      "missingCount": 0,
+      "presentCount": 35,
+      "missingKeys": []
+    },
+    "fr-FR": {
+      "coverage": 100,
+      "missingCount": 0,
+      "presentCount": 35,
+      "missingKeys": []
+    }
+  }
+}

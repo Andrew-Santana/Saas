@@ -12,17 +12,18 @@ import {
   Boxes,
   Mail,
   ShoppingBag,
-  Star
+  Star,
+  Timer
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import { trackEvent } from '../hooks/useAnalytics';
 import { ROUTES, ANALYTICS_EVENTS } from '../constants';
 import type { DemoPage } from '../types';
+import { useLocalizedPath } from '../hooks/useLocalizedPath';
 
 export default function Hero() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const { navigateLocalized } = useLocalizedPath();
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   const demos: DemoPage[] = [
@@ -87,6 +88,18 @@ export default function Hero() {
       keywords: 'controle estoque salão, inventário spa, gestão produtos estética, agenda pro estoque'
     },
     {
+      id: 'timeBank',
+      title: t('agendaPro.demoModal.demos.timeBank.title'),
+      description: t('agendaPro.demoModal.demos.timeBank.description'),
+      icon: Timer,
+      color: 'from-lime-500 to-emerald-600',
+      bgColor: 'bg-lime-50',
+      borderColor: 'border-lime-200',
+      features: t('agendaPro.demoModal.demos.timeBank.features', { returnObjects: true }) || [],
+      url: ROUTES.DEMO_TIME_BANK,
+      keywords: 'banco de horas, controle de ponto, gestão jornada, horas extras, compliance trabalhista'
+    },
+    {
       id: 'newsletter',
       title: t('agendaPro.demoModal.demos.newsletter.title'),
       description: t('agendaPro.demoModal.demos.newsletter.description'),
@@ -139,7 +152,7 @@ export default function Hero() {
       demo_type: demo.title
     });
     setIsDemoModalOpen(false);
-    navigate(demo.url);
+    navigateLocalized(demo.url);
   };
 
   const handleCloseModal = () => {

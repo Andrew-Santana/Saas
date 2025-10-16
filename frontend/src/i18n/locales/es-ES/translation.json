@@ -72,6 +72,16 @@
           ],
           "button": "Ver Demostración"
         },
+        "timeBank": {
+          "title": "Banco de Horas",
+          "description": "Controla la jornada en tiempo real y cumple con la normativa laboral",
+          "features": [
+            "Contador en vivo",
+            "Flujos de aprobación de horas extra",
+            "Exportación lista para nómina"
+          ],
+          "button": "Ver Demostración"
+        },
         "newsletter": {
           "title": "Marketplace de Newsletters",
           "description": "Impulsa los ingresos con campañas promocionales curadas",
@@ -297,6 +307,193 @@
         "placeholder": "Tu email"
       },
       "copyright": "© 2025 AgendaPro. Todos los derechos reservados."
+    }
+  },
+  "timeBankPage": {
+    "header": {
+      "title": "Banco de Horas Inteligente",
+      "subtitle": "Seguimiento del equipo y cumplimiento en tiempo real",
+      "rating": "4,9 (312 reseñas)",
+      "runningBadge": "Contador en vivo activo",
+      "balanceLabel": "Saldo del equipo",
+      "balanceValue": "+12h30"
+    },
+    "about": {
+      "title": "Controla a tu equipo con precisión",
+      "description": "El módulo de banco de horas integra marcajes en tiempo real, aprobaciones inteligentes y alertas legales para garantizar el cumplimiento normativo.",
+      "details": [
+        {
+          "label": "Colaboradores monitoreados",
+          "value": "18"
+        },
+        {
+          "label": "Horas registradas este mes",
+          "value": "1.245h"
+        },
+        {
+          "label": "Horas extra por aprobar",
+          "value": "6h45"
+        },
+        {
+          "label": "Límite legal disponible",
+          "value": "27h"
+        }
+      ]
+    },
+    "liveTracker": {
+      "title": "Temporizador en tiempo real",
+      "currentTaskLabel": "Actividad actual",
+      "currentTaskPlaceholder": "Ej.: Revisión de contratos u onboarding de clientes",
+      "elapsedLabel": "Tiempo acumulado en la sesión",
+      "startLabel": "Iniciar conteo",
+      "pauseLabel": "Pausar",
+      "resumeLabel": "Reanudar",
+      "resetLabel": "Reiniciar contador",
+      "note": "Da visibilidad total al RR. HH. mientras distribuyes horas automáticamente entre proyectos.",
+      "runningSinceLabel": "En ejecución desde",
+      "manualEntry": {
+        "title": "Registro manual",
+        "description": "Añadir horas de días anteriores",
+        "action": "Agregar hora"
+      }
+    },
+    "calendar": {
+      "title": "Calendario de jornada",
+      "monthLabel": "Septiembre 2024",
+      "legend": {
+        "working": "Día trabajado",
+        "overtime": "Hora extra",
+        "absence": "Ausencia programada"
+      },
+      "summary": {
+        "totalTracked": "Total registrado: 132h",
+        "overtime": "Horas extra acumuladas",
+        "daysWorked": "17 días trabajados"
+      },
+      "weekDays": ["L", "M", "X", "J", "V", "S", "D"],
+      "days": [
+        { "date": "01", "hours": "8h15", "status": "working" },
+        { "date": "02", "hours": "8h45", "status": "overtime" },
+        { "date": "03", "hours": "-", "status": "absence" },
+        { "date": "04", "hours": "7h58", "status": "working" },
+        { "date": "05", "hours": "8h10", "status": "working" },
+        { "date": "06", "hours": "4h20", "status": "working" },
+        { "date": "07", "hours": "-", "status": "absence" },
+        { "date": "08", "hours": "8h05", "status": "working" },
+        { "date": "09", "hours": "9h20", "status": "overtime" },
+        { "date": "10", "hours": "8h00", "status": "working" },
+        { "date": "11", "hours": "8h12", "status": "working" },
+        { "date": "12", "hours": "-", "status": "absence" },
+        { "date": "13", "hours": "5h45", "status": "working" },
+        { "date": "14", "hours": "-", "status": "absence" },
+        { "date": "15", "hours": "8h30", "status": "working" },
+        { "date": "16", "hours": "8h40", "status": "overtime" },
+        { "date": "17", "hours": "7h55", "status": "working" },
+        { "date": "18", "hours": "8h05", "status": "working" },
+        { "date": "19", "hours": "-", "status": "absence" },
+        { "date": "20", "hours": "6h10", "status": "working" },
+        { "date": "21", "hours": "-", "status": "absence" },
+        { "date": "22", "hours": "8h00", "status": "working" },
+        { "date": "23", "hours": "8h50", "status": "overtime" },
+        { "date": "24", "hours": "8h10", "status": "working" },
+        { "date": "25", "hours": "8h02", "status": "working" },
+        { "date": "26", "hours": "-", "status": "absence" },
+        { "date": "27", "hours": "5h30", "status": "working" },
+        { "date": "28", "hours": "-", "status": "absence" }
+      ]
+    },
+    "history": {
+      "title": "Historial consolidado",
+      "filterLabel": "Últimos fichajes sincronizados automáticamente",
+      "exportLabel": "Exportar informe",
+      "entries": [
+        {
+          "date": "23/09",
+          "weekDay": "Lunes",
+          "duration": "08h50",
+          "activity": "Planificación de campañas Q4",
+          "project": "Marketing",
+          "notes": "Reunión estratégica con dirección y ajuste del roadmap."
+        },
+        {
+          "date": "22/09",
+          "weekDay": "Domingo",
+          "duration": "04h10",
+          "activity": "Turno de soporte",
+          "project": "Atención al Cliente",
+          "notes": "Servicio extraordinario aprobado automáticamente por el gestor."
+        },
+        {
+          "date": "21/09",
+          "weekDay": "Sábado",
+          "duration": "03h20",
+          "activity": "Actualización de tableros BI",
+          "project": "Datos & Analytics",
+          "notes": "Carga adicional para cerrar el OKR mensual."
+        },
+        {
+          "date": "20/09",
+          "weekDay": "Viernes",
+          "duration": "07h55",
+          "activity": "Onboarding de nuevos colaboradores",
+          "project": "People Ops",
+          "notes": "Sesiones individuales y ajustes en plantillas internas."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Indicadores clave",
+      "items": [
+        {
+          "label": "Horas aprobadas",
+          "value": "98h",
+          "helper": "Se enviarán a nómina en 3 días"
+        },
+        {
+          "label": "Alertas de cumplimiento",
+          "value": "2 pendientes",
+          "helper": "Límite diario de 2h extra excedido por 2 colaboradores"
+        },
+        {
+          "label": "Promedio diario",
+          "value": "7h36",
+          "helper": "Alineado con la meta de RR. HH. (7h30)"
+        }
+      ]
+    },
+    "insights": {
+      "title": "Insights automáticos",
+      "items": [
+        {
+          "title": "Equipo comercial con saldo positivo",
+          "description": "Los consultores suman +6h este mes. Sugerencia: compensar con entrenamientos internos."
+        },
+        {
+          "title": "Turnos concentrados en fin de semana",
+          "description": "Rebalancea las guardias para distribuir mejor las horas extra entre los equipos."
+        },
+        {
+          "title": "Fichajes incompletos detectados",
+          "description": "3 colaboradores no registraron la salida. Envía un recordatorio automático."
+        }
+      ]
+    },
+    "quickActions": {
+      "title": "Acciones rápidas",
+      "actions": [
+        {
+          "label": "Aprobar horas extra de la semana",
+          "description": "Envía al área financiera con un clic"
+        },
+        {
+          "label": "Notificar saldo negativo",
+          "description": "Comparte automáticamente el plan de compensación"
+        },
+        {
+          "label": "Generar informe de compliance",
+          "description": "PDF con historial por colaborador y justificaciones"
+        }
+      ]
     }
   },
   "dashboardPage": {
@@ -1062,6 +1259,115 @@
         "Promueve ejercicio regular",
         "Programa chequeos anuales"
       ]
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "Error de Conexión",
+      "message": "No se pudo conectar al servidor. Verifica tu conexión e intenta de nuevo.",
+      "retry": "Reintentar"
+    },
+    "notFound": {
+      "title": "Página No Encontrada",
+      "message": "La página que buscas no existe.",
+      "backHome": "Volver al Inicio"
+    },
+    "unauthorized": {
+      "title": "Acceso Denegado",
+      "message": "No tienes permiso para acceder a este recurso.",
+      "login": "Iniciar Sesión"
+    },
+    "serverError": {
+      "title": "Error del Servidor",
+      "message": "Ocurrió un error inesperado. Intenta de nuevo más tarde.",
+      "contactSupport": "Contactar Soporte"
+    },
+    "validation": {
+      "required": "Este campo es obligatorio",
+      "email": "Ingresa un email válido",
+      "minLength": "Mínimo {{min}} caracteres",
+      "maxLength": "Máximo {{max}} caracteres",
+      "password": "La contraseña debe tener al menos 8 caracteres",
+      "passwordMatch": "Las contraseñas no coinciden",
+      "phone": "Ingresa un teléfono válido",
+      "cpf": "Ingresa un CPF válido",
+      "cnpj": "Ingresa un CNPJ válido",
+      "date": "Ingresa una fecha válida",
+      "url": "Ingresa una URL válida",
+      "number": "Ingresa solo números",
+      "positive": "El valor debe ser positivo",
+      "min": "El valor mínimo es {{min}}",
+      "max": "El valor máximo es {{max}}"
+    }
+  },
+  "notifications": {
+    "success": {
+      "saved": "¡Guardado con éxito!",
+      "updated": "¡Actualizado con éxito!",
+      "deleted": "¡Eliminado con éxito!",
+      "created": "¡Creado con éxito!",
+      "sent": "¡Enviado con éxito!"
+    },
+    "error": {
+      "generic": "Algo salió mal. Intenta de nuevo.",
+      "timeout": "La operación tardó mucho. Intenta de nuevo.",
+      "offline": "Estás desconectado. Verifica tu conexión."
+    },
+    "warning": {
+      "unsavedChanges": "Tienes cambios sin guardar. ¿Deseas continuar?",
+      "deleteConfirm": "¿Estás seguro de eliminar?",
+      "irreversible": "Esta acción no se puede deshacer."
+    },
+    "info": {
+      "loading": "Cargando...",
+      "processing": "Procesando...",
+      "saving": "Guardando...",
+      "uploading": "Subiendo..."
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "edit": "Editar",
+      "create": "Crear",
+      "update": "Actualizar",
+      "close": "Cerrar",
+      "confirm": "Confirmar",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "export": "Exportar",
+      "import": "Importar",
+      "download": "Descargar",
+      "upload": "Subir",
+      "view": "Ver",
+      "back": "Volver",
+      "next": "Siguiente",
+      "previous": "Anterior",
+      "finish": "Finalizar"
+    },
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "pending": "Pendiente",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "draft": "Borrador",
+      "published": "Publicado",
+      "archived": "Archivado"
+    },
+    "time": {
+      "now": "Ahora",
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "tomorrow": "Mañana",
+      "thisWeek": "Esta Semana",
+      "lastWeek": "Semana Pasada",
+      "thisMonth": "Este Mes",
+      "lastMonth": "Mes Pasado",
+      "thisYear": "Este Año",
+      "lastYear": "Año Pasado"
     }
   }
 }

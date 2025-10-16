@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Trans } from 'react-i18next';
 import { usePing } from '../hooks/usePing';
 import { useI18n } from '../hooks/useI18n';
 import SEO from '../components/SEO';
 import { DEMO_PAGES_CONFIG } from '../constants';
+import { MOCK_RECENT_SALES, MOCK_TOP_PLANS, MOCK_CHART_DATA } from '../data/mockData';
 
 type DashboardMetric = {
   label: string;
@@ -11,42 +11,15 @@ type DashboardMetric = {
   change: string;
 };
 
-// Dados mockados realistas
-const MOCK_METRICS: DashboardMetric[] = [
-  { label: 'Receita Mensal', value: 'R$ 45.280', change: '+18.2%' },
-  { label: 'Novos Clientes', value: '1.245', change: '+24.5%' },
-  { label: 'Taxa de Conversão', value: '3.84%', change: '+0.8%' },
-  { label: 'Ticket Médio', value: 'R$ 156', change: '+5.2%' },
-  { label: 'Assinaturas Ativas', value: '892', change: '+12.1%' },
-  { label: 'Churn Rate', value: '2.1%', change: '-0.4%' },
-];
-
-const MOCK_RECENT_SALES = [
-  { id: 1, client: 'Maria Silva', plan: 'Premium', value: 'R$ 299', date: '2 min atrás', status: 'Concluído' },
-  { id: 2, client: 'João Santos', plan: 'Básico', value: 'R$ 99', date: '15 min atrás', status: 'Concluído' },
-  { id: 3, client: 'Ana Costa', plan: 'Pro', value: 'R$ 199', date: '32 min atrás', status: 'Processando' },
-  { id: 4, client: 'Pedro Lima', plan: 'Premium', value: 'R$ 299', date: '1h atrás', status: 'Concluído' },
-  { id: 5, client: 'Carla Dias', plan: 'Básico', value: 'R$ 99', date: '2h atrás', status: 'Concluído' },
-];
-
-const MOCK_TOP_PLANS = [
-  { name: 'Premium', subscriptions: 425, revenue: 'R$ 127.075', growth: '+23%' },
-  { name: 'Pro', subscriptions: 312, revenue: 'R$ 62.088', growth: '+18%' },
-  { name: 'Básico', subscriptions: 155, revenue: 'R$ 15.345', growth: '+12%' },
-];
-
-const MOCK_CHART_DATA = [
-  { month: 'Jan', value: 32 },
-  { month: 'Fev', value: 38 },
-  { month: 'Mar', value: 35 },
-  { month: 'Abr', value: 42 },
-  { month: 'Mai', value: 48 },
-  { month: 'Jun', value: 45 },
-];
-
 export const DashboardPage = () => {
   const { t, i18n } = useI18n();
-  const metrics = useMemo(() => MOCK_METRICS, []);
+  
+  // Buscar métricas das traduções
+  const metrics = useMemo(
+    () => t('dashboardPage.metrics', { returnObjects: true }) as DashboardMetric[],
+    [t]
+  );
+  
   const [selectedMetric, setSelectedMetric] = useState<DashboardMetric>(metrics[0]);
 
   useEffect(() => {
@@ -81,11 +54,11 @@ export const DashboardPage = () => {
         <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
           <header className="space-y-3">
             <span className="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
-              📊 Dashboard Analytics
+              {t('dashboardPage.badge')}
             </span>
-            <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">Dashboard Inteligente</h1>
+            <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{t('dashboardPage.title')}</h1>
             <p className="max-w-3xl text-base text-slate-600 sm:text-lg">
-              Acompanhe métricas em tempo real, analise tendências e tome decisões baseadas em dados concretos.
+              {t('dashboardPage.subtitle')}
             </p>
           </header>
 
@@ -135,8 +108,8 @@ export const DashboardPage = () => {
             <div className="rounded-3xl border border-white/60 bg-white/90 p-8 shadow-xl backdrop-blur">
               <div className="mb-6 flex items-center justify-between">
                 <div>
-                  <h2 className="text-lg font-semibold text-slate-900">Crescimento Mensal</h2>
-                  <p className="mt-1 text-sm text-slate-600">Receita dos últimos 6 meses</p>
+                  <h2 className="text-lg font-semibold text-slate-900">{t('dashboardPage.chart.title')}</h2>
+                  <p className="mt-1 text-sm text-slate-600">{t('dashboardPage.chart.subtitle')}</p>
                 </div>
                 <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
                   +18.2%
@@ -174,14 +147,14 @@ export const DashboardPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h2 className="text-lg font-semibold text-slate-900">Status da API</h2>
+                <h2 className="text-lg font-semibold text-slate-900">{t('dashboardPage.status.title')}</h2>
               </div>
 
               <div className="space-y-3 text-sm">
                 {isLoading && (
                   <div className="flex items-center gap-2 text-slate-500">
                     <div className="h-4 w-4 animate-spin rounded-full border-2 border-emerald-500/60 border-t-transparent" />
-                    <span>Verificando conexão...</span>
+                    <span>{t('dashboardPage.status.loading')}</span>
                   </div>
                 )}
                 {isError && (
@@ -189,7 +162,7 @@ export const DashboardPage = () => {
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>Erro na conexão</span>
+                    <span>{t('dashboardPage.status.error')}</span>
                   </div>
                 )}
                 {data && (
@@ -197,22 +170,22 @@ export const DashboardPage = () => {
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>API Online - {formattedTimestamp(data.timestamp)}</span>
+                    <span>{t('dashboardPage.status.success')} - {formattedTimestamp(data.timestamp)}</span>
                   </div>
                 )}
               </div>
 
               <div className="mt-6 space-y-3">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-slate-600">Uptime</span>
+                  <span className="text-slate-600">{t('dashboardPage.status.uptime')}</span>
                   <span className="font-semibold text-slate-900">99.9%</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-slate-600">Latência Média</span>
+                  <span className="text-slate-600">{t('dashboardPage.status.latency')}</span>
                   <span className="font-semibold text-slate-900">45ms</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-slate-600">Requests/min</span>
+                  <span className="text-slate-600">{t('dashboardPage.status.requests')}</span>
                   <span className="font-semibold text-slate-900">1.2k</span>
                 </div>
               </div>
@@ -223,7 +196,7 @@ export const DashboardPage = () => {
           <section className="grid gap-6 lg:grid-cols-2">
             {/* Vendas Recentes */}
             <div className="rounded-3xl border border-white/60 bg-white/90 p-8 shadow-xl backdrop-blur">
-              <h2 className="mb-6 text-lg font-semibold text-slate-900">Vendas Recentes</h2>
+              <h2 className="mb-6 text-lg font-semibold text-slate-900">{t('dashboardPage.recentSales.title')}</h2>
               <div className="space-y-4">
                 {MOCK_RECENT_SALES.map((sale) => (
                   <div
@@ -258,7 +231,7 @@ export const DashboardPage = () => {
 
             {/* Top Planos */}
             <div className="rounded-3xl border border-white/60 bg-white/90 p-8 shadow-xl backdrop-blur">
-              <h2 className="mb-6 text-lg font-semibold text-slate-900">Planos Mais Vendidos</h2>
+              <h2 className="mb-6 text-lg font-semibold text-slate-900">{t('dashboardPage.topPlans.title')}</h2>
               <div className="space-y-5">
                 {MOCK_TOP_PLANS.map((plan, index) => (
                   <div key={plan.name} className="space-y-2">
@@ -269,7 +242,7 @@ export const DashboardPage = () => {
                         </span>
                         <div>
                           <p className="font-semibold text-slate-900">{plan.name}</p>
-                          <p className="text-xs text-slate-500">{plan.subscriptions} assinaturas</p>
+                          <p className="text-xs text-slate-500">{plan.subscriptions} {t('dashboardPage.topPlans.subscriptions')}</p>
                         </div>
                       </div>
                       <div className="text-right">

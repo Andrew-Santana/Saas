@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { SEO_DEFAULTS } from '../constants';
 import type { SEOProps } from '../types';
+import { useLocalizedPath } from '../hooks/useLocalizedPath';
 
 export default function SEO({
   title,
@@ -18,11 +19,22 @@ export default function SEO({
   structuredData,
   url,
 }: SEOProps) {
+  const { getAlternateUrls, currentLanguage } = useLocalizedPath();
+  
   const defaultTitle = SEO_DEFAULTS.title;
   const defaultDescription = SEO_DEFAULTS.description;
   const defaultKeywords = SEO_DEFAULTS.keywords;
   const defaultOgImage = SEO_DEFAULTS.ogImage;
   const defaultUrl = SEO_DEFAULTS.url;
+  
+  const alternateUrls = getAlternateUrls();
+  const localeMap: Record<string, string> = {
+    'pt-BR': 'pt_BR',
+    'en-US': 'en_US',
+    'es-ES': 'es_ES',
+    'fr-FR': 'fr_FR',
+  };
+  const ogLocale = localeMap[currentLanguage] || 'pt_BR';
 
   return (
     <Helmet>
@@ -38,7 +50,35 @@ export default function SEO({
       <meta property="og:description" content={ogDescription || description || defaultDescription} />
       <meta property="og:image" content={ogImage || defaultOgImage} />
       <meta property="og:site_name" content="AgendaPro" />
-      <meta property="og:locale" content="pt_BR" />
+      <meta property="og:locale" content={ogLocale} />
+      
+      {/* Alternate Locales */}
+      {alternateUrls
+        .filter((alt) => alt.lang !== currentLanguage)
+        .map((alt) => (
+          <meta
+            key={alt.lang}
+            property="og:locale:alternate"
+            content={localeMap[alt.lang]}
+          />
+        ))}
+
+      {/* hreflang for SEO */}
+      {alternateUrls.map((alt) => (
+        <link
+          key={alt.hreflang}
+          rel="alternate"
+          hrefLang={alt.hreflang}
+          href={alt.url}
+        />
+      ))}
+      
+      {/* x-default for international targeting */}
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href={alternateUrls.find((alt) => alt.lang === 'pt-BR')?.url || defaultUrl}
+      />
 
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard || "summary_large_image"} />

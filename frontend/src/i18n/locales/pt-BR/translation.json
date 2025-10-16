@@ -72,6 +72,16 @@
           ],
           "button": "Ver Demonstração"
         },
+        "timeBank": {
+          "title": "Banco de Horas",
+          "description": "Controle jornada em tempo real e mantenha compliance trabalhista com relatórios automáticos",
+          "features": [
+            "Contador em tempo real",
+            "Aprovação de horas extras",
+            "Exportação para folha"
+          ],
+          "button": "Ver Demonstração"
+        },
         "newsletter": {
           "title": "Marketplace de Newsletter",
           "description": "Aumente a receita com campanhas promocionais curadas",
@@ -299,246 +309,465 @@
       "copyright": "© 2025 AgendaPro. Todos os direitos reservados."
     }
   },
+  "timeBankPage": {
+    "header": {
+      "title": "Banco de Horas Inteligente",
+      "subtitle": "Gestão de jornada e conformidade em tempo real",
+      "rating": "4,9 (312 avaliações)",
+      "runningBadge": "Contador em tempo real ativo",
+      "balanceLabel": "Saldo do time",
+      "balanceValue": "+12h30"
+    },
+    "about": {
+      "title": "Acompanhe seu time com precisão",
+      "description": "O módulo de banco de horas integra apontamentos em tempo real, aprovações inteligentes e alertas legais para garantir que sua operação esteja sempre em conformidade.",
+      "details": [
+        {
+          "label": "Colaboradores monitorados",
+          "value": "18"
+        },
+        {
+          "label": "Horas registradas neste mês",
+          "value": "1.245h"
+        },
+        {
+          "label": "Horas extras a aprovar",
+          "value": "6h45"
+        },
+        {
+          "label": "Limite legal restante",
+          "value": "27h"
+        }
+      ]
+    },
+    "liveTracker": {
+      "title": "Rastreador em tempo real",
+      "currentTaskLabel": "Atividade atual",
+      "currentTaskPlaceholder": "Ex: Revisão de contratos ou onboarding de clientes",
+      "elapsedLabel": "Tempo acumulado na sessão",
+      "startLabel": "Iniciar contagem",
+      "pauseLabel": "Pausar",
+      "resumeLabel": "Retomar",
+      "resetLabel": "Zerar contador",
+      "note": "Mantenha visibilidade do que está sendo feito e distribua horas automaticamente entre projetos.",
+      "runningSinceLabel": "Rodando desde",
+      "manualEntry": {
+        "title": "Lançamento manual",
+        "description": "Registrar horas de dias anteriores",
+        "action": "Adicionar hora"
+      }
+    },
+    "calendar": {
+      "title": "Calendário de jornada",
+      "monthLabel": "Setembro 2024",
+      "legend": {
+        "working": "Dia trabalhado",
+        "overtime": "Hora extra",
+        "absence": "Ausência programada"
+      },
+      "summary": {
+        "totalTracked": "Total registrado: 132h",
+        "overtime": "Horas extras acumuladas",
+        "daysWorked": "17 dias trabalhados"
+      },
+      "weekDays": ["S", "T", "Q", "Q", "S", "S", "D"],
+      "days": [
+        { "date": "01", "hours": "8h15", "status": "working" },
+        { "date": "02", "hours": "8h45", "status": "overtime" },
+        { "date": "03", "hours": "-", "status": "absence" },
+        { "date": "04", "hours": "7h58", "status": "working" },
+        { "date": "05", "hours": "8h10", "status": "working" },
+        { "date": "06", "hours": "4h20", "status": "working" },
+        { "date": "07", "hours": "-", "status": "absence" },
+        { "date": "08", "hours": "8h05", "status": "working" },
+        { "date": "09", "hours": "9h20", "status": "overtime" },
+        { "date": "10", "hours": "8h00", "status": "working" },
+        { "date": "11", "hours": "8h12", "status": "working" },
+        { "date": "12", "hours": "-", "status": "absence" },
+        { "date": "13", "hours": "5h45", "status": "working" },
+        { "date": "14", "hours": "-", "status": "absence" },
+        { "date": "15", "hours": "8h30", "status": "working" },
+        { "date": "16", "hours": "8h40", "status": "overtime" },
+        { "date": "17", "hours": "7h55", "status": "working" },
+        { "date": "18", "hours": "8h05", "status": "working" },
+        { "date": "19", "hours": "-", "status": "absence" },
+        { "date": "20", "hours": "6h10", "status": "working" },
+        { "date": "21", "hours": "-", "status": "absence" },
+        { "date": "22", "hours": "8h00", "status": "working" },
+        { "date": "23", "hours": "8h50", "status": "overtime" },
+        { "date": "24", "hours": "8h10", "status": "working" },
+        { "date": "25", "hours": "8h02", "status": "working" },
+        { "date": "26", "hours": "-", "status": "absence" },
+        { "date": "27", "hours": "5h30", "status": "working" },
+        { "date": "28", "hours": "-", "status": "absence" }
+      ]
+    },
+    "history": {
+      "title": "Histórico consolidado",
+      "filterLabel": "Últimas marcações sincronizadas automaticamente",
+      "exportLabel": "Exportar relatório",
+      "entries": [
+        {
+          "date": "23/09",
+          "weekDay": "Segunda-feira",
+          "duration": "08h50",
+          "activity": "Planejamento de campanhas Q4",
+          "project": "Marketing",
+          "notes": "Reunião estratégica com diretoria e atualização de cronograma."
+        },
+        {
+          "date": "22/09",
+          "weekDay": "Domingo",
+          "duration": "04h10",
+          "activity": "Plantão de suporte",
+          "project": "Customer Care",
+          "notes": "Atendimento extraordinário aprovado automaticamente pelo gestor."
+        },
+        {
+          "date": "21/09",
+          "weekDay": "Sábado",
+          "duration": "03h20",
+          "activity": "Atualização de indicadores BI",
+          "project": "Dados & Analytics",
+          "notes": "Carga extra para fechamento de OKR mensal."
+        },
+        {
+          "date": "20/09",
+          "weekDay": "Sexta-feira",
+          "duration": "07h55",
+          "activity": "Onboarding de novos colaboradores",
+          "project": "People Ops",
+          "notes": "Sessões individuais com novos membros e ajustes em templates."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Indicadores principais",
+      "items": [
+        {
+          "label": "Horas aprovadas",
+          "value": "98h",
+          "helper": "Serão enviadas para a folha em 3 dias"
+        },
+        {
+          "label": "Alertas de conformidade",
+          "value": "2 pendências",
+          "helper": "Limite diário de 2h extras excedido por 2 colaboradores"
+        },
+        {
+          "label": "Média diária",
+          "value": "7h36",
+          "helper": "Dentro da meta definida pelo RH (7h30)"
+        }
+      ]
+    },
+    "insights": {
+      "title": "Insights automáticos",
+      "items": [
+        {
+          "title": "Equipe comercial com saldo positivo",
+          "description": "Os consultores acumularam +6h no mês. Sugestão: compensar em treinamentos internos."
+        },
+        {
+          "title": "Plantões concentrados no fim de semana",
+          "description": "Rebalanceie escalas para distribuir melhor as horas extras entre as equipes."
+        },
+        {
+          "title": "Pontos faltantes identificados",
+          "description": "3 colaboradores não finalizaram a batida de saída. Envie lembrete automático."
+        }
+      ]
+    },
+    "quickActions": {
+      "title": "Ações rápidas",
+      "actions": [
+        {
+          "label": "Aprovar horas extras da semana",
+          "description": "Envie para o financeiro com um clique"
+        },
+        {
+          "label": "Notificar colaboradores com saldo negativo",
+          "description": "Compartilhe plano de compensação automaticamente"
+        },
+        {
+          "label": "Gerar relatório para compliance",
+          "description": "PDF com histórico por colaborador e justificativas"
+        }
+      ]
+    }
+  },
   "dashboardPage": {
-    "title": "Painel Executivo",
-    "subtitle": "Visualize em tempo real agendamentos, receita e satisfação dos clientes.",
+    "title": "Dashboard Inteligente",
+    "subtitle": "Acompanhe métricas em tempo real, analise tendências e tome decisões baseadas em dados concretos.",
+    "badge": "📊 Dashboard Analytics",
     "metrics": [
       {
-        "label": "Clientes ativos",
-        "value": "24",
-        "change": "+12%"
+        "label": "Receita Mensal",
+        "value": "R$ 45.280",
+        "change": "+18.2%"
       },
       {
-        "label": "Receita recorrente mensal",
-        "value": "$4.200",
-        "change": "+8%"
+        "label": "Novos Clientes",
+        "value": "1.245",
+        "change": "+24.5%"
       },
       {
-        "label": "Chamados em aberto",
-        "value": "5",
-        "change": "-2"
+        "label": "Taxa de Conversão",
+        "value": "3.84%",
+        "change": "+0.8%"
+      },
+      {
+        "label": "Ticket Médio",
+        "value": "R$ 156",
+        "change": "+5.2%"
+      },
+      {
+        "label": "Assinaturas Ativas",
+        "value": "892",
+        "change": "+12.1%"
+      },
+      {
+        "label": "Churn Rate",
+        "value": "2.1%",
+        "change": "-0.4%"
       }
     ],
-    "status": {
-      "title": "Status da API Laravel",
-      "loading": "Verificando conexão...",
-      "error": "Não foi possível acessar o backend.",
-      "success": "{{message}} — {{time}}"
+    "chart": {
+      "title": "Crescimento Mensal",
+      "subtitle": "Receita dos últimos 6 meses"
     },
-    "integration": {
-      "description": "<strong>Integração sugerida:</strong> exponha um endpoint REST no Laravel (ex.: <code>{{endpoint}}</code>) e utilize <code>{{library}}</code> para buscar dados reais. Substitua este card por gráficos, tabelas ou widgets específicos do produto."
+    "status": {
+      "title": "Status da API",
+      "loading": "Verificando conexão...",
+      "error": "Erro na conexão",
+      "success": "API Online",
+      "uptime": "Uptime",
+      "latency": "Latência Média",
+      "requests": "Requests/min"
+    },
+    "recentSales": {
+      "title": "Vendas Recentes"
+    },
+    "topPlans": {
+      "title": "Planos Mais Vendidos",
+      "subscriptions": "assinaturas"
     }
   },
   "inventoryManagementPage": {
-    "hero": {
-      "badge": "Operações",
-      "title": "Gestão de Estoque",
-      "subtitle": "Garanta cada unidade abastecida sem excesso de compras.",
-      "description": "Centralize pontos de reposição, status de fornecedores e prazos de entrega em um workspace conectado."
-    },
+    "title": "Gerenciamento de Inventário",
+    "subtitle": "Controle completo do seu estoque com alertas inteligentes, reposição automática e análise de consumo.",
+    "badge": "📦 Controle de Estoque",
     "stats": [
       {
-        "label": "SKUs monitorados",
-        "value": "1.842"
+        "label": "Total de Produtos",
+        "value": "156",
+        "change": "+12 este mês"
       },
       {
-        "label": "Alertas de baixo estoque",
-        "value": "12"
+        "label": "Valor do Estoque",
+        "value": "R$ 28.450",
+        "change": "+8.2%"
       },
       {
-        "label": "Pedidos de compra pendentes",
-        "value": "4"
+        "label": "Itens em Falta",
+        "value": "8",
+        "change": "-3 resolvidos"
+      },
+      {
+        "label": "Pedidos Pendentes",
+        "value": "5",
+        "change": "2 em trânsito"
       }
     ],
-    "highlights": {
-      "title": "Por que o time de operações ama esta visão",
-      "items": [
-        {
-          "title": "Limites em tempo real",
-          "description": "Centralize alertas para itens que ficam abaixo do estoque mínimo."
-        },
-        {
-          "title": "Scorecards de fornecedores",
-          "description": "Meça prazos e confiabilidade de cada fornecedor."
-        },
-        {
-          "title": "Calendário de recebimento",
-          "description": "Coordene remessas com serviços ou entregas agendadas."
-        }
-      ]
+    "table": {
+      "title": "Produtos em Estoque",
+      "filters": {
+        "all": "Todos",
+        "ok": "OK",
+        "low": "Baixo",
+        "critical": "Crítico"
+      },
+      "columns": {
+        "product": "Produto",
+        "category": "Categoria",
+        "stock": "Estoque",
+        "price": "Preço",
+        "supplier": "Fornecedor",
+        "status": "Status",
+        "actions": "Ações"
+      },
+      "statuses": {
+        "ok": "Estoque OK",
+        "low": "Estoque Baixo",
+        "critical": "Crítico"
+      },
+      "actions": {
+        "reorder": "Repor"
+      },
+      "lastPurchase": "Última compra",
+      "minStock": "Mín",
+      "units": "un",
+      "noResults": "Nenhum produto encontrado com este filtro."
     },
-    "workflow": {
-      "title": "Fluxo sugerido",
-      "steps": [
-        "Conecte seu catálogo de produtos via API Laravel.",
-        "Sincronize pedidos de compra do ERP ou das planilhas.",
-        "Automatize alertas e aprovações com o motor de workflow da AgendaPro."
-      ]
-    },
-    "cta": {
-      "title": "Pronto para automatizar a reposição?",
-      "description": "Use este template como base para o seu painel de operações.",
-      "primary": "Abrir demo de estoque",
-      "secondary": "Baixar briefing de handoff"
+    "alerts": {
+      "critical": {
+        "title": "Estoque Crítico",
+        "value": "3 itens",
+        "description": "Necessitam reposição urgente"
+      },
+      "low": {
+        "title": "Próximo ao Mínimo",
+        "value": "5 itens",
+        "description": "Atenção necessária em breve"
+      },
+      "healthy": {
+        "title": "Estoque Saudável",
+        "value": "148 itens",
+        "description": "Níveis adequados"
+      }
     }
   },
   "newsletterMarketplacePage": {
-    "hero": {
-      "badge": "Crescimento",
-      "title": "Marketplace de Newsletter",
-      "subtitle": "Conecte marcas a campanhas promocionais curadas.",
-      "description": "Mostre espaços patrocinados, insights de audiência e performance dos anunciantes."
-    },
+    "title": "Newsletter e Campanhas",
+    "subtitle": "Crie newsletters segmentadas, automações de email e campanhas de retenção para fidelizar seus clientes.",
+    "badge": "📧 Email Marketing",
     "stats": [
       {
-        "label": "Publicadores ativos",
-        "value": "38"
+        "label": "Total de Assinantes",
+        "value": "12.450",
+        "change": "+18.2%"
       },
       {
-        "label": "Taxa média de abertura",
-        "value": "41%"
+        "label": "Taxa de Abertura Média",
+        "value": "58.5%",
+        "change": "+5.2%"
       },
       {
-        "label": "Vagas patrocinadas na semana",
-        "value": "22"
+        "label": "Taxa de Cliques",
+        "value": "22.3%",
+        "change": "+3.8%"
+      },
+      {
+        "label": "Campanhas Ativas",
+        "value": "8",
+        "change": "2 agendadas"
       }
     ],
-    "highlights": {
-      "title": "Recursos pensados para times de growth",
-      "items": [
-        {
-          "title": "Audiências segmentadas",
-          "description": "Monte pacotes por demografia, interesse ou etapa do funil."
-        },
-        {
-          "title": "Receita previsível",
-          "description": "Compare CPM e valores fixos para otimizar o yield."
-        },
-        {
-          "title": "Analytics de campanha",
-          "description": "Entregue dashboards transparentes com dados exportáveis aos patrocinadores."
-        }
-      ]
+    "campaigns": {
+      "title": "Campanhas Recentes",
+      "statuses": {
+        "sent": "Enviada",
+        "draft": "Rascunho",
+        "scheduled": "Agendada"
+      }
     },
-    "workflow": {
-      "title": "Fluxo sugerido",
-      "steps": [
-        "Onboard publishers e sincronize listas via API.",
-        "Monte pacotes de patrocínio com faixas de preço e alcance.",
-        "Meça conversões e automatize renovações em um único hub."
-      ]
+    "performance": {
+      "title": "Desempenho da Campanha",
+      "sent": "Enviados",
+      "opened": "Abertos",
+      "clicked": "Cliques",
+      "openRate": "Taxa de Abertura",
+      "clickRate": "Taxa de Cliques",
+      "sentOn": "Enviado em",
+      "notSentYet": "Esta campanha ainda não foi enviada. Estatísticas estarão disponíveis após o envio."
     },
-    "cta": {
-      "title": "Monetize sua audiência mais rápido",
-      "description": "Una vendas, marketing e parceiros em um workspace compartilhado.",
-      "primary": "Ver demo do marketplace",
-      "secondary": "Compartilhar com marketing"
+    "segments": {
+      "title": "Segmentação de Audiência",
+      "subscribers": "assinantes"
     }
   },
   "productShowcasePage": {
-    "hero": {
-      "badge": "Vendas",
-      "title": "Vitrine de Produtos",
-      "subtitle": "Apresente coleções curadas que transformam visitantes em compradores.",
-      "description": "Destaque produtos estrela, combos e adicionais com storytelling voltado à conversão."
-    },
+    "title": "Vitrine de Produtos",
+    "subtitle": "Apresente seus produtos com vitrines digitais integradas, destaque lançamentos e aumente suas vendas online.",
+    "badge": "🛍️ Vitrine Digital",
     "stats": [
       {
-        "label": "Coleções em destaque",
-        "value": "6"
+        "label": "Produtos Ativos",
+        "value": "248",
+        "change": "+18 novos"
       },
       {
-        "label": "Aumento de conversão",
-        "value": "+18%"
+        "label": "Vendas Este Mês",
+        "value": "R$ 52.340",
+        "change": "+32.5%"
       },
       {
-        "label": "Oportunidades de cross-sell",
-        "value": "14"
+        "label": "Visualizações",
+        "value": "12.450",
+        "change": "+18.2%"
+      },
+      {
+        "label": "Taxa de Conversão",
+        "value": "4.2%",
+        "change": "+0.8%"
       }
     ],
-    "highlights": {
-      "title": "O que torna esta página eficiente",
-      "items": [
-        {
-          "title": "Hero imersivo",
-          "description": "Use imagens marcantes e blocos de texto para comunicar valor rapidamente."
-        },
-        {
-          "title": "Pronto para comparação",
-          "description": "Inclua matrizes de recursos para ajudar na escolha do plano ou combo."
-        },
-        {
-          "title": "Captura de leads",
-          "description": "Incorpore formulários ou modais de checkout para reduzir o caminho de compra."
-        }
-      ]
+    "featured": {
+      "title": "Produtos em Destaque",
+      "subtitle": "Mais vendidos e com melhores avaliações",
+      "inStock": "unidades em estoque",
+      "reviews": "avaliações",
+      "buy": "Comprar"
     },
-    "workflow": {
-      "title": "Fluxo sugerido",
-      "steps": [
-        "Importe catálogo e dados de merchandising pelo backend Laravel.",
-        "Personalize selos, destaques de preço e indicadores de estoque.",
-        "Incorpore CTAs integrados ao fluxo de checkout preferido."
-      ]
-    },
-    "cta": {
-      "title": "Destaque seus campeões de venda",
-      "description": "Entregue uma experiência premium sem recriar componentes do zero.",
-      "primary": "Abrir demo da vitrine",
-      "secondary": "Copiar layout"
+    "catalog": {
+      "title": "Catálogo Completo",
+      "filters": {
+        "all": "Todos"
+      },
+      "viewDetails": "Ver Detalhes",
+      "noResults": "Nenhum produto encontrado nesta categoria."
     }
   },
   "productReviewsPage": {
-    "hero": {
-      "badge": "Prova social",
-      "title": "Avaliações de Produtos",
-      "subtitle": "Celebre o sucesso dos clientes com depoimentos multimídia.",
-      "description": "Colete e publique histórias que influenciam decisões de compra em todos os canais."
-    },
+    "title": "Sistema de Avaliações",
+    "subtitle": "Colete, gerencie e destaque avaliações dos clientes para fortalecer a reputação do seu negócio e aumentar conversões.",
+    "badge": "⭐ Avaliações de Clientes",
     "stats": [
       {
-        "label": "Avaliações publicadas",
-        "value": "312"
+        "label": "Avaliações Totais",
+        "value": "2.847",
+        "change": "+156 este mês"
       },
       {
-        "label": "Nota média",
-        "value": "4,9"
+        "label": "Nota Média",
+        "value": "4.8/5",
+        "change": "+0.2 pontos"
       },
       {
-        "label": "Net promoter score",
-        "value": "72"
+        "label": "Taxa de Resposta",
+        "value": "94%",
+        "change": "+5% este mês"
+      },
+      {
+        "label": "Recomendariam",
+        "value": "96%",
+        "change": "+3%"
       }
     ],
-    "highlights": {
-      "title": "Transforme feedback em conversão",
-      "items": [
-        {
-          "title": "Galeria de depoimentos",
-          "description": "Curadoria de textos, fotos e vídeos em uma grade responsiva."
-        },
-        {
-          "title": "Destaques por uso",
-          "description": "Agrupe avaliações por segmento para que cada perfil encontre histórias relevantes."
-        },
-        {
-          "title": "Sumários de insights",
-          "description": "Mostre tendências de sentimento, notas e temas recorrentes."
-        }
-      ]
+    "distribution": {
+      "title": "Distribuição de Notas",
+      "basedOn": "Baseado em {{count}} avaliações",
+      "showAll": "Mostrar Todas"
     },
-    "workflow": {
-      "title": "Fluxo sugerido",
-      "steps": [
-        "Colete feedback com formulários ou integrações.",
-        "Modere envios, marque destaques e peça aprovações.",
-        "Publique depoimentos na página e replique em campanhas."
-      ]
+    "recentReviews": {
+      "title": "Avaliações Recentes",
+      "verified": "Verificado",
+      "photos": "foto",
+      "photosPlural": "fotos",
+      "helpful": "Útil",
+      "reply": "Responder",
+      "noResults": "Nenhuma avaliação encontrada com este filtro."
     },
-    "cta": {
-      "title": "Ative seus defensores",
-      "description": "Reaproveite prova social em anúncios, landing pages e enablement de vendas.",
-      "primary": "Abrir demo de avaliações",
-      "secondary": "Exportar briefing de conteúdo"
+    "insights": {
+      "strengths": {
+        "title": "Pontos Fortes"
+      },
+      "opportunities": {
+        "title": "Oportunidades"
+      },
+      "trends": {
+        "title": "Tendências"
+      }
     }
   },
   "barbershopPage": {
@@ -1062,6 +1291,115 @@
         "Promova exercícios regulares",
         "Agende check-ups anuais"
       ]
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "Erro de Conexão",
+      "message": "Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.",
+      "retry": "Tentar Novamente"
+    },
+    "notFound": {
+      "title": "Página Não Encontrada",
+      "message": "A página que você está procurando não existe.",
+      "backHome": "Voltar para Início"
+    },
+    "unauthorized": {
+      "title": "Acesso Negado",
+      "message": "Você não tem permissão para acessar este recurso.",
+      "login": "Fazer Login"
+    },
+    "serverError": {
+      "title": "Erro no Servidor",
+      "message": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+      "contactSupport": "Contatar Suporte"
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "email": "Digite um e-mail válido",
+      "minLength": "Mínimo de {{min}} caracteres",
+      "maxLength": "Máximo de {{max}} caracteres",
+      "password": "A senha deve ter pelo menos 8 caracteres",
+      "passwordMatch": "As senhas não coincidem",
+      "phone": "Digite um telefone válido",
+      "cpf": "Digite um CPF válido",
+      "cnpj": "Digite um CNPJ válido",
+      "date": "Digite uma data válida",
+      "url": "Digite uma URL válida",
+      "number": "Digite apenas números",
+      "positive": "O valor deve ser positivo",
+      "min": "O valor mínimo é {{min}}",
+      "max": "O valor máximo é {{max}}"
+    }
+  },
+  "notifications": {
+    "success": {
+      "saved": "Salvo com sucesso!",
+      "updated": "Atualizado com sucesso!",
+      "deleted": "Excluído com sucesso!",
+      "created": "Criado com sucesso!",
+      "sent": "Enviado com sucesso!"
+    },
+    "error": {
+      "generic": "Algo deu errado. Tente novamente.",
+      "timeout": "A operação demorou muito. Tente novamente.",
+      "offline": "Você está offline. Verifique sua conexão."
+    },
+    "warning": {
+      "unsavedChanges": "Você tem alterações não salvas. Deseja continuar?",
+      "deleteConfirm": "Tem certeza que deseja excluir?",
+      "irreversible": "Esta ação não pode ser desfeita."
+    },
+    "info": {
+      "loading": "Carregando...",
+      "processing": "Processando...",
+      "saving": "Salvando...",
+      "uploading": "Enviando..."
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "edit": "Editar",
+      "create": "Criar",
+      "update": "Atualizar",
+      "close": "Fechar",
+      "confirm": "Confirmar",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "export": "Exportar",
+      "import": "Importar",
+      "download": "Baixar",
+      "upload": "Enviar",
+      "view": "Visualizar",
+      "back": "Voltar",
+      "next": "Próximo",
+      "previous": "Anterior",
+      "finish": "Finalizar"
+    },
+    "status": {
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "pending": "Pendente",
+      "completed": "Concluído",
+      "cancelled": "Cancelado",
+      "draft": "Rascunho",
+      "published": "Publicado",
+      "archived": "Arquivado"
+    },
+    "time": {
+      "now": "Agora",
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "tomorrow": "Amanhã",
+      "thisWeek": "Esta Semana",
+      "lastWeek": "Semana Passada",
+      "thisMonth": "Este Mês",
+      "lastMonth": "Mês Passado",
+      "thisYear": "Este Ano",
+      "lastYear": "Ano Passado"
     }
   }
 }

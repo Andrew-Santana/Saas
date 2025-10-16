@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Globe, Check, Loader2 } from 'lucide-react';
 import { supportedLanguagesList } from '../i18n';
 import { useSmartTranslation } from '../hooks/useSmartTranslation';
+import { useLocalizedPath } from '../hooks/useLocalizedPath';
 
 interface LanguageSelectorProps {
   className?: string;
@@ -10,16 +11,16 @@ interface LanguageSelectorProps {
 }
 
 /**
- * Seletor de idioma com lazy loading
+ * Seletor de idioma com lazy loading e URLs multilíngues
  */
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   className = '',
   showFlags = true,
   showNames = true
 }) => {
-  const { changeLanguage, isLanguageLoaded, loadingLanguages } = useSmartTranslation();
+  const { isLanguageLoaded, loadingLanguages } = useSmartTranslation();
+  const { changeLanguage: changeLocalizedLanguage, currentLanguage } = useLocalizedPath();
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('pt-BR');
 
   const handleLanguageChange = async (languageCode: string) => {
     if (languageCode === currentLanguage) {
@@ -28,8 +29,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     }
 
     try {
-      await changeLanguage(languageCode);
-      setCurrentLanguage(languageCode);
+      await changeLocalizedLanguage(languageCode);
       setIsOpen(false);
     } catch (error) {
       console.error('Erro ao mudar idioma:', error);
