@@ -32,14 +32,11 @@ export default defineConfig({
   build: {
     // Desabilitar source maps em produção por segurança
     sourcemap: false,
-    // Otimizações para produção
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
+    // Usar esbuild para minificação (padrão do Vite, mais rápido)
+    minify: 'esbuild',
+    // Configurações de otimização
+    target: 'es2015',
+    cssMinify: true,
     rollupOptions: {
       output: {
         manualChunks: {
