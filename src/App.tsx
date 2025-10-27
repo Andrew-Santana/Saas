@@ -78,9 +78,12 @@ function LandingPage() {
 }
 
 function App() {
+  // Configurar basename para GitHub Pages
+  const basename = import.meta.env.PROD ? '/Saas' : '';
+  
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename={basename}>
         <ChatbotWidget />
         <LocalizedRoutes LandingPage={LandingPage} />
       </Router>
