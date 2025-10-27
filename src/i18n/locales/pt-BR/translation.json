@@ -1,0 +1,1514 @@
+{
+  "agendaPro": {
+    "brand": "AgendaPro",
+    "navbar": {
+      "services": "Serviços",
+      "howItWorks": "Como funciona",
+      "testimonials": "Depoimentos",
+      "pricing": "Preços",
+      "faq": "FAQ",
+      "freeTrial": "Teste Grátis"
+    },
+    "hero": {
+      "title": "Agendamento fácil e gestão completa para o seu negócio",
+      "subtitle": "Reduza faltas, organize seu time e conquiste mais clientes com a plataforma mais simples do mercado",
+      "freeTrial": "Teste Grátis por 14 Dias",
+      "watchDemo": "Ver Demonstração",
+      "companies": "empresas",
+      "rating": "avaliação"
+    },
+    "demoModal": {
+      "title": "Escolha sua Demonstração",
+      "subtitle": "Veja como o AgendaPro se adapta ao seu negócio",
+      "closeButton": "Fechar modal",
+      "demos": {
+        "salao": {
+          "title": "Salão de Beleza",
+          "description": "Gestão completa para salões e clínicas de estética",
+          "features": [
+            "Agendamentos online",
+            "Gestão de profissionais",
+            "Controle de estoque"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "barbearia": {
+          "title": "Barbearia",
+          "description": "Sistema completo para barbearias modernas",
+          "features": [
+            "Agendamentos 24/7",
+            "Gestão de barbeiros",
+            "Fidelização de clientes"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "veterinaria": {
+          "title": "Clínica Veterinária",
+          "description": "Plataforma especializada para veterinários",
+          "features": [
+            "Agendamentos por especialidade",
+            "Prontuário eletrônico",
+            "Gestão de vacinas"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "dashboard": {
+          "title": "Painel Executivo",
+          "description": "Acompanhe métricas chave e desempenho dos serviços em tempo real",
+          "features": [
+            "Indicadores ao vivo",
+            "Monitoramento de status",
+            "Painel de próximas ações"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "inventory": {
+          "title": "Gestão de Estoque",
+          "description": "Controle níveis de estoque e pedidos de fornecedores em todas as unidades",
+          "features": [
+            "Alertas de reposição",
+            "Acompanhamento de fornecedores",
+            "Estoque multiunidade"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "timeBank": {
+          "title": "Banco de Horas",
+          "description": "Controle jornada em tempo real e mantenha compliance trabalhista com relatórios automáticos",
+          "features": [
+            "Contador em tempo real",
+            "Aprovação de horas extras",
+            "Exportação para folha"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "newsletter": {
+          "title": "Marketplace de Newsletter",
+          "description": "Aumente a receita com campanhas promocionais curadas",
+          "features": [
+            "Audiências segmentadas",
+            "Divisão de receita",
+            "Analytics de campanhas"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "productShowcase": {
+          "title": "Vitrine de Produtos",
+          "description": "Apresente coleções de produtos com seções compráveis",
+          "features": [
+            "Destaques no topo",
+            "Tabelas comparativas",
+            "Captura de leads"
+          ],
+          "button": "Ver Demonstração"
+        },
+        "productReviews": {
+          "title": "Avaliações de Produtos",
+          "description": "Destaque a voz dos clientes com storytelling rico",
+          "features": [
+            "Grade de depoimentos",
+            "Destaques em vídeo",
+            "Resumos de avaliações"
+          ],
+          "button": "Ver Demonstração"
+        }
+      },
+      "footer": {
+        "text": "Não encontrou seu segmento? O AgendaPro se adapta a qualquer negócio com agendamentos.",
+        "expertButton": "Falar com Especialista",
+        "trialButton": "Teste Grátis por 14 Dias"
+      }
+    },
+    "benefits": {
+      "title": "Tudo que você precisa em uma plataforma",
+      "subtitle": "Ferramentas poderosas para transformar a gestão do seu negócio",
+      "onlineScheduling": {
+        "title": "Agendamentos Online 24/7",
+        "description": "Seus clientes agendam a qualquer hora, de qualquer lugar. Sem ligações, sem confusão."
+      },
+      "automaticReminders": {
+        "title": "Lembretes Automáticos",
+        "description": "Reduza faltas em até 70% com confirmações e lembretes por WhatsApp e SMS."
+      },
+      "teamManagement": {
+        "title": "Gestão de Equipe Simplificada",
+        "description": "Controle horários, disponibilidade e desempenho de cada profissional em um só lugar."
+      },
+      "realTimeReports": {
+        "title": "Relatórios em Tempo Real",
+        "description": "Veja faturamento, serviços mais vendidos e performance do seu negócio instantaneamente."
+      },
+      "integratedPayments": {
+        "title": "Pagamentos Integrados",
+        "description": "Receba pagamentos online com segurança. Aumente sua taxa de conversão."
+      },
+      "saveTime": {
+        "title": "Economize Tempo",
+        "description": "Automatize tarefas repetitivas e foque no que realmente importa: seus clientes."
+      }
+    },
+    "pricing": {
+      "title": "Planos transparentes para seu negócio",
+      "subtitle": "Sem taxas escondidas. Cancele a qualquer momento.",
+      "freeTrial": "Teste grátis por 14 dias em qualquer plano",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "R$ 49",
+          "description": "Ideal para profissionais autônomos",
+          "features": [
+            "1 profissional",
+            "Agendamentos ilimitados",
+            "Lembretes automáticos",
+            "Gestão de clientes",
+            "Suporte por email"
+          ],
+          "cta": "Começar agora"
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "R$ 129",
+          "description": "Perfeito para pequenas equipes",
+          "features": [
+            "Até 5 profissionais",
+            "Agendamentos ilimitados",
+            "Lembretes automáticos",
+            "Gestão de clientes",
+            "Relatórios avançados",
+            "Pagamentos online",
+            "Suporte prioritário"
+          ],
+          "cta": "Teste grátis 14 dias",
+          "popular": "Mais Popular"
+        },
+        "advanced": {
+          "name": "Avançado",
+          "price": "R$ 249",
+          "description": "Para negócios em crescimento",
+          "features": [
+            "Profissionais ilimitados",
+            "Agendamentos ilimitados",
+            "Lembretes automáticos",
+            "Gestão de clientes",
+            "Relatórios avançados",
+            "Pagamentos online",
+            "API personalizada",
+            "Suporte dedicado",
+            "Múltiplas unidades"
+          ],
+          "cta": "Começar agora"
+        }
+      },
+      "footer": "Todos os planos incluem atualizações gratuitas e acesso completo à plataforma. Upgrade ou downgrade a qualquer momento."
+    },
+    "testimonials": {
+      "title": "Amado por profissionais em todo o Brasil",
+      "subtitle": "Veja o que nossos clientes estão dizendo sobre a transformação nos seus negócios",
+      "testimonials": [
+        {
+          "name": "Mariana Silva",
+          "role": "Proprietária - Salão Bella Vita",
+          "content": "Aumentei em 40% meus agendamentos depois que comecei a usar essa plataforma! Meus clientes adoram a facilidade de agendar pelo celular."
+        },
+        {
+          "name": "Carlos Mendes",
+          "role": "Gestor - Barbearia Premium",
+          "content": "Reduzi as faltas em mais de 60% com os lembretes automáticos. Economizo horas por semana que antes gastava atendendo ligações."
+        },
+        {
+          "name": "Ana Costa",
+          "role": "Veterinária - Clínica PetCare",
+          "content": "A gestão da equipe ficou muito mais simples. Consigo ver a agenda de todos os veterinários em tempo real e otimizar os atendimentos."
+        },
+        {
+          "name": "Roberto Santos",
+          "role": "Dono - Pet Shop Amigo Fiel",
+          "content": "Plataforma intuitiva e completa. Os relatórios me ajudam a tomar decisões mais estratégicas para o negócio. Recomendo!"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Comece em 3 passos simples",
+      "subtitle": "Configure sua agenda profissional em minutos, não em dias",
+      "stepLabel": "Passo",
+      "steps": [
+        {
+          "title": "Cadastre seu negócio",
+          "description": "Crie sua conta em menos de 2 minutos. Não precisa cartão de crédito."
+        },
+        {
+          "title": "Personalize sua agenda",
+          "description": "Adicione sua logo, cores da marca, serviços e horários de atendimento."
+        },
+        {
+          "title": "Compartilhe e receba agendamentos",
+          "description": "Envie seu link personalizado e comece a receber agendamentos online imediatamente."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para transformar seu negócio?",
+      "subtitle": "Junte-se a milhares de profissionais que já economizam tempo e aumentam seus resultados com nossa plataforma",
+      "button": "Comece Agora Grátis",
+      "disclaimer": "14 dias grátis • Sem cartão de crédito • Cancele quando quiser"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Tire suas dúvidas sobre a plataforma",
+      "questions": [
+        {
+          "question": "Posso cancelar a qualquer momento?",
+          "answer": "Sim, você pode cancelar sua assinatura a qualquer momento sem multas ou taxas adicionais. Seu acesso continuará até o final do período pago."
+        },
+        {
+          "question": "Há taxa de configuração ou implementação?",
+          "answer": "Não há nenhuma taxa de configuração. Você paga apenas o plano mensal escolhido e pode começar a usar imediatamente após o cadastro."
+        },
+        {
+          "question": "Posso personalizar com a marca do meu negócio?",
+          "answer": "Sim! Você pode adicionar sua logo, escolher as cores da sua marca e personalizar completamente a página de agendamentos para combinar com a identidade visual do seu negócio."
+        },
+        {
+          "question": "Como funciona o suporte ao cliente?",
+          "answer": "Todos os planos incluem suporte por email. Os planos Pro e Avançado têm acesso a suporte prioritário, com tempos de resposta mais rápidos. O plano Avançado inclui suporte dedicado."
+        },
+        {
+          "question": "Preciso instalar algum software?",
+          "answer": "Não! A plataforma é 100% online e funciona em qualquer navegador. Basta fazer login e começar a usar. Também temos apps mobile para facilitar o acesso."
+        },
+        {
+          "question": "Meus dados estão seguros?",
+          "answer": "Sim! Utilizamos criptografia de ponta a ponta e seguimos as melhores práticas de segurança. Seus dados e os dos seus clientes estão completamente protegidos conforme a LGPD."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Confiado por milhares de profissionais"
+    },
+    "footer": {
+      "description": "A solução completa para gestão e agendamento do seu negócio.",
+      "menu": {
+        "title": "Menu",
+        "services": "Serviços",
+        "howItWorks": "Como funciona",
+        "pricing": "Preços",
+        "testimonials": "Depoimentos"
+      },
+      "legal": {
+        "title": "Legal",
+        "terms": "Termos de Uso",
+        "privacy": "Política de Privacidade",
+        "lgpd": "LGPD",
+        "cookies": "Cookies"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Receba dicas e novidades sobre gestão de negócios",
+        "placeholder": "Seu e-mail"
+      },
+      "copyright": "© 2025 AgendaPro. Todos os direitos reservados."
+    }
+  },
+  "timeBankPage": {
+    "header": {
+      "title": "Banco de Horas Inteligente",
+      "subtitle": "Gestão de jornada e conformidade em tempo real",
+      "rating": "4,9 (312 avaliações)",
+      "runningBadge": "Contador em tempo real ativo",
+      "balanceLabel": "Saldo do time",
+      "balanceValue": "+12h30"
+    },
+    "about": {
+      "title": "Acompanhe seu time com precisão",
+      "description": "O módulo de banco de horas integra apontamentos em tempo real, aprovações inteligentes e alertas legais para garantir que sua operação esteja sempre em conformidade.",
+      "details": [
+        {
+          "label": "Colaboradores monitorados",
+          "value": "18"
+        },
+        {
+          "label": "Horas registradas neste mês",
+          "value": "1.245h"
+        },
+        {
+          "label": "Horas extras a aprovar",
+          "value": "6h45"
+        },
+        {
+          "label": "Limite legal restante",
+          "value": "27h"
+        }
+      ]
+    },
+    "liveTracker": {
+      "title": "Rastreador em tempo real",
+      "currentTaskLabel": "Atividade atual",
+      "currentTaskPlaceholder": "Ex: Revisão de contratos ou onboarding de clientes",
+      "elapsedLabel": "Tempo acumulado na sessão",
+      "startLabel": "Iniciar contagem",
+      "pauseLabel": "Pausar",
+      "resumeLabel": "Retomar",
+      "resetLabel": "Zerar contador",
+      "note": "Mantenha visibilidade do que está sendo feito e distribua horas automaticamente entre projetos.",
+      "runningSinceLabel": "Rodando desde",
+      "manualEntry": {
+        "title": "Lançamento manual",
+        "description": "Registrar horas de dias anteriores",
+        "action": "Adicionar hora"
+      }
+    },
+    "calendar": {
+      "title": "Calendário de jornada",
+      "monthLabel": "Setembro 2024",
+      "legend": {
+        "working": "Dia trabalhado",
+        "overtime": "Hora extra",
+        "absence": "Ausência programada"
+      },
+      "summary": {
+        "totalTracked": "Total registrado: 132h",
+        "overtime": "Horas extras acumuladas",
+        "daysWorked": "17 dias trabalhados"
+      },
+      "weekDays": ["S", "T", "Q", "Q", "S", "S", "D"],
+      "days": [
+        { "date": "01", "hours": "8h15", "status": "working" },
+        { "date": "02", "hours": "8h45", "status": "overtime" },
+        { "date": "03", "hours": "-", "status": "absence" },
+        { "date": "04", "hours": "7h58", "status": "working" },
+        { "date": "05", "hours": "8h10", "status": "working" },
+        { "date": "06", "hours": "4h20", "status": "working" },
+        { "date": "07", "hours": "-", "status": "absence" },
+        { "date": "08", "hours": "8h05", "status": "working" },
+        { "date": "09", "hours": "9h20", "status": "overtime" },
+        { "date": "10", "hours": "8h00", "status": "working" },
+        { "date": "11", "hours": "8h12", "status": "working" },
+        { "date": "12", "hours": "-", "status": "absence" },
+        { "date": "13", "hours": "5h45", "status": "working" },
+        { "date": "14", "hours": "-", "status": "absence" },
+        { "date": "15", "hours": "8h30", "status": "working" },
+        { "date": "16", "hours": "8h40", "status": "overtime" },
+        { "date": "17", "hours": "7h55", "status": "working" },
+        { "date": "18", "hours": "8h05", "status": "working" },
+        { "date": "19", "hours": "-", "status": "absence" },
+        { "date": "20", "hours": "6h10", "status": "working" },
+        { "date": "21", "hours": "-", "status": "absence" },
+        { "date": "22", "hours": "8h00", "status": "working" },
+        { "date": "23", "hours": "8h50", "status": "overtime" },
+        { "date": "24", "hours": "8h10", "status": "working" },
+        { "date": "25", "hours": "8h02", "status": "working" },
+        { "date": "26", "hours": "-", "status": "absence" },
+        { "date": "27", "hours": "5h30", "status": "working" },
+        { "date": "28", "hours": "-", "status": "absence" }
+      ]
+    },
+    "history": {
+      "title": "Histórico consolidado",
+      "filterLabel": "Últimas marcações sincronizadas automaticamente",
+      "exportLabel": "Exportar relatório",
+      "entries": [
+        {
+          "date": "23/09",
+          "weekDay": "Segunda-feira",
+          "duration": "08h50",
+          "activity": "Planejamento de campanhas Q4",
+          "project": "Marketing",
+          "notes": "Reunião estratégica com diretoria e atualização de cronograma."
+        },
+        {
+          "date": "22/09",
+          "weekDay": "Domingo",
+          "duration": "04h10",
+          "activity": "Plantão de suporte",
+          "project": "Customer Care",
+          "notes": "Atendimento extraordinário aprovado automaticamente pelo gestor."
+        },
+        {
+          "date": "21/09",
+          "weekDay": "Sábado",
+          "duration": "03h20",
+          "activity": "Atualização de indicadores BI",
+          "project": "Dados & Analytics",
+          "notes": "Carga extra para fechamento de OKR mensal."
+        },
+        {
+          "date": "20/09",
+          "weekDay": "Sexta-feira",
+          "duration": "07h55",
+          "activity": "Onboarding de novos colaboradores",
+          "project": "People Ops",
+          "notes": "Sessões individuais com novos membros e ajustes em templates."
+        }
+      ]
+    },
+    "stats": {
+      "title": "Indicadores principais",
+      "items": [
+        {
+          "label": "Horas aprovadas",
+          "value": "98h",
+          "helper": "Serão enviadas para a folha em 3 dias"
+        },
+        {
+          "label": "Alertas de conformidade",
+          "value": "2 pendências",
+          "helper": "Limite diário de 2h extras excedido por 2 colaboradores"
+        },
+        {
+          "label": "Média diária",
+          "value": "7h36",
+          "helper": "Dentro da meta definida pelo RH (7h30)"
+        }
+      ]
+    },
+    "insights": {
+      "title": "Insights automáticos",
+      "items": [
+        {
+          "title": "Equipe comercial com saldo positivo",
+          "description": "Os consultores acumularam +6h no mês. Sugestão: compensar em treinamentos internos."
+        },
+        {
+          "title": "Plantões concentrados no fim de semana",
+          "description": "Rebalanceie escalas para distribuir melhor as horas extras entre as equipes."
+        },
+        {
+          "title": "Pontos faltantes identificados",
+          "description": "3 colaboradores não finalizaram a batida de saída. Envie lembrete automático."
+        }
+      ]
+    },
+    "quickActions": {
+      "title": "Ações rápidas",
+      "actions": [
+        {
+          "label": "Aprovar horas extras da semana",
+          "description": "Envie para o financeiro com um clique"
+        },
+        {
+          "label": "Notificar colaboradores com saldo negativo",
+          "description": "Compartilhe plano de compensação automaticamente"
+        },
+        {
+          "label": "Gerar relatório para compliance",
+          "description": "PDF com histórico por colaborador e justificativas"
+        }
+      ]
+    }
+  },
+  "dashboardPage": {
+    "title": "Dashboard Inteligente",
+    "subtitle": "Acompanhe métricas em tempo real, analise tendências e tome decisões baseadas em dados concretos.",
+    "badge": "📊 Dashboard Analytics",
+    "metrics": [
+      {
+        "label": "Receita Mensal",
+        "value": "R$ 45.280",
+        "change": "+18.2%"
+      },
+      {
+        "label": "Novos Clientes",
+        "value": "1.245",
+        "change": "+24.5%"
+      },
+      {
+        "label": "Taxa de Conversão",
+        "value": "3.84%",
+        "change": "+0.8%"
+      },
+      {
+        "label": "Ticket Médio",
+        "value": "R$ 156",
+        "change": "+5.2%"
+      },
+      {
+        "label": "Assinaturas Ativas",
+        "value": "892",
+        "change": "+12.1%"
+      },
+      {
+        "label": "Churn Rate",
+        "value": "2.1%",
+        "change": "-0.4%"
+      }
+    ],
+    "chart": {
+      "title": "Crescimento Mensal",
+      "subtitle": "Receita dos últimos 6 meses"
+    },
+    "status": {
+      "title": "Status da API",
+      "loading": "Verificando conexão...",
+      "error": "Erro na conexão",
+      "success": "API Online",
+      "uptime": "Uptime",
+      "latency": "Latência Média",
+      "requests": "Requests/min"
+    },
+    "recentSales": {
+      "title": "Vendas Recentes"
+    },
+    "topPlans": {
+      "title": "Planos Mais Vendidos",
+      "subscriptions": "assinaturas"
+    }
+  },
+  "inventoryManagementPage": {
+    "title": "Gerenciamento de Inventário",
+    "subtitle": "Controle completo do seu estoque com alertas inteligentes, reposição automática e análise de consumo.",
+    "badge": "📦 Controle de Estoque",
+    "stats": [
+      {
+        "label": "Total de Produtos",
+        "value": "156",
+        "change": "+12 este mês"
+      },
+      {
+        "label": "Valor do Estoque",
+        "value": "R$ 28.450",
+        "change": "+8.2%"
+      },
+      {
+        "label": "Itens em Falta",
+        "value": "8",
+        "change": "-3 resolvidos"
+      },
+      {
+        "label": "Pedidos Pendentes",
+        "value": "5",
+        "change": "2 em trânsito"
+      }
+    ],
+    "table": {
+      "title": "Produtos em Estoque",
+      "filters": {
+        "all": "Todos",
+        "ok": "OK",
+        "low": "Baixo",
+        "critical": "Crítico"
+      },
+      "columns": {
+        "product": "Produto",
+        "category": "Categoria",
+        "stock": "Estoque",
+        "price": "Preço",
+        "supplier": "Fornecedor",
+        "status": "Status",
+        "actions": "Ações"
+      },
+      "statuses": {
+        "ok": "Estoque OK",
+        "low": "Estoque Baixo",
+        "critical": "Crítico"
+      },
+      "actions": {
+        "reorder": "Repor"
+      },
+      "lastPurchase": "Última compra",
+      "minStock": "Mín",
+      "units": "un",
+      "noResults": "Nenhum produto encontrado com este filtro."
+    },
+    "alerts": {
+      "critical": {
+        "title": "Estoque Crítico",
+        "value": "3 itens",
+        "description": "Necessitam reposição urgente"
+      },
+      "low": {
+        "title": "Próximo ao Mínimo",
+        "value": "5 itens",
+        "description": "Atenção necessária em breve"
+      },
+      "healthy": {
+        "title": "Estoque Saudável",
+        "value": "148 itens",
+        "description": "Níveis adequados"
+      }
+    }
+  },
+  "newsletterMarketplacePage": {
+    "title": "Newsletter e Campanhas",
+    "subtitle": "Crie newsletters segmentadas, automações de email e campanhas de retenção para fidelizar seus clientes.",
+    "badge": "📧 Email Marketing",
+    "stats": [
+      {
+        "label": "Total de Assinantes",
+        "value": "12.450",
+        "change": "+18.2%"
+      },
+      {
+        "label": "Taxa de Abertura Média",
+        "value": "58.5%",
+        "change": "+5.2%"
+      },
+      {
+        "label": "Taxa de Cliques",
+        "value": "22.3%",
+        "change": "+3.8%"
+      },
+      {
+        "label": "Campanhas Ativas",
+        "value": "8",
+        "change": "2 agendadas"
+      }
+    ],
+    "campaigns": {
+      "title": "Campanhas Recentes",
+      "statuses": {
+        "sent": "Enviada",
+        "draft": "Rascunho",
+        "scheduled": "Agendada"
+      }
+    },
+    "performance": {
+      "title": "Desempenho da Campanha",
+      "sent": "Enviados",
+      "opened": "Abertos",
+      "clicked": "Cliques",
+      "openRate": "Taxa de Abertura",
+      "clickRate": "Taxa de Cliques",
+      "sentOn": "Enviado em",
+      "notSentYet": "Esta campanha ainda não foi enviada. Estatísticas estarão disponíveis após o envio."
+    },
+    "segments": {
+      "title": "Segmentação de Audiência",
+      "subscribers": "assinantes"
+    }
+  },
+  "productShowcasePage": {
+    "title": "Vitrine de Produtos",
+    "subtitle": "Apresente seus produtos com vitrines digitais integradas, destaque lançamentos e aumente suas vendas online.",
+    "badge": "🛍️ Vitrine Digital",
+    "stats": [
+      {
+        "label": "Produtos Ativos",
+        "value": "248",
+        "change": "+18 novos"
+      },
+      {
+        "label": "Vendas Este Mês",
+        "value": "R$ 52.340",
+        "change": "+32.5%"
+      },
+      {
+        "label": "Visualizações",
+        "value": "12.450",
+        "change": "+18.2%"
+      },
+      {
+        "label": "Taxa de Conversão",
+        "value": "4.2%",
+        "change": "+0.8%"
+      }
+    ],
+    "featured": {
+      "title": "Produtos em Destaque",
+      "subtitle": "Mais vendidos e com melhores avaliações",
+      "inStock": "unidades em estoque",
+      "reviews": "avaliações",
+      "buy": "Comprar"
+    },
+    "catalog": {
+      "title": "Catálogo Completo",
+      "filters": {
+        "all": "Todos"
+      },
+      "viewDetails": "Ver Detalhes",
+      "noResults": "Nenhum produto encontrado nesta categoria."
+    }
+  },
+  "productReviewsPage": {
+    "title": "Sistema de Avaliações",
+    "subtitle": "Colete, gerencie e destaque avaliações dos clientes para fortalecer a reputação do seu negócio e aumentar conversões.",
+    "badge": "⭐ Avaliações de Clientes",
+    "stats": [
+      {
+        "label": "Avaliações Totais",
+        "value": "2.847",
+        "change": "+156 este mês"
+      },
+      {
+        "label": "Nota Média",
+        "value": "4.8/5",
+        "change": "+0.2 pontos"
+      },
+      {
+        "label": "Taxa de Resposta",
+        "value": "94%",
+        "change": "+5% este mês"
+      },
+      {
+        "label": "Recomendariam",
+        "value": "96%",
+        "change": "+3%"
+      }
+    ],
+    "distribution": {
+      "title": "Distribuição de Notas",
+      "basedOn": "Baseado em {{count}} avaliações",
+      "showAll": "Mostrar Todas"
+    },
+    "recentReviews": {
+      "title": "Avaliações Recentes",
+      "verified": "Verificado",
+      "photos": "foto",
+      "photosPlural": "fotos",
+      "helpful": "Útil",
+      "reply": "Responder",
+      "noResults": "Nenhuma avaliação encontrada com este filtro."
+    },
+    "insights": {
+      "strengths": {
+        "title": "Pontos Fortes"
+      },
+      "opportunities": {
+        "title": "Oportunidades"
+      },
+      "trends": {
+        "title": "Tendências"
+      }
+    }
+  },
+  "barbershopPage": {
+    "header": {
+      "title": "Barbearia Moderna",
+      "subtitle": "Agendamento Online",
+      "rating": "4,8 (127 avaliações)"
+    },
+    "about": {
+      "title": "Sobre a Barbearia",
+      "description": "A Barbearia Moderna oferece serviços de qualidade com profissionais experientes e equipamentos modernos para garantir o melhor atendimento.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rua das Flores, 123 — Centro"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 99999-9999"
+        },
+        {
+          "icon": "email",
+          "text": "contato@barbeariamoderna.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sáb: 9h às 19h"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Corte Masculino",
+          "price": "R$ 25,00",
+          "duration": "30 min"
+        },
+        {
+          "name": "Barba",
+          "price": "R$ 20,00",
+          "duration": "20 min"
+        },
+        {
+          "name": "Corte + Barba",
+          "price": "R$ 40,00",
+          "duration": "45 min"
+        },
+        {
+          "name": "Design de Sobrancelhas",
+          "price": "R$ 15,00",
+          "duration": "15 min"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nossos Profissionais",
+      "items": [
+        {
+          "name": "João Silva",
+          "specialty": "Cortes modernos",
+          "rating": "4,9",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Pedro Santos",
+          "specialty": "Barbas",
+          "rating": "4,8",
+          "experience": "5 anos de experiência"
+        },
+        {
+          "name": "Carlos Lima",
+          "specialty": "Cortes clássicos",
+          "rating": "4,7",
+          "experience": "3 anos de experiência"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Agendar Horário",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Profissional",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Agendar horário",
+      "serviceOptions": [
+        "Corte Masculino - R$ 25,00",
+        "Barba - R$ 20,00",
+        "Corte + Barba - R$ 40,00",
+        "Design de Sobrancelhas - R$ 15,00"
+      ],
+      "professionalOptions": [
+        "João Silva",
+        "Pedro Santos",
+        "Carlos Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Clientes atendidos",
+          "value": "1.247"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "16"
+        }
+      ]
+    }
+  },
+  "chatbot": {
+    "launcher": {
+      "label": "Fale com nosso especialista",
+      "active": "Assistente AgendaPro"
+    },
+    "header": {
+      "title": "Assistente AgendaPro",
+      "subtitle": "Vamos indicar a solução ideal para o seu negócio"
+    },
+    "intro": {
+      "title": "Olá! Vamos começar?",
+      "subtitle": "Qual desafio você quer resolver primeiro?",
+      "prompt": "Selecione uma das soluções abaixo:"
+    },
+    "options": {
+      "salao": {
+        "title": "Agendamentos e salões",
+        "description": "Organize agendas, equipe e fidelização de clientes para salões e clínicas de estética.",
+        "benefits": [
+          "Reservas online 24/7",
+          "Gestão de profissionais e comissões",
+          "Fluxo completo de relacionamento"
+        ]
+      },
+      "barbearia": {
+        "title": "Barbearias e grooming",
+        "description": "Otimize o atendimento dos barbeiros, reduza faltas e conquiste novos clientes.",
+        "benefits": [
+          "Lembretes automáticos por WhatsApp",
+          "Controle de cadeiras e tempos de serviço",
+          "Programa de fidelidade integrado"
+        ]
+      },
+      "veterinaria": {
+        "title": "Clínicas veterinárias",
+        "description": "Centralize agendamentos por especialidade e mantenha os prontuários sempre atualizados.",
+        "benefits": [
+          "Histórico completo de pacientes",
+          "Gestão de vacinas e retornos",
+          "Agenda por veterinário ou sala"
+        ]
+      },
+      "timeBank": {
+        "title": "Banco de horas",
+        "description": "Controle ponto e compensações em tempo real com alertas de conformidade.",
+        "benefits": [
+          "Contador de jornada em tempo real",
+          "Fluxo de aprovação de horas extras",
+          "Exportação automática para folha"
+        ]
+      },
+      "inventory": {
+        "title": "Gestão de estoque",
+        "description": "Acompanhe entradas, saídas e reposição automática de produtos em todas as unidades.",
+        "benefits": [
+          "Alertas inteligentes de reposição",
+          "Relatórios de consumo por profissional",
+          "Integração com pedidos e fornecedores"
+        ]
+      },
+      "newsletter": {
+        "title": "Campanhas e marketing",
+        "description": "Automatize o relacionamento com clientes e aumente a recompra com campanhas segmentadas.",
+        "benefits": [
+          "Fluxos automáticos de e-mail e SMS",
+          "Segmentação por comportamento",
+          "Relatórios de desempenho em tempo real"
+        ]
+      }
+    },
+    "actions": {
+      "choose": "Quero esta solução",
+      "back": "Voltar",
+      "viewDemo": "Ver demo recomendada",
+      "startOver": "Iniciar outra conversa",
+      "close": "Fechar assistente"
+    },
+    "form": {
+      "title": "Enviar informações para nossa equipe",
+      "description": "Compartilhe seus dados e enviaremos a proposta ideal para você.",
+      "fields": {
+        "name": "Nome completo",
+        "email": "E-mail profissional",
+        "company": "Empresa (opcional)",
+        "message": "Conte-nos um pouco mais"
+      },
+      "placeholders": {
+        "name": "Como devemos te chamar?",
+        "email": "nome@empresa.com",
+        "company": "Nome da empresa ou unidade",
+        "message": "Quais desafios você quer resolver?"
+      },
+      "submit": "Enviar para a equipe AgendaPro"
+    },
+    "validation": {
+      "name": "Informe seu nome para continuarmos.",
+      "email": "Digite um e-mail válido."
+    },
+    "success": {
+      "title": "Obrigado! Recebemos suas informações.",
+      "description": "Nossa equipe comercial já está com todos os detalhes para preparar o melhor contato.",
+      "contact": "Enquanto isso, explore a demo indicada abaixo.",
+      "viewDemo": "Abrir demo recomendada",
+      "newChat": "Começar outra conversa"
+    },
+    "errors": {
+      "submit": "Não foi possível enviar suas informações. Tente novamente em instantes."
+    }
+  },
+  "beautySalonPage": {
+    "header": {
+      "title": "Salão de Beleza Elegance",
+      "subtitle": "Agendamento Online",
+      "rating": "4,9 (89 avaliações)"
+    },
+    "about": {
+      "title": "Sobre o Salão",
+      "description": "O Salão Elegance é especializado em beleza feminina com produtos premium, profissionais qualificados e um ambiente acolhedor.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Av. das Rosas, 456 — Jardins"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 88888-8888"
+        },
+        {
+          "icon": "email",
+          "text": "contato@salaoelegance.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sáb: 9h às 19h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "hair",
+          "label": "Cabelo"
+        },
+        {
+          "key": "nails",
+          "label": "Unhas"
+        },
+        {
+          "key": "beauty",
+          "label": "Estética"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Corte Feminino",
+          "price": "R$ 45,00",
+          "duration": "60 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Brushing",
+          "price": "R$ 35,00",
+          "duration": "45 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Coloração",
+          "price": "R$ 120,00",
+          "duration": "120 min",
+          "categoryKey": "hair"
+        },
+        {
+          "name": "Manicure",
+          "price": "R$ 25,00",
+          "duration": "30 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Pedicure",
+          "price": "R$ 30,00",
+          "duration": "45 min",
+          "categoryKey": "nails"
+        },
+        {
+          "name": "Design de Sobrancelhas",
+          "price": "R$ 20,00",
+          "duration": "20 min",
+          "categoryKey": "beauty"
+        }
+      ]
+    },
+    "professionals": {
+      "title": "Nossas Profissionais",
+      "items": [
+        {
+          "name": "Maria Silva",
+          "specialty": "Cortes e coloração",
+          "rating": "4,9",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Ana Costa",
+          "specialty": "Manicure e pedicure",
+          "rating": "4,8",
+          "experience": "5 anos de experiência"
+        },
+        {
+          "name": "Juliana Lima",
+          "specialty": "Design de sobrancelhas",
+          "rating": "4,7",
+          "experience": "3 anos de experiência"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Agendar Atendimento",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Profissional",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Agendar horário",
+      "serviceOptions": [
+        "Corte Feminino - R$ 45,00",
+        "Brushing - R$ 35,00",
+        "Coloração - R$ 120,00",
+        "Manicure - R$ 25,00",
+        "Pedicure - R$ 30,00",
+        "Design de Sobrancelhas - R$ 20,00"
+      ],
+      "professionalOptions": [
+        "Maria Silva",
+        "Ana Costa",
+        "Juliana Lima"
+      ],
+      "slots": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "11:00",
+        "11:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00",
+        "18:30",
+        "19:00"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Clientes atendidas",
+          "value": "892"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,9/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "17"
+        },
+        {
+          "label": "Serviços oferecidos",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Promoção Especial",
+      "description": "Corte + Brushing por R$ 70,00",
+      "note": "Válido até o final do mês"
+    }
+  },
+  "vetClinicPage": {
+    "header": {
+      "title": "Clínica Veterinária PetCare",
+      "subtitle": "Agendamento Online",
+      "rating": "4,8 (156 avaliações)",
+      "emergencyBadge": "Emergência 24h"
+    },
+    "about": {
+      "title": "Sobre a Clínica",
+      "description": "A Clínica PetCare oferece cuidados completos para o seu animal, com equipe dedicada e equipamentos modernos.",
+      "details": [
+        {
+          "icon": "address",
+          "text": "Rua dos Animais, 789 — Vila Pet"
+        },
+        {
+          "icon": "phone",
+          "text": "(21) 77777-7777"
+        },
+        {
+          "icon": "email",
+          "text": "contato@petcare.com"
+        },
+        {
+          "icon": "hours",
+          "text": "Seg-Sex: 8h às 18h"
+        }
+      ]
+    },
+    "filters": {
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "consultations",
+          "label": "Consultas"
+        },
+        {
+          "key": "prevention",
+          "label": "Prevenção"
+        },
+        {
+          "key": "surgery",
+          "label": "Cirurgias"
+        },
+        {
+          "key": "grooming",
+          "label": "Estética"
+        },
+        {
+          "key": "diagnostics",
+          "label": "Diagnóstico"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "durationLabel": "Duração: {{duration}}",
+      "items": [
+        {
+          "name": "Consulta Geral",
+          "price": "R$ 80,00",
+          "duration": "30 min",
+          "categoryKey": "consultations"
+        },
+        {
+          "name": "Vacinação",
+          "price": "R$ 60,00",
+          "duration": "20 min",
+          "categoryKey": "prevention"
+        },
+        {
+          "name": "Cirurgia",
+          "price": "R$ 300,00",
+          "duration": "120 min",
+          "categoryKey": "surgery"
+        },
+        {
+          "name": "Banho e Tosa",
+          "price": "R$ 45,00",
+          "duration": "60 min",
+          "categoryKey": "grooming"
+        },
+        {
+          "name": "Exames Laboratoriais",
+          "price": "R$ 120,00",
+          "duration": "45 min",
+          "categoryKey": "diagnostics"
+        },
+        {
+          "name": "Esterilização",
+          "price": "R$ 200,00",
+          "duration": "90 min",
+          "categoryKey": "surgery"
+        }
+      ]
+    },
+    "veterinarians": {
+      "title": "Nossos Veterinários",
+      "items": [
+        {
+          "name": "Dr. Carlos Mendes",
+          "specialty": "Clínica geral",
+          "rating": "4,9",
+          "experience": "12 anos de experiência"
+        },
+        {
+          "name": "Dra. Ana Santos",
+          "specialty": "Cirurgia",
+          "rating": "4,8",
+          "experience": "8 anos de experiência"
+        },
+        {
+          "name": "Dr. Pedro Lima",
+          "specialty": "Dermatologia",
+          "rating": "4,7",
+          "experience": "6 anos de experiência"
+        }
+      ]
+    },
+    "emergencies": {
+      "title": "Emergências",
+      "items": [
+        {
+          "name": "Emergência 24h",
+          "availability": "Disponível todos os dias",
+          "phone": "(21) 99999-9999"
+        },
+        {
+          "name": "Plantão de fim de semana",
+          "availability": "Cobertura Sáb-Dom",
+          "phone": "(21) 88888-8888"
+        }
+      ]
+    },
+    "schedule": {
+      "title": "Agendar Consulta",
+      "dateLabel": "Data",
+      "serviceLabel": "Serviço",
+      "professionalLabel": "Veterinário",
+      "availableTimesLabel": "Horários Disponíveis",
+      "submitLabel": "Agendar consulta",
+      "serviceOptions": [
+        "Consulta Geral - R$ 80,00",
+        "Vacinação - R$ 60,00",
+        "Cirurgia - R$ 300,00",
+        "Banho e Tosa - R$ 45,00",
+        "Exames Laboratoriais - R$ 120,00",
+        "Esterilização - R$ 200,00"
+      ],
+      "professionalOptions": [
+        "Dr. Carlos Mendes",
+        "Dra. Ana Santos",
+        "Dr. Pedro Lima"
+      ],
+      "slots": [
+        "08:00",
+        "08:30",
+        "09:00",
+        "09:30",
+        "10:00",
+        "10:30",
+        "14:00",
+        "14:30",
+        "15:00",
+        "15:30",
+        "16:00",
+        "16:30",
+        "17:00",
+        "17:30",
+        "18:00"
+      ]
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "items": [
+        {
+          "label": "Pets atendidos",
+          "value": "2.156"
+        },
+        {
+          "label": "Avaliação média",
+          "value": "4,8/5"
+        },
+        {
+          "label": "Horários disponíveis",
+          "value": "15"
+        },
+        {
+          "label": "Serviços oferecidos",
+          "value": "6"
+        }
+      ]
+    },
+    "promotion": {
+      "title": "Promoção Especial",
+      "description": "Vacinação + Consulta por R$ 120,00",
+      "note": "Válido até o final do mês"
+    },
+    "healthTips": {
+      "title": "Dicas de Saúde",
+      "tips": [
+        "Mantenha as vacinas em dia",
+        "Ofereça alimentação equilibrada",
+        "Promova exercícios regulares",
+        "Agende check-ups anuais"
+      ]
+    }
+  },
+  "errors": {
+    "network": {
+      "title": "Erro de Conexão",
+      "message": "Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.",
+      "retry": "Tentar Novamente"
+    },
+    "notFound": {
+      "title": "Página Não Encontrada",
+      "message": "A página que você está procurando não existe.",
+      "backHome": "Voltar para Início"
+    },
+    "unauthorized": {
+      "title": "Acesso Negado",
+      "message": "Você não tem permissão para acessar este recurso.",
+      "login": "Fazer Login"
+    },
+    "serverError": {
+      "title": "Erro no Servidor",
+      "message": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+      "contactSupport": "Contatar Suporte"
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "email": "Digite um e-mail válido",
+      "minLength": "Mínimo de {{min}} caracteres",
+      "maxLength": "Máximo de {{max}} caracteres",
+      "password": "A senha deve ter pelo menos 8 caracteres",
+      "passwordMatch": "As senhas não coincidem",
+      "phone": "Digite um telefone válido",
+      "cpf": "Digite um CPF válido",
+      "cnpj": "Digite um CNPJ válido",
+      "date": "Digite uma data válida",
+      "url": "Digite uma URL válida",
+      "number": "Digite apenas números",
+      "positive": "O valor deve ser positivo",
+      "min": "O valor mínimo é {{min}}",
+      "max": "O valor máximo é {{max}}"
+    }
+  },
+  "notifications": {
+    "success": {
+      "saved": "Salvo com sucesso!",
+      "updated": "Atualizado com sucesso!",
+      "deleted": "Excluído com sucesso!",
+      "created": "Criado com sucesso!",
+      "sent": "Enviado com sucesso!"
+    },
+    "error": {
+      "generic": "Algo deu errado. Tente novamente.",
+      "timeout": "A operação demorou muito. Tente novamente.",
+      "offline": "Você está offline. Verifique sua conexão."
+    },
+    "warning": {
+      "unsavedChanges": "Você tem alterações não salvas. Deseja continuar?",
+      "deleteConfirm": "Tem certeza que deseja excluir?",
+      "irreversible": "Esta ação não pode ser desfeita."
+    },
+    "info": {
+      "loading": "Carregando...",
+      "processing": "Processando...",
+      "saving": "Salvando...",
+      "uploading": "Enviando..."
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "edit": "Editar",
+      "create": "Criar",
+      "update": "Atualizar",
+      "close": "Fechar",
+      "confirm": "Confirmar",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "export": "Exportar",
+      "import": "Importar",
+      "download": "Baixar",
+      "upload": "Enviar",
+      "view": "Visualizar",
+      "back": "Voltar",
+      "next": "Próximo",
+      "previous": "Anterior",
+      "finish": "Finalizar"
+    },
+    "status": {
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "pending": "Pendente",
+      "completed": "Concluído",
+      "cancelled": "Cancelado",
+      "draft": "Rascunho",
+      "published": "Publicado",
+      "archived": "Arquivado"
+    },
+    "time": {
+      "now": "Agora",
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "tomorrow": "Amanhã",
+      "thisWeek": "Esta Semana",
+      "lastWeek": "Semana Passada",
+      "thisMonth": "Este Mês",
+      "lastMonth": "Mês Passado",
+      "thisYear": "Este Ano",
+      "lastYear": "Ano Passado"
+    }
+  }
+}
