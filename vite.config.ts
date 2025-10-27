@@ -4,6 +4,8 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  // Base path para GitHub Pages - ajuste 'Saas' para o nome do seu repositório
+  base: process.env.NODE_ENV === 'production' ? '/Saas/' : '/',
   server: {
     port: 5173,
     host: true
@@ -28,7 +30,16 @@ export default defineConfig({
     }
   },
   build: {
-    sourcemap: true,
+    // Desabilitar source maps em produção por segurança
+    sourcemap: false,
+    // Otimizações para produção
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: {
