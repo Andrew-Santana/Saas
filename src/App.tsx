@@ -78,8 +78,8 @@ function LandingPage() {
 }
 
 function App() {
-  // Configurar basename para GitHub Pages
-  const basename = import.meta.env.PROD ? '/Saas' : '';
+  // Configurar basename para GitHub Pages (sem trailing slash)
+  const basename = import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL.slice(0, -1);
   
   return (
     <LanguageProvider>
