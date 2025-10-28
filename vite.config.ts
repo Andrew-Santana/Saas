@@ -2,10 +2,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-export default defineConfig(({ command }) => ({
+export default defineConfig(({ command }) => {
+  // Detectar ambiente de deploy
+  // GitHub Pages usa /Saas/, Vercel e local usam /
+  const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+  const base = command === 'build' && isGitHubPages ? '/Saas/' : '/';
+  
+  return {
   plugins: [react()],
-  // Base path: '/Saas/' para produção, '/' para desenvolvimento
-  base: command === 'build' ? '/Saas/' : '/',
+  // Base path dinâmico: '/Saas/' apenas no GitHub Pages
+  base,
   server: {
     port: 5173,
     host: true
@@ -49,4 +55,4 @@ export default defineConfig(({ command }) => ({
       }
     }
   }
-}));
+}});
