@@ -43,7 +43,7 @@ const supportedLanguageKeys = Object.keys(resources);
 
 export const resolveLanguage = (language?: string): string => {
   if (!language) {
-    return 'pt-BR';
+    return 'en-US'; // Padrão inglês quando não detectado
   }
 
   const normalized = language.toLowerCase();
@@ -63,14 +63,22 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'pt-BR',
+    fallbackLng: 'en-US', // Fallback para inglês
     debug: false,
-    lng: 'pt-BR',
+    // Remover lng fixo para permitir detecção automática
     supportedLngs: supportedLanguageKeys,
     nonExplicitSupportedLngs: true,
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupLocalStorage: 'i18nextLng',
       caches: ['localStorage'],
+      // Detectar automaticamente do navegador
+      convertDetectedLanguage: (lng: string) => {
+        // Normalizar pt -> pt-BR, en -> en-US, etc
+        const base = lng.split('-')[0].toLowerCase();
+        return languageAliases[base] || lng;
+      },
     },
     interpolation: {
       escapeValue: false,
